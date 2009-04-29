@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/7545/code/m2eclipse-book/trunk/maven-book-sitemesh-plugin/src/main/java/org/sonatype/book
+END
+MeshVelocityMojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/!svn/ver/7545/code/m2eclipse-book/trunk/maven-book-sitemesh-plugin/src/main/java/org/sonatype/book/MeshVelocityMojo.java
+END
+VelocityMerger.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/!svn/ver/7545/code/m2eclipse-book/trunk/maven-book-sitemesh-plugin/src/main/java/org/sonatype/book/VelocityMerger.java
+END
+ContentHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/!svn/ver/7545/code/m2eclipse-book/trunk/maven-book-sitemesh-plugin/src/main/java/org/sonatype/book/ContentHandler.java
+END
+SiteMeshPageExtractor.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/!svn/ver/7545/code/m2eclipse-book/trunk/maven-book-sitemesh-plugin/src/main/java/org/sonatype/book/SiteMeshPageExtractor.java
+END
