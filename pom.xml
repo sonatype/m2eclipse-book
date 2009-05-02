@@ -41,7 +41,6 @@
   </developers>
   <modules>
     <module>content</module>
-    <module>maven-book-sitemesh-plugin</module>
   </modules>
   
   <profiles>
