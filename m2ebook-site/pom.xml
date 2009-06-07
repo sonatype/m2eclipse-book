@@ -105,6 +105,54 @@
       </plugin>
     </plugins>
   </reporting>
+<profiles>
+  <profile>
+    <id>publish</id>
+    <distributionManagement>
+      <site>
+        <id>sonatype-site</id>
+        <name>Sonatype Book Examples</name>
+        <url>scp://deployer@172.16.0.1/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book/</url>
+      </site>
+    </distributionManagement>
+    <properties>
+      <maven.book.baseurl>http://books.sonatype.com/maven-book</maven.book.baseurl>
+    </properties>
+  </profile>
+  <profile>
+    <id>publish-external</id>
+    <distributionManagement>
+      <site>
+        <id>sonatype-site</id>
+        <name>Sonatype Book Examples</name>
+        <url>scp://deployer@svn.sonatype.com/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book/</url>
+      </site>
+    </distributionManagement>
+    <properties>
+      <maven.book.baseurl>http://books.sonatype.com/maven-book</maven.book.baseurl>
+    </properties>
+  </profile>
+  <profile>
+    <id>stage</id>
+    <distributionManagement>
+      <site>
+        <id>sonatype-site</id>
+        <name>Sonatype Book Examples</name>
+        <url>scp://deployer@172.16.0.1/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book-stage/</url>
+      </site>
+    </distributionManagement>
+  </profile>
+  <profile>
+    <id>stage-external</id>
+    <distributionManagement>
+      <site>
+        <id>sonatype-site</id>
+        <name>Sonatype Book Examples</name>
+        <url>scp://deployer@svn.sonatype.com/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book-stage/</url>
+      </site>
+    </distributionManagement>
+  </profile>
+</profiles>
   <dependencies>
   </dependencies>
 </project>
