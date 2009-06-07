@@ -58,7 +58,7 @@
       </properties>
     </profile>
     <profile>
-      <id>remote-publish</id>
+      <id>publish-external</id>
       <distributionManagement>
         <site>
           <id>sonatype-site</id>
@@ -77,6 +77,16 @@
           <id>sonatype-site</id>
           <name>Sonatype Book Examples</name>
           <url>scp://deployer@172.16.0.1/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book-stage/parent</url>
+        </site>
+      </distributionManagement>
+    </profile>
+    <profile>
+      <id>stage-external</id>
+      <distributionManagement>
+        <site>
+          <id>sonatype-site</id>
+          <name>Sonatype Book Examples</name>
+          <url>scp://deployer@svn.sonatype.com/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book-stage/parent</url>
         </site>
       </distributionManagement>
     </profile>
