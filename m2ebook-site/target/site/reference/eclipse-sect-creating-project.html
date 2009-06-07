@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+  <head>
+    <title>m2eclipse Book: 3.2.&nbsp;Creating a Maven Project</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="3.2.&nbsp;Creating a Maven Project" />
+    <meta name="robots" content="index,follow" />
+    <meta name="DC.title" content="3.2.&nbsp;Creating a Maven Project" />
+    <link rel="shortcut icon" href="/sites/all/themes/sonatype/favicon_sonatype.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?h" />
+
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date_popup/themes/datepicker.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date_popup/themes/timeentry.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/imagefield/imagefield.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/img_assist/img_assist.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/style.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/css/tabs.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/css/main.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/css/layout-fixed.css?h" />
+    <link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/sonatype/css/print.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/css/book.css?h" />
+    <!--[if lte IE 6]>
+        <style type="text/css" media="all">
+          @import "/sites/all/themes/sonatype/css/ie6.css";
+        </style>
+        <![endif]-->
+
+    <!--[if IE 7]>
+        <style type="text/css" media="all">
+          @import "/sites/all/themes/sonatype/css/ie7.css";
+        </style>
+        <![endif]-->
+    <script type="text/javascript" src="/misc/jquery.js?h"></script>
+    <script type="text/javascript" src="/misc/drupal.js?h"></script>
+    <script type="text/javascript" src="/sites/all/modules/date/date_timezone/date_timezone.js?h"></script>
+    <script type="text/javascript" src="/sites/all/modules/img_assist/img_assist.js?h"></script>
+    <script type="text/javascript" src="/sites/all/modules/views/js/base.js?h"></script>
+    <script type="text/javascript" src="/sites/all/modules/views/js/ajax_view.js?h"></script>
+
+    <script type="text/javascript"></script>
+    
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+      
+      <meta name="generator" content="DocBook XSL Stylesheets V1.72.0">
+      <link rel="start" href="index.html" title="Developing with Eclipse and Maven">
+      <link rel="up" href="eclipse.html" title="Chapter&nbsp;3.&nbsp;Using m2eclipse">
+      <link rel="prev" href="eclipse.html" title="Chapter&nbsp;3.&nbsp;Using m2eclipse">
+      <link rel="next" href="eclipse-sect-creating-pom.html" title="3.3.&nbsp;Create a Maven POM File">
+   
+  </head>
+
+  <body class="not-front not-logged-in page-node node-type-page one-sidebar sidebar-left page-about-team section-about">
+    <div id="page">
+      <div id="header">
+        <div id="logo-title">
+          <a href="/" title="Home" rel="home" id="logo"><img src="/sites/all/themes/sonatype/images/sonatype_logo.gif" alt="Home" /></a>
+          <div id="name-and-slogan">
+            
+          </div> <!-- /name-and-slogan -->
+
+        </div> <!-- /logo-title -->
+        <div id="navigation" class="menu withprimary ">
+          <div id="primary" class="clear-block">
+            <ul class="links primary-links"><li class="menu-443 first"><a href="/home" title="Sonatype, Inc.">HOME</a></li>
+              <li class="menu-1037"><a href="http://store.sonatype.com" title="Buy Sonatype products">STORE</a></li>
+              <li class="menu-1032"><a href="/products" title="Products">PRODUCTS</a></li>
+              <li class="menu-996"><a href="/solutions" title="Solutions">SOLUTIONS</a></li>
+              <li class="menu-418"><a href="http://blogs.sonatype.com/" title="Sonatype Blogs">BLOGS</a></li>
+
+              <li class="menu-329 active-trail last"><a href="/about" title="About Sonatype">ABOUT</a></li>
+          </ul>        </div>
+        </div> <!-- /navigation -->
+        
+        <div id="header-region">
+          <h1 class="title">Developing with Eclipse and Maven</h1>              </div>
+
+      </div> <!-- /header -->
+
+      <div id="main" class="clearfix">
+        <div id="main-inner">
+          <div id="content" class="column">
+            <div id="content-inner">
+              <div id="content-header">  
+              </div> <!-- /#content-header -->
+              <div id="content-area">
+	            <div class="node node-type-page" id="node-45">
+		          <div class="node-inner">
+	  	            <div class="meta">
+	  			  	</div>
+	  	            <div class="content">
+			          
+      <div class="navheader">
+         <table width="100%" summary="Navigation header">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="eclipse.html">Chapter&nbsp;3.&nbsp;Using m2eclipse</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="index.html">
+                     												TOC
+                                                                 </a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="eclipse-sect-creating-pom.html">3.3.&nbsp;Create a Maven POM File</a></td>
+            </tr>
+         </table>
+      </div>
+      <div class="section" lang="en">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title" style="clear: both"><a name="eclipse-sect-creating-project"></a>3.2.&nbsp;Creating a Maven Project
+                  </h2>
+               </div>
+            </div>
+         </div>
+         <p>When using Maven, project creation takes place through the use of a
+            Maven archetype. In Eclipse, project creation takes place via the new
+            project wizard. The new project wizard inside of Eclipse offers a plethora
+                of templates for creating new projects. The m2eclipse plugin improves upon
+                this wizard to provide the following additional capabilities:
+         </p>
+         <div class="itemizedlist">
+            <ul type="disc">
+               <li>
+                  <p>Checking out a Maven project from a SCM repository</p>
+               </li>
+               <li>
+                  <p>Creating a Maven project using a Maven archetype</p>
+               </li>
+               <li>
+                  <p>Creating a Maven <acronym class="acronym">POM</acronym> file
+                  </p>
+               </li>
+            </ul>
+         </div>
+         <p>As shown in <a href="eclipse-sect-creating-project.html#fig-eclipse-new" title="Figure&nbsp;3.2.&nbsp;Creating a New Project with m2eclipse Wizards">Figure&nbsp;3.2, &#8220;Creating a New Project with m2eclipse Wizards&#8221;</a>, all three of these
+                options are important to developers using Maven. Let&#8217;s take a look at each
+                one.
+         </p>
+         <div class="figure"><a name="fig-eclipse-new"></a><div class="figure-contents">
+               <div class="mediaobject"><img src="figs/web/eclipse_create-wizard.png" alt="Creating a New Project with m2eclipse Wizards"></div>
+            </div>
+            <p class="title"><b>Figure&nbsp;3.2.&nbsp;Creating a New Project with m2eclipse Wizards</b></p>
+         </div><br class="figure-break"><div class="section" lang="en">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="eclipse-sect-checking-out-scm"></a>3.2.1.&nbsp;Checking Out a Maven Project from SCM
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>m2eclipse provides the ability to check out a project directly
+                     from a SCM repository. Simply enter the SCM information for a project
+                     and it will check it out for you to a location of your choice as shown
+                     in <a href="eclipse-sect-creating-project.html#fig-eclipse-new-checkout" title="Figure&nbsp;3.3.&nbsp;Checkout a New Project from Subversion">Figure&nbsp;3.3, &#8220;Checkout a New Project from Subversion&#8221;</a>:
+            </p>
+            <div class="figure"><a name="fig-eclipse-new-checkout"></a><div class="figure-contents">
+                  <div class="mediaobject"><img src="figs/web/eclipse_checking-out.png" height="" alt="Checkout a New Project from Subversion"></div>
+               </div>
+               <p class="title"><b>Figure&nbsp;3.3.&nbsp;Checkout a New Project from Subversion</b></p>
+            </div><br class="figure-break"><p>There are additional options in this dialog for specifying a
+                     particular revision by browsing the revisions in a Subversion repository
+                     or by simply entering the revision number manually. These features reuse
+                     of some of the features in the Subclipse plugin to interact with the
+                     Subversion repository. In addition to Subversion, the m2eclipse plugin
+                     also supports the following SCM providers:
+            </p>
+            <div class="itemizedlist">
+               <ul type="disc">
+                  <li>
+                     <p>Bazaar</p>
+                  </li>
+                  <li>
+                     <p>Clearcase</p>
+                  </li>
+                  <li>
+                     <p>CVS</p>
+                  </li>
+                  <li>
+                     <p>git</p>
+                  </li>
+                  <li>
+                     <p>hg</p>
+                  </li>
+                  <li>
+                     <p>Perforce</p>
+                  </li>
+                  <li>
+                     <p>Starteam</p>
+                  </li>
+                  <li>
+                     <p>Subversion</p>
+                  </li>
+                  <li>
+                     <p>Synergy</p>
+                  </li>
+                  <li>
+                     <p>Visual SourceSafe</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="section" lang="en">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="eclipse-sect-m2e-create-archetype"></a>3.2.2.&nbsp;Creating a Maven Project from a Maven Archetype
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>m2eclipse offers the ability to create a Maven project using a
+                     Maven Archetype. There are many Maven Archetypes provided in the list
+                     that comes with m2eclipse as shown in <a href="eclipse-sect-creating-project.html#fig-eclipse-new-archetype" title="Figure&nbsp;3.4.&nbsp;Creating a New Project with a Maven Archetype">Figure&nbsp;3.4, &#8220;Creating a New Project with a Maven Archetype&#8221;</a>.
+            </p>
+            <div class="figure"><a name="fig-eclipse-new-archetype"></a><div class="figure-contents">
+                  <div class="mediaobject"><img src="figs/web/eclipse_new-maven.png" height="" alt="Creating a New Project with a Maven Archetype"></div>
+               </div>
+               <p class="title"><b>Figure&nbsp;3.4.&nbsp;Creating a New Project with a Maven Archetype</b></p>
+            </div><br class="figure-break"><p>The list of archetypes in <a href="eclipse-sect-creating-project.html#fig-eclipse-new-archetype" title="Figure&nbsp;3.4.&nbsp;Creating a New Project with a Maven Archetype">Figure&nbsp;3.4, &#8220;Creating a New Project with a Maven Archetype&#8221;</a> is a list generated by something
+                     called the Nexus Indexer. Nexus is a repository manager which is
+                     introduced in <a href="">???</a>. The Nexus indexer
+                     is a file which contains an index of the entire Maven repository, and
+                     m2eclipse uses it to list all of the available archetypes in the entire
+                     Maven repository. When this chapter was last updated, m2eclipse had
+                     approximately ninety archetypes in this Archetype dialog. Highlights of
+                     this list include:
+            </p>
+            <div class="itemizedlist">
+               <ul type="disc">
+                  <li>
+                     <p>Standard Maven Archetypes to create</p>
+                     <div class="itemizedlist">
+                        <ul type="circle">
+                           <li>
+                              <p>Maven Plugins</p>
+                           </li>
+                           <li>
+                              <p>Simple Web Applications</p>
+                           </li>
+                           <li>
+                              <p>Simple Projects</p>
+                           </li>
+                           <li>
+                              <p>New Maven Archetypes</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://databinder.net/site/show/overview" target="_top">Databinder</a>
+                                    Archetypes (data-driven Wicket Applications) under
+                                    <code class="varname">net.databinder</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://cocoon.apache.org/" target="_top">Apache Cocoon</a>
+                                    Archetypes under <code class="varname">org.apache.cocoon</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://directory.apache.org" target="_top">Apache Directory
+                                       Server</a> Archetypes under
+                                    <code class="varname">org.apache.directory.server</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://geronimo.apache.org" target="_top">Apache
+                                       Geronimo</a> Archetypes under
+                                    <code class="varname">org.apache.geronimo.buildsupport</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://myfaces.apache.org" target="_top">Apache
+                                       MyFaces</a> Archetypes under
+                                    <code class="varname">org.apache.myfaces.buildtools</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://tapestry.apache.org" target="_top">Apache
+                                       Tapestry</a> Archetypes under
+                                    <code class="varname">org.apache.tapestry</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://wicket.apache.org" target="_top">Apache Wicket</a>
+                                    Archetypes under <code class="varname">org.apache.wicket</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://appfuse.org/display/APF/Home" target="_top">AppFuse</a>
+                                    Archetypes under <code class="varname">org.appfuse.archetypes</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://cargo.codehaus.org/" target="_top">Codehaus
+                                       Cargo</a> Archetypes under
+                                    <code class="varname">org.codehaus.cargo</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://castor.codehaus.org/" target="_top">Codehaus
+                                       Castor</a> Archetypes under
+                                    <code class="varname">org.codehaus.castor</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://groovy.codehaus.org/GMaven" target="_top">Groovy-based
+                                       Maven Plugin</a> Archetypes (deprecated)<sup>[<a href="#ftn.foot-gmaven">1</a>]</sup> under
+                                    <code class="varname">org.codehaus.mojo.groovy</code></p>
+                  </li>
+                  <li>
+                     <p>Jini Archetypes</p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://mule.mulesource.org/display/MULE/Home" target="_top">Mule</a>
+                                    Archetypes under <code class="varname">org.mule.tools</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://fractal.objectweb.org/index.html" target="_top">Objectweb
+                                       Fractal</a> Archetypes under
+                                    <code class="varname">org.objectweb.fractal</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://petals.objectweb.org/index.html" target="_top">Objectweb
+                                       Petals</a> Archetypes under
+                                    <code class="varname">org.objectweb.petals</code></p>
+                  </li>
+                  <li>
+                     <p>ops4j Archetypes under <code class="varname">org.ops4j</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.parancoe.org/" target="_top">Parancoe</a> under
+                                    <code class="varname">org.parancoe</code></p>
+                  </li>
+                  <li>
+                     <p>slf4j Archetypes under <code class="varname">org.slf4j</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.springframework.org" target="_top">Springframework</a>
+                                    <acronym class="acronym">OSGI</acronym> and Web Services Archetypes under
+                                    <code class="varname">org.springframework</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.trailsframework.org/" target="_top">Trails
+                                       Framework</a> Archetypes under
+                                    <code class="varname">org.trailsframework</code></p>
+                  </li>
+               </ul>
+            </div>
+            <p><sup>[<a name="foot-gmaven" href="#ftn.foot-gmaven">1</a>]</sup>And these were just the archetypes that were listed under
+                     the Nexus Indexer Catalog, if you switch Catalogs you'll see other
+                     archetypes. While your results may vary, the following additional
+                     archetypes were available in the Internal Catalog:
+            </p>
+            <div class="itemizedlist">
+               <ul type="disc">
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.atlassian.com" target="_top">Atlassian
+                                       Confluence</a> Plugin Archetype under
+                                    <code class="varname">com.atlassian.maven.archetypes</code></p>
+                  </li>
+                  <li>
+                     <p><a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://struts.apache.org" target="_top">Apache Struts</a>
+                                    Archetypes under <code class="varname">org.apache.struts</code></p>
+                  </li>
+                  <li>
+                     <p>Apache Shale Archetypes under
+                                    <code class="varname">org.apache.shale</code></p>
+                  </li>
+               </ul>
+            </div>
+            <p>A catalog is simply a reference to a repository index. You can
+                     manage the set of catalogs that the m2eclipse plugin knows about by
+                     clicking on the <span class="guibutton">Configure... </span>button next to the
+                     catalog drop down. If you have your own archetypes to add to this list,
+                     you can click on <span class="guibutton">Add Archetype...</span>.
+            </p>
+            <p>Once you choose an archetype, Maven will retrieve the appropriate
+                     artifact from the Maven repository and create a new Eclipse project with
+                     the selected archetype.
+            </p>
+         </div>
+         <div class="section" lang="en">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="eclipse-sect-creating-module"></a>3.2.3.&nbsp;Creating a Maven Module
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>m2eclipse provides the ability to create a Maven module. Creating
+                     a Maven module is almost identical to creating a Maven project as it
+                     also creates a new Maven project using a Maven archetype. However, a
+                     Maven module is a subproject of another Maven project typically known as
+                     a parent project.
+            </p>
+            <div class="figure"><a name="fig-eclipse-new-module"></a><div class="figure-contents">
+                  <div class="mediaobject"><img src="figs/web/eclipse_new-module.png" height="" alt="Creating a New Maven Module"></div>
+               </div>
+               <p class="title"><b>Figure&nbsp;3.5.&nbsp;Creating a New Maven Module</b></p>
+            </div><br class="figure-break"><p>When creating a new Maven module you must select a parent project
+                     that already exists inside of Eclipse. Clicking the browse button
+                     displays a list of projects that already exist as shown in <a href="eclipse-sect-creating-project.html#fig-eclipse-select-parent" title="Figure&nbsp;3.6.&nbsp;Selecting a Parent Project for a New Maven Module">Figure&nbsp;3.6, &#8220;Selecting a Parent Project for a New Maven Module&#8221;</a>:
+            </p>
+            <div class="figure"><a name="fig-eclipse-select-parent"></a><div class="figure-contents">
+                  <div class="mediaobject"><img src="figs/web/eclipse_select-project.png" height="" alt="Selecting a Parent Project for a New Maven Module"></div>
+               </div>
+               <p class="title"><b>Figure&nbsp;3.6.&nbsp;Selecting a Parent Project for a New Maven Module</b></p>
+            </div><br class="figure-break"><p>After selecting a parent project from the list, you are returned
+                     to the New Maven Module window and the Parent Project field is populated
+                     as shown in <a href="eclipse-sect-creating-project.html#fig-eclipse-new-module" title="Figure&nbsp;3.5.&nbsp;Creating a New Maven Module">Figure&nbsp;3.5, &#8220;Creating a New Maven Module&#8221;</a>. Clicking
+                     <span class="guibutton">Next</span> will then display the standard list of
+                     archetypes from <a href="eclipse-sect-creating-project.html#eclipse-sect-m2e-create-archetype" title="3.2.2.&nbsp;Creating a Maven Project from a Maven Archetype">Section&nbsp;3.2.2, &#8220;Creating a Maven Project from a Maven Archetype&#8221;</a> so
+                     you can choose which one should be used to create the Maven
+                     module.
+            </p>
+         </div>
+         <div class="footnotes"><br><hr width="100" align="left">
+            <div class="footnote">
+               <p><sup>[<a name="ftn.foot-gmaven" href="#foot-gmaven">1</a>] </sup>Don't use the Groovy Maven Plugin in Codehaus' Mojo project.
+                            Jason Dillon has moved the Groovy Maven integration to the Groovy
+                            project in codehaus. For more information see <a xmlns:xlink="http://www.w3.org/1999/xlink" href="http://groovy.codehaus.org/GMaven" target="_top">http://groovy.codehaus.org/GMaven</a>.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="navfooter">
+         <hr>
+         <table width="100%" summary="Navigation footer">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="eclipse.html">Prev</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="eclipse-sect-creating-pom.html">Next</a></td>
+            </tr>
+            <tr>
+               <td width="40%" align="left" valign="top">Chapter&nbsp;3.&nbsp;Using m2eclipse&nbsp;</td>
+               <td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.sonatype.com/" title="Sonatype: Build Success for your Enterprise">Sponsored by Sonatype
+                                                                </a></span></td>
+               <td width="40%" align="right" valign="top">&nbsp;3.3.&nbsp;Create a Maven POM File</td>
+            </tr>
+         </table>
+      </div>
+   
+	  	  	  	    </div>
+		          </div> <!-- end node-inner -->
+	            </div> <!-- end node-->
+              </div>
+            </div>
+          </div> <!-- /content-inner /content -->
+          
+          
+          <!-- SIDEBAR LEFT -->
+          <div id="sidebar-left" class="column sidebar">
+            <div id="sidebar-left-inner">
+              <div class="left" id="top-left"><div id="block-menu-menu-about-menu" class="block block-menu odd left">
+                  
+                  
+                  <div class="content">
+                    <h3>m2eclipse Book</h3>
+                    <ul class="menu">
+                      <li class="leaf first">
+                        <a href="/m2eclipse/documentation/download-book?file=books/m2eclipse-book.pdf" title="Download PDF">Download PDF</a>
+                      </li>
+                      <li class="leaf">
+                        <a href="/people/category/book/" title="Book Blog">Book Blog</a></li>
+                    </li>
+                  </ul>
+                  <br/><br/>
+<center>                  <a href="/products/downloads" title="Evaluate Pro"><img src="http://www.sonatype.com/system/files/images/book-ad.png" width="160" height="424" border="0"/></a><br/>  </center><br/><br/>
+                  <ul class="menu">
+                    <li class="leaf">
+                      <a href="http://www.sonatype.org" title="Nexus Project">Nexus Project</a></li>
+                    <li class="leaf">
+                      <a href="/products/nexus" title="Nexus Professional">Nexus Professional</a></li>
+                    <li class="leaf">
+                      <a href="/products/downloads" title="Evaluate Pro">Evaluate Nx Pro</a></li>
+                  </ul>  
+                </div>
+              </div>          
+            </div>
+          </div> <!-- /sidebar-left -->
+        </div> <!-- /main-inner -->
+      </div> <!-- /main -->
+      
+            <script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+              _lf_cid = "LF_5208d25a";
+              _lf_remora();
+          </script>  
+
+            <script type="text/javascript">
+              var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+              document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script><script type="text/javascript">
+              try {
+              var pageTracker = _gat._getTracker("UA-1693297-1");
+              pageTracker._setDomainName(".sonatype.com");
+              pageTracker._trackPageview();
+              } catch(err) {}</script>  
+
+    </div> <!-- /page -->
+  </body>
+</html>

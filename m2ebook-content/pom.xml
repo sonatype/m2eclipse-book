@@ -67,49 +67,4 @@
       </plugin>
     </plugins>
   </build>
-  <profiles>
-    <profile>
-      <id>publish</id>
-      <distributionManagement>
-        <site>
-          <id>sonatype-site</id>
-          <name>Sonatype Book Examples</name>
-          <url>scp://deployer@172.16.0.1/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book/</url>
-        </site>
-      </distributionManagement>
-      <properties>
-        <sonatype.site>scp://deployer@172.16.0.1/var/www/domains/sonatype.com/books/htdocs/</sonatype.site>
-        <maven.book.baseurl>http://books.sonatype.com/m2eclipse-book</maven.book.baseurl>
-      </properties>
-    </profile>
-    <profile>
-      <id>remote-publish</id>
-      <distributionManagement>
-        <site>
-          <id>sonatype-site</id>
-          <name>Sonatype Book Examples</name>
-          <url>scp://deployer@svn.sonatype.com/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book/</url>
-        </site>
-      </distributionManagement>
-      <properties>
-        <sonatype.site>scp://deployer@svn.sonatype.com/var/www/domains/sonatype.com/books/htdocs/</sonatype.site>
-        <maven.book.baseurl>http://books.sonatype.com/m2eclipse-book</maven.book.baseurl>
-      </properties>
-    </profile>
-    <profile>
-      <id>stage</id>
-      <distributionManagement>
-        <site>
-          <id>sonatype-site</id>
-          <name>Sonatype Book Examples</name>
-          <url>scp://deployer@172.16.0.1/var/www/domains/sonatype.com/books/htdocs/m2eclipse-book-stage/</url>
-        </site>
-      </distributionManagement>
-      <properties>
-        <sonatype.site>scp://deployer@172.16.0.1/var/www/domains/sonatype.com/books/htdocs/</sonatype.site>
-      </properties>
-    </profile>
-  </profiles>
-  <dependencies>
-  </dependencies>
 </project>

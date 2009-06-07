@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+  <head>
+    <title>m2eclipse Book: 3.6.&nbsp;Working with Maven Projects</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="3.6.&nbsp;Working with Maven Projects" />
+    <meta name="robots" content="index,follow" />
+    <meta name="DC.title" content="3.6.&nbsp;Working with Maven Projects" />
+    <link rel="shortcut icon" href="/sites/all/themes/sonatype/favicon_sonatype.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?h" />
+
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date_popup/themes/datepicker.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date_popup/themes/timeentry.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/imagefield/imagefield.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/img_assist/img_assist.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/style.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/css/tabs.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/css/main.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/css/layout-fixed.css?h" />
+    <link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/sonatype/css/print.css?h" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sonatype/css/book.css?h" />
+    <!--[if lte IE 6]>
+        <style type="text/css" media="all">
+          @import "/sites/all/themes/sonatype/css/ie6.css";
+        </style>
+        <![endif]-->
+
+    <!--[if IE 7]>
+        <style type="text/css" media="all">
+          @import "/sites/all/themes/sonatype/css/ie7.css";
+        </style>
+        <![endif]-->
+    <script type="text/javascript" src="/misc/jquery.js?h"></script>
+    <script type="text/javascript" src="/misc/drupal.js?h"></script>
+    <script type="text/javascript" src="/sites/all/modules/date/date_timezone/date_timezone.js?h"></script>
+    <script type="text/javascript" src="/sites/all/modules/img_assist/img_assist.js?h"></script>
+    <script type="text/javascript" src="/sites/all/modules/views/js/base.js?h"></script>
+    <script type="text/javascript" src="/sites/all/modules/views/js/ajax_view.js?h"></script>
+
+    <script type="text/javascript"></script>
+    
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+      
+      <meta name="generator" content="DocBook XSL Stylesheets V1.72.0">
+      <link rel="start" href="index.html" title="Developing with Eclipse and Maven">
+      <link rel="up" href="eclipse.html" title="Chapter&nbsp;3.&nbsp;Using m2eclipse">
+      <link rel="prev" href="eclipse-sect-running-maven-builds.html" title="3.5.&nbsp;Running Maven Builds">
+      <link rel="next" href="eclipse-sect-working-repos.html" title="3.7.&nbsp;Working with Maven Repositories">
+   
+  </head>
+
+  <body class="not-front not-logged-in page-node node-type-page one-sidebar sidebar-left page-about-team section-about">
+    <div id="page">
+      <div id="header">
+        <div id="logo-title">
+          <a href="/" title="Home" rel="home" id="logo"><img src="/sites/all/themes/sonatype/images/sonatype_logo.gif" alt="Home" /></a>
+          <div id="name-and-slogan">
+            
+          </div> <!-- /name-and-slogan -->
+
+        </div> <!-- /logo-title -->
+        <div id="navigation" class="menu withprimary ">
+          <div id="primary" class="clear-block">
+            <ul class="links primary-links"><li class="menu-443 first"><a href="/home" title="Sonatype, Inc.">HOME</a></li>
+              <li class="menu-1037"><a href="http://store.sonatype.com" title="Buy Sonatype products">STORE</a></li>
+              <li class="menu-1032"><a href="/products" title="Products">PRODUCTS</a></li>
+              <li class="menu-996"><a href="/solutions" title="Solutions">SOLUTIONS</a></li>
+              <li class="menu-418"><a href="http://blogs.sonatype.com/" title="Sonatype Blogs">BLOGS</a></li>
+
+              <li class="menu-329 active-trail last"><a href="/about" title="About Sonatype">ABOUT</a></li>
+          </ul>        </div>
+        </div> <!-- /navigation -->
+        
+        <div id="header-region">
+          <h1 class="title">Developing with Eclipse and Maven</h1>              </div>
+
+      </div> <!-- /header -->
+
+      <div id="main" class="clearfix">
+        <div id="main-inner">
+          <div id="content" class="column">
+            <div id="content-inner">
+              <div id="content-header">  
+              </div> <!-- /#content-header -->
+              <div id="content-area">
+	            <div class="node node-type-page" id="node-45">
+		          <div class="node-inner">
+	  	            <div class="meta">
+	  			  	</div>
+	  	            <div class="content">
+			          
+      <div class="navheader">
+         <table width="100%" summary="Navigation header">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="eclipse-sect-running-maven-builds.html">3.5.&nbsp;Running Maven Builds</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="index.html">
+                     												TOC
+                                                                 </a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="eclipse-sect-working-repos.html">3.7.&nbsp;Working with Maven Repositories</a></td>
+            </tr>
+         </table>
+      </div>
+      <div class="section" lang="en">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title" style="clear: both"><a name="eclipse-sect-working-maven-projects"></a>3.6.&nbsp;Working with Maven Projects
+                  </h2>
+               </div>
+            </div>
+         </div>
+         <p>The m2eclipse plugin also provides a set of features for working
+            with Maven projects once they are inside of Eclipse. There are many
+            features that ease the ability to use Maven in Eclipse so let&#8217;s dive right
+            into them. In the previous section, I materialized a Maven project and
+                selected a subproject from the Apache Camel project named camel-core.
+                We&#8217;ll use that project to demonstrate these features.
+         </p>
+         <p>By right-clicking on the camel-core project, and selecting the Maven
+                menu item, you can see the available Maven features. <a href="eclipse-sect-working-maven-projects.html#fig-eclipse-available-features" title="Figure&nbsp;3.17.&nbsp;Available Maven Features">Figure&nbsp;3.17, &#8220;Available Maven Features&#8221;</a> shows a screenshot of
+                this:
+         </p>
+         <div class="figure"><a name="fig-eclipse-available-features"></a><div class="figure-contents">
+               <div class="mediaobject"><img src="figs/web/eclipse_available-features.png" height="" alt="Available Maven Features"></div>
+            </div>
+            <p class="title"><b>Figure&nbsp;3.17.&nbsp;Available Maven Features</b></p>
+         </div><br class="figure-break"><p>Notice in <a href="eclipse-sect-working-maven-projects.html#fig-eclipse-available-features" title="Figure&nbsp;3.17.&nbsp;Available Maven Features">Figure&nbsp;3.17, &#8220;Available Maven Features&#8221;</a> the
+                available Maven features for the camel-core project,
+                including:
+         </p>
+         <div class="itemizedlist">
+            <ul type="disc">
+               <li>
+                  <p>Adding dependencies and plugins</p>
+               </li>
+               <li>
+                  <p>Updating dependencies, snapshots and source folders</p>
+               </li>
+               <li>
+                  <p>Creating a Maven module</p>
+               </li>
+               <li>
+                  <p>Downloading the source</p>
+               </li>
+               <li>
+                  <p>Opening Project URLs such as the Project Web Page, Issue
+                               Tracker, Source Control, and Continuous Integration tool.
+                  </p>
+               </li>
+               <li>
+                  <p>Enabling /Disabling workspace resolution, nested Maven modules
+                               and dependency management
+                  </p>
+               </li>
+            </ul>
+         </div>
+         <p>These features are also big time savers so let&#8217;s review them
+                briefly.
+         </p>
+         <div class="section" lang="en">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="eclipse-sect-adding-updating"></a>3.6.1.&nbsp;Adding and Updating Dependencies and Plugins
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>Let&#8217;s say we&#8217;d like to add a dependency or a plugin to the
+                     <code class="varname">camel-core</code> <acronym class="acronym">POM</acronym>. For the sake of
+                     demonstration, we're going to add <code class="varname">commons-lang</code> as a
+                     dependency. (Please note that the functionality for adding a dependency
+                     or a plugin is exactly the same so we&#8217;ll demonstrate it by adding a
+                     dependency.)
+            </p>
+            <p>m2eclipse offers two options for adding dependencies to a project.
+                     The first option is by manually editing the <acronym class="acronym">POM</acronym> file
+                     to type in the <acronym class="acronym">XML</acronym> to add the dependency. The
+                     downside to manually editing the <acronym class="acronym">POM</acronym> file to add a
+                     dependency is that you must already know the information about the
+                     artifact, or use the features discussed in the next section to manually
+                     locate the artifact information in the repository indexes. The upside is
+                     that after manually adding the dependency and saving the
+                     <acronym class="acronym">POM</acronym>, the project&#8217;s Maven Dependencies container will
+                     be automatically updated to include the new dependency. <a href="eclipse-sect-working-maven-projects.html#fig-eclipse-manual-add" title="Figure&nbsp;3.18.&nbsp;Manually Adding a Dependency to the Project's POM">Figure&nbsp;3.18, &#8220;Manually Adding a Dependency to the Project's POM&#8221;</a> shows how I added a dependency for
+                     <code class="varname">commons-lang</code> to the <code class="varname">camel-console</code>
+                     <acronym class="acronym">POM</acronym> and the Maven Dependencies container was
+                     automatically updated to included it:
+            </p>
+            <div class="figure"><a name="fig-eclipse-manual-add"></a><div class="figure-contents">
+                  <div class="mediaobject"><img src="figs/web/eclipse_add-manual-depend.png" height="" alt="Manually Adding a Dependency to the Project's POM"></div>
+               </div>
+               <p class="title"><b>Figure&nbsp;3.18.&nbsp;Manually Adding a Dependency to the Project's POM</b></p>
+            </div><br class="figure-break"><p>Manually adding a dependency works well but requires more work
+                     than the second approach. Upon manually adding the dependency element to
+                     the <acronym class="acronym">POM</acronym>, the Eclipse progress in the lower right-hand
+                     corner of the Eclipse workbench reflects the action as shown in <a href="eclipse-sect-working-maven-projects.html#fig-eclipse-update-depends" title="Figure&nbsp;3.19.&nbsp;Updating Maven Dependencies">Figure&nbsp;3.19, &#8220;Updating Maven Dependencies&#8221;</a>:
+            </p>
+            <div class="figure"><a name="fig-eclipse-update-depends"></a><div class="figure-contents">
+                  <div class="mediaobject"><img src="figs/web/eclipse_updating-depends.png" height="" alt="Updating Maven Dependencies"></div>
+               </div>
+               <p class="title"><b>Figure&nbsp;3.19.&nbsp;Updating Maven Dependencies</b></p>
+            </div><br class="figure-break"><p>The second option for adding a dependency is much easier because
+                     you don&#8217;t have to know any information about about the artifact other
+                     than its <code class="varname">groupId</code>. <a href="eclipse-sect-working-maven-projects.html#fig-eclipse-search-depend" title="Figure&nbsp;3.20.&nbsp;Searching for a Dependency">Figure&nbsp;3.20, &#8220;Searching for a Dependency&#8221;</a> shows this functionality:
+            </p>
+            <div class="figure"><a name="fig-eclipse-search-depend"></a><div class="figure-contents">
+                  <div class="mediaobject"><img src="figs/web/eclipse_add-depend3.png" height="" alt="Searching for a Dependency"></div>
+               </div>
+               <p class="title"><b>Figure&nbsp;3.20.&nbsp;Searching for a Dependency</b></p>
+            </div><br class="figure-break"><p>By simply entering a <code class="varname">groupId</code> into the query
+                     field, m2eclipse queries the repository indexes and even shows a version
+                     of the artifact that is currently in my local Maven repository. This
+                     option is preferred because it is such a tremendous time saver. With
+                     m2eclipse, you no longer need to hunt through the central Maven
+                     repository for an artifact version.
+            </p>
+         </div>
+         <div class="section" lang="en">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="eclipse-sect-creating-maven-module"></a>3.6.2.&nbsp;Creating a Maven Module
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>m2eclipse makes it very easy to create a series of nested projects
+                     in a multi-module Maven project. If you have a parent project, and you
+                     want to add a module to the project, just right click on the project, go
+                     the Maven menu, and choose "New Maven Module Project". m2eclipse will
+                     walk you through the project creation process to create a new project,
+                     then it will update the parent project's POM to include the module
+                     reference. Before m2eclipse came along it was very difficult to use a
+                     hierarchy of Maven projects within Eclipse. With m2eclipse, the details
+                     of the underlying relationships between parent and child projects are
+                     integrated into the development environment.
+            </p>
+         </div>
+         <div class="section" lang="en">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="eclipse-sect-downloading-source"></a>3.6.3.&nbsp;Downloading Source
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>If the central Maven repository contains a source artifact for a
+                     particular project, you can download the source from the repository and
+                     expose it to the Eclipse environment. When you are trying to debug a
+                     complex issue in Eclipse, nothing can be easier than being able to right
+                     click on a third-party dependency and drill into the code in the Eclipse
+                     debugger. Select this option, and m2eclipse will attempt to download the
+                     source artifact from the Maven repository. If it is unable to retrieve
+                     this source artifact, you should ask the maintainers of the project in
+                     question to upload the appropriate Maven source bundle to the central
+                     Maven repository.
+            </p>
+         </div>
+         <div class="section" lang="en">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="eclipse-sect-opening-project-pages"></a>3.6.4.&nbsp;Opening Project Pages
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>A Maven <acronym class="acronym">POM</acronym> contains some valuable
+                     <acronym class="acronym">URL</acronym>s which a developer may need to consult. These are
+                     the project's web page, the <acronym class="acronym">URL</acronym> for the source code
+                     repository, a <acronym class="acronym">URL</acronym> for a continuous integration system
+                     like Hudson, and a <acronym class="acronym">URL</acronym> for an issue tracker. If these
+                     <acronym class="acronym">URL</acronym>s are present in a project's
+                     <acronym class="acronym">POM</acronym>, m2eclipse will open these project pages in a
+                     browser.
+            </p>
+         </div>
+         <div class="section" lang="en">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h3 class="title"><a name="eclipse-sect-resolving-dependencies"></a>3.6.5.&nbsp;Resolving Dependencies
+                     </h3>
+                  </div>
+               </div>
+            </div>
+            <p>You can configure a project to resolve dependencies from a
+                     workspace. This has the effect of altering the way that Maven locates
+                     dependency artifacts. If a project is configured to resolve dependencies
+                     from the workspace, these artifacts do not need to be present in your
+                     local repository. Assume that project-a and project-b are both in the
+                     same Eclipse workspace, and that project-a depends on project-b. If
+                     workspace resolution is disabled, the m2eclipse Maven build for
+                     <code class="varname">project-a</code> will only succeed if
+                     <code class="varname">project-b</code>'s artifact is present in the local
+                     repository. If workspace resolution is enabled, m2eclipse will resolve
+                     the dependency via the eclipse workspace. In other words, when workspace
+                     resolution is enabled, project's don't have to be installed in the local
+                     repository to relate to one another.
+            </p>
+            <p>You can also disable dependency management. This has the effect of
+                     telling m2eclipse to stop trying to manage your project's classpath, and
+                     it will remove the Maven Dependencies classpath container from your
+                     project. If you do this, you are essentially on your own when it comes
+                     to managing your project's classpath.
+            </p>
+         </div>
+      </div>
+      <div class="navfooter">
+         <hr>
+         <table width="100%" summary="Navigation footer">
+            <tr>
+               <td width="40%" align="left"><a accesskey="p" href="eclipse-sect-running-maven-builds.html">Prev</a>&nbsp;
+               </td>
+               <td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+               <td width="40%" align="right">&nbsp;<a accesskey="n" href="eclipse-sect-working-repos.html">Next</a></td>
+            </tr>
+            <tr>
+               <td width="40%" align="left" valign="top">3.5.&nbsp;Running Maven Builds&nbsp;</td>
+               <td width="20%" align="center"><span style="color:white;font-size:90%;"><a href="http://www.sonatype.com/" title="Sonatype: Build Success for your Enterprise">Sponsored by Sonatype
+                                                                </a></span></td>
+               <td width="40%" align="right" valign="top">&nbsp;3.7.&nbsp;Working with Maven Repositories</td>
+            </tr>
+         </table>
+      </div>
+   
+	  	  	  	    </div>
+		          </div> <!-- end node-inner -->
+	            </div> <!-- end node-->
+              </div>
+            </div>
+          </div> <!-- /content-inner /content -->
+          
+          
+          <!-- SIDEBAR LEFT -->
+          <div id="sidebar-left" class="column sidebar">
+            <div id="sidebar-left-inner">
+              <div class="left" id="top-left"><div id="block-menu-menu-about-menu" class="block block-menu odd left">
+                  
+                  
+                  <div class="content">
+                    <h3>m2eclipse Book</h3>
+                    <ul class="menu">
+                      <li class="leaf first">
+                        <a href="/m2eclipse/documentation/download-book?file=books/m2eclipse-book.pdf" title="Download PDF">Download PDF</a>
+                      </li>
+                      <li class="leaf">
+                        <a href="/people/category/book/" title="Book Blog">Book Blog</a></li>
+                    </li>
+                  </ul>
+                  <br/><br/>
+<center>                  <a href="/products/downloads" title="Evaluate Pro"><img src="http://www.sonatype.com/system/files/images/book-ad.png" width="160" height="424" border="0"/></a><br/>  </center><br/><br/>
+                  <ul class="menu">
+                    <li class="leaf">
+                      <a href="http://www.sonatype.org" title="Nexus Project">Nexus Project</a></li>
+                    <li class="leaf">
+                      <a href="/products/nexus" title="Nexus Professional">Nexus Professional</a></li>
+                    <li class="leaf">
+                      <a href="/products/downloads" title="Evaluate Pro">Evaluate Nx Pro</a></li>
+                  </ul>  
+                </div>
+              </div>          
+            </div>
+          </div> <!-- /sidebar-left -->
+        </div> <!-- /main-inner -->
+      </div> <!-- /main -->
+      
+            <script src="http://loopfuse.net/webrecorder/js/listen.js" type="text/javascript"></script><script type="text/javascript">
+              _lf_cid = "LF_5208d25a";
+              _lf_remora();
+          </script>  
+
+            <script type="text/javascript">
+              var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+              document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script><script type="text/javascript">
+              try {
+              var pageTracker = _gat._getTracker("UA-1693297-1");
+              pageTracker._setDomainName(".sonatype.com");
+              pageTracker._trackPageview();
+              } catch(err) {}</script>  
+
+    </div> <!-- /page -->
+  </body>
+</html>
