@@ -6,7 +6,7 @@
 	<version>2</version>
   </parent>
   <groupId>org.sonatype.m2eclipsebook</groupId>
-  <artifactId>book</artifactId>
+  <artifactId>m2ebook-parent</artifactId>
   <version>0.4-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Developing with Eclipse and Maven</name>
@@ -37,7 +37,10 @@
     </developer>
   </developers>
   <modules>
-    <module>content</module>
+    <module>m2ebook-content</module>
+    <module>m2ebook-pdf</module>
+<!--    <module>m2ebook-html</module>
+    <module>m2ebook-site</module> -->
   </modules>
   
   <profiles>
