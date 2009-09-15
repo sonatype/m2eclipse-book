@@ -21,8 +21,11 @@
       <title>Enabling the Maven Console in Eclipse</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata fileref="figs/web/eclipse_console.png" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata fileref="figs/print/eclipse_console.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -62,8 +65,11 @@
       <title>Creating a New Project with m2eclipse Wizards</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata fileref="figs/web/eclipse_create-wizard.png" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata fileref="figs/print/eclipse_create-wizard.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -80,9 +86,14 @@
         <title>Checkout a New Project from Subversion</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_checking-out.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_checking-out.pdf"
                        scalefit="1" width="100%" />
           </imageobject>
         </mediaobject>
@@ -148,9 +159,14 @@
         <title>Creating a New Project with a Maven Archetype</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_new-maven.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_new-maven.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -354,9 +370,14 @@
         <title>Creating a New Maven Module</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_new-module.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_new-module.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -371,9 +392,14 @@
         <title>Selecting a Parent Project for a New Maven Module</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_select-project.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_select-project.pdf"
                        scalefit="1" width="100%" />
           </imageobject>
         </mediaobject>
@@ -402,9 +428,14 @@
       <title>Creating a New POM</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_create-pom.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_create-pom.pdf" scalefit="1"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -419,9 +450,14 @@
       <title>Adding Dependencies to a New POM</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_additional-depends.png"
+                     scalefit="1" width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_additional-depends.pdf"
                      scalefit="1" width="100%" />
         </imageobject>
       </mediaobject>
@@ -437,9 +473,14 @@
       <title>Querying the Central Repository for Dependencies</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_add-dependency.png"
+                     scalefit="1" width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_add-dependency.pdf"
                      scalefit="1" width="100%" />
         </imageobject>
       </mediaobject>
@@ -488,8 +529,12 @@
       <title>Importing a Maven Project</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%" fileref="figs/web/eclipse_import.png"
+                     scale="" scalefit="1" width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%" fileref="figs/print/eclipse_import.pdf"
                      scale="" scalefit="1" width="100%" />
         </imageobject>
       </mediaobject>
@@ -525,11 +570,16 @@
         <title>Importing a Multi-module Maven Project</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_import-project.png"
                        scalefit="1" width="100%" />
           </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_import-project.pdf"
+                       scalefit="1" width="100%" />
+	  </imageobject>
         </mediaobject>
       </figure>
 
@@ -568,9 +618,14 @@
         <title>Materializing a Maven Project</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_import2.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_import2.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -588,9 +643,14 @@
         <title>Selecting Artifact to Materialize</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_add-depend.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_add-depend.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -606,9 +666,14 @@
         <title>Materializing Apache Camel</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_import-camel.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_import-camel.pdf"
                        scalefit="1" width="100%" />
           </imageobject>
         </mediaobject>
@@ -634,9 +699,14 @@
       <title>Running an Eclipse build with Run As..</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_run-menu.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_run-menu.pdf" scalefit="1"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -651,9 +721,14 @@
       <title>Configuring a Maven Build as a Run Configuration</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_run-config.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_run-config.pdf" scalefit="1"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -685,9 +760,14 @@
       <title>Available Maven Features</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_available-features.png"
+                     scalefit="1" width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_available-features.pdf"
                      scalefit="1" width="100%" />
         </imageobject>
       </mediaobject>
@@ -755,9 +835,14 @@
         <title>Manually Adding a Dependency to the Project's POM</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_add-manual-depend.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_add-manual-depend.pdf"
                        scalefit="1" width="100%" />
           </imageobject>
         </mediaobject>
@@ -773,9 +858,14 @@
         <title>Updating Maven Dependencies</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_updating-depends.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_updating-depends.pdf"
                        scalefit="1" width="100%" />
           </imageobject>
         </mediaobject>
@@ -790,9 +880,14 @@
         <title>Searching for a Dependency</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_add-depend3.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_add-depend3.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -905,9 +1000,14 @@
         <title>Searching for Artifacts and Classes</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_navigate.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_navigate.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -925,9 +1025,14 @@
         <title>Searching for a POM</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_search-pom.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_search-pom.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -949,9 +1054,14 @@
         <title>Searching the Repository for a Class</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_search-class.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_search-class.pdf"
                        scalefit="1" width="100%" />
           </imageobject>
         </mediaobject>
@@ -984,9 +1094,14 @@
         <title>Show Maven Indexes View</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_show-view.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_show-view.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -1000,9 +1115,14 @@
         <title>Maven Indexes View</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_indexes.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_indexes.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -1016,9 +1136,14 @@
         <title>Locating a POM from the Indexes View</title>
 
         <mediaobject>
-          <imageobject>
+          <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/eclipse_index2.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+          <imageobject role="print">
+            <imagedata contentdepth="100%"
+                       fileref="figs/print/eclipse_index2.pdf" scalefit="1"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -1064,9 +1189,13 @@
       <title>Overview Tab of POM Editor for idiom-core</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_pom-editor.png" scalefit="1" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_pom-editor.pdf" scalefit="1" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1098,9 +1227,14 @@
       <title>Overview Tab of POM Editor for idiom Parent Project</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_pom-editor-parent.png"
+                     scalefit="1" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_pom-editor-parent.pdf"
                      scalefit="1" />
         </imageobject>
       </mediaobject>
@@ -1126,8 +1260,11 @@
       <title>Effective POM for idiom-core</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata fileref="figs/web/eclipse_pom-editor-effective.png" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata fileref="figs/print/eclipse_pom-editor-effective.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1169,9 +1306,14 @@
       <title>Dependencies Tab of the POM Editor</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_pom-editor-dependencies.png"
+                     scalefit="1" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_pom-editor-dependencies.pdf"
                      scalefit="1" />
         </imageobject>
       </mediaobject>
@@ -1187,9 +1329,14 @@
       <title>Build Tab of the POM Editor</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_pom-editor-build.png"
+                     scalefit="1" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_pom-editor-build.pdf"
                      scalefit="1" />
         </imageobject>
       </mediaobject>
@@ -1246,9 +1393,14 @@
       <title>Dependency Tree Tab of the POM Editor</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_pom-editor-depend-tree.png"
+                     scalefit="1" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_pom-editor-depend-tree.pdf"
                      scalefit="1" />
         </imageobject>
       </mediaobject>
@@ -1278,8 +1430,11 @@
       <title>Locating Dependencies in the Dependency Tree</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata fileref="figs/web/eclipse_pom-editor-depend-tree-locate.png" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata fileref="figs/print/eclipse_pom-editor-depend-tree-locate.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1303,8 +1458,11 @@
       <title>Viewing the Dependencies of a Project as a Graph</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata fileref="figs/web/eclipse_pom-editor-graph.png" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata fileref="figs/print/eclipse_pom-editor-graph.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1320,8 +1478,11 @@
       <title>Radial Layout of Dependency Graph</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata fileref="figs/web/eclipse_pom-editor-graph-radial.png" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata fileref="figs/print/eclipse_pom-editor-graph-radial.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1344,9 +1505,14 @@
       <title>Maven Preferences for Eclipse</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_preferences.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_preferences.pdf" scalefit="1"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -1398,9 +1564,14 @@
       <title>Maven Goal Dialogs</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_preference-goals.png"
+                     scalefit="1" width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_preference-goals.pdf"
                      scalefit="1" width="100%" />
         </imageobject>
       </mediaobject>
@@ -1427,9 +1598,14 @@
       <title>Maven Installations Preference Page</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_preferences2.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_preferences2.pdf" scalefit="1"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -1468,9 +1644,14 @@
       <title>Enabling the Maven Version Decorator</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_decorate.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_decorate.pdf" scalefit="1"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -1486,9 +1667,14 @@
       <title>Package Explorer without Maven Version Decorator</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_decorate2.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_decorate2.pdf" scalefit="1"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -1502,9 +1688,14 @@
       <title>Package Explorer with Maven Version Decorator Enabled</title>
 
       <mediaobject>
-        <imageobject>
+        <imageobject role="web">
           <imagedata contentdepth="100%"
                      fileref="figs/web/eclipse_decorate3.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+        <imageobject role="print">
+          <imagedata contentdepth="100%"
+                     fileref="figs/print/eclipse_decorate3.pdf" scalefit="1"
                      width="100%" />
         </imageobject>
       </mediaobject>
