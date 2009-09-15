@@ -1828,7 +1828,7 @@
           </imageobject>
 
           <imageobject role="print">
-            <imagedata align="center" fileref="repo-view_show-view-other.pdf"
+            <imagedata align="center" fileref="figs/print/repo-view_show-view-other.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -1850,7 +1850,7 @@
           </imageobject>
 
           <imageobject role="print">
-            <imagedata align="center" fileref="repo-view_show-view.pdf"
+            <imagedata align="center" fileref="figs/print/repo-view_show-view.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -1919,7 +1919,7 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="repo-view_browsing-remote-repo.pdf"
+                       fileref="figs/print/repo-view_browsing-remote-repo.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -1953,7 +1953,7 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/web/repo-view_workspace-repo.pdf"
+                       fileref="figs/print/repo-view_workspace-repo.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -2011,7 +2011,7 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="repo-view_adding-project-repo.pdf"
+                       fileref="figs/print/repo-view_adding-project-repo.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -2054,7 +2054,7 @@
           </imageobject>
 
           <imageobject role="print">
-            <imagedata align="center" fileref="repo-view_project-repos.pdf"
+            <imagedata align="center" fileref="figs/print/repo-view_project-repos.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -2085,7 +2085,7 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="repo-view_browsing-local-repo.pdf"
+                       fileref="figs/print/repo-view_browsing-local-repo.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -2153,7 +2153,7 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/web/repo-view_update-remote-index.pdf"
+                       fileref="figs/print/repo-view_update-remote-index.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
