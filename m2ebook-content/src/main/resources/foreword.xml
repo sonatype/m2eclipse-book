@@ -4,26 +4,135 @@
 <preface id="foreword">
   <title>Foreword: ${project.version}</title>
 
-  <para>The book you are reading was originally a part of <ulink
-  url="${maven.book.baseurl}">Maven: The Definitive Guide</ulink>. As Sonatype
-  expanded our coverage of this chapter for the 0.9.7 release we
-  decided to separate the m2eclipse chapter into a stand-alone
-  title.</para>
-
   <para>You are encouraged to check <ulink
   url="http://books.sonatype.com/m2eclipse-book">http://books.sonatype.com/m2eclipse-book</ulink>
   weekly for any updates to the content. If you would like to receive updates
   whenever there is a change to this user's manual, please send a quick note
-  to <ulink url="mailto:book@sonatype.com">book@sonatype.com</ulink>,
-  and we will gladly add your email to the update notification list.</para>
+  to <ulink url="mailto:book@sonatype.com">book@sonatype.com</ulink>, and we
+  will gladly add your email to the update notification list.</para>
 
   <para>We welcome your feedback, please do not hesitate to contact the
-  Sonatype team with any questions or ideas you may have about the product.</para>
-
+  Sonatype team with any questions or ideas you may have about the
+  product.</para>
 
   <para>Tim O'Brien, Sonatype</para>
 
-  <para>July 21, 2009</para>
+  <para>September 15, 2009</para>
 
   <para>Edition: ${project.version}</para>
+
+  <section id="foreword-sect-revisions">
+    <title>Revision History</title>
+
+    <para>The following sections list changes made to the book in reverse
+    chronological order starting with ${project.version}.</para>
+
+    <section>
+      <title>Changes in Edition 0.6</title>
+
+      <para>The following changes were introduced in Edition 0.6 on September
+      15, 2009:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Modified project to generate a PDF for pre-print:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Embedded the fonts in the generated PDF. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-17">MEBOOK-17</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Resized book to Royal Quarto (7.444" x 9.681"). (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-16">MEBOOK-16</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added a Title Page to the PDF. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-21">MEBOOK-21</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added a blank page to the end of the PDF. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-20">MEBOOK-20</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Automated the production of print and web figures. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-23">MEBOOK-23</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Standardized on 0.5" Margins. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-22">MEBOOK-22</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added the appropriate roles to all imageobjects. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-18">MEBOOK-18</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Assigned the book an ISBN. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-32">MEBOOK-32</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added the full text of the Creative Commons license to the
+              front matter. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-33">MEBOOK-33</ulink>)</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Fixed a typo: redundant mention of Subversion in <xref
+          linkend="eclipse-sect-checking-out-scm" />. (<ulink
+          url="https://issues.sonatype.org/browse/MEBOOK-12">MEBOOK-12</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Fixed a typo: capitalized "eclipse" in <xref
+          linkend="eclipse-sect-resolving-dependencies" />. (<ulink
+          url="https://issues.sonatype.org/browse/MEBOOK-9">MEBOOK-9</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Added clarification about the availability of the Form-based
+          POM Editor to <xref linkend="eclipse-sect-pom-form" />. (<ulink
+          url="https://issues.sonatype.org/browse/MEBOOK-8">MEBOOK-8</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Added new section about the Maven Repository view: <xref
+          linkend="eclipse-sect-repo-view" />. (<ulink
+          url="https://issues.sonatype.org/browse/MEBOOK-19">MEBOOK-19</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Address feedback from Proofread of Edition 0.5 PDF:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Fixed a typo: removed duplicate "about" from page 29.
+              (<ulink type=""
+              url="https://issues.sonatype.org/browse/MEBOOK-28">MEBOOK-28</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Removed extraneous space from page 28: (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-29">MEBOOK-29</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Fixed a spelling error on page 51. (<ulink
+              url="https://issues.sonatype.org/browse/MEBOOK-25">MEBOOK-25</ulink>)
+              </para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </itemizedlist>
+    </section>
+  </section>
 </preface>
