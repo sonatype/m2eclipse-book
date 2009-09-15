@@ -25,7 +25,7 @@
           <imagedata fileref="figs/web/eclipse_console.png" />
         </imageobject>
         <imageobject role="print">
-          <imagedata fileref="figs/print/eclipse_console.pdf" />
+          <imagedata align="center" scalefit="0" width="100%" fileref="figs/print/eclipse_console.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -69,7 +69,8 @@
           <imagedata fileref="figs/web/eclipse_create-wizard.png" />
         </imageobject>
         <imageobject role="print">
-          <imagedata fileref="figs/print/eclipse_create-wizard.pdf" />
+          <imagedata align="center" scalefit="0" width="100%" 
+		     fileref="figs/print/eclipse_create-wizard.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -92,9 +93,9 @@
                        scalefit="1" width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_checking-out.pdf"
-                       scalefit="1" width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+		       fileref="figs/print/eclipse_checking-out.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -165,9 +166,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_new-maven.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_new-maven.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -376,9 +377,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_new-module.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_new-module.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -398,9 +399,9 @@
                        scalefit="1" width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
+            <imagedata align="center" scalefit="0" width="100%" 
                        fileref="figs/print/eclipse_select-project.pdf"
-                       scalefit="1" width="100%" />
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -434,9 +435,9 @@
                      width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_create-pom.pdf" scalefit="1"
-                     width="100%" />
+          <imagedata align="center" scalefit="0" width="100%" 
+                     fileref="figs/print/eclipse_create-pom.pdf"
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -456,9 +457,9 @@
                      scalefit="1" width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
+          <imagedata align="center" scalefit="0" width="100%" 
                      fileref="figs/print/eclipse_additional-depends.pdf"
-                     scalefit="1" width="100%" />
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -479,9 +480,9 @@
                      scalefit="1" width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
+          <imagedata align="center" scalefit="0" width="100%" 
                      fileref="figs/print/eclipse_add-dependency.pdf"
-                     scalefit="1" width="100%" />
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -534,8 +535,8 @@
                      scale="" scalefit="1" width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%" fileref="figs/print/eclipse_import.pdf"
-                     scale="" scalefit="1" width="100%" />
+          <imagedata fileref="figs/print/eclipse_import.pdf"
+                     align="center" scalefit="0" width="100%"  />
         </imageobject>
       </mediaobject>
     </figure>
@@ -576,9 +577,9 @@
                        scalefit="1" width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
+            <imagedata align="center" scalefit="0" width="100%" 
                        fileref="figs/print/eclipse_import-project.pdf"
-                       scalefit="1" width="100%" />
+                       />
 	  </imageobject>
         </mediaobject>
       </figure>
@@ -624,9 +625,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_import2.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_import2.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -649,9 +650,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_add-depend.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_add-depend.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -672,9 +673,9 @@
                        scalefit="1" width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
+            <imagedata align="center" scalefit="0" width="100%" 
                        fileref="figs/print/eclipse_import-camel.pdf"
-                       scalefit="1" width="100%" />
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -705,9 +706,9 @@
                      width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_run-menu.pdf" scalefit="1"
-                     width="100%" />
+          <imagedata align="center" scalefit="0" width="100%" 
+                     fileref="figs/print/eclipse_run-menu.pdf"
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -727,9 +728,9 @@
                      width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_run-config.pdf" scalefit="1"
-                     width="100%" />
+          <imagedata align="center" scalefit="0" width="100%" 
+                     fileref="figs/print/eclipse_run-config.pdf"
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -766,9 +767,9 @@
                      scalefit="1" width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
+          <imagedata align="center" scalefit="0" width="100%" 
                      fileref="figs/print/eclipse_available-features.pdf"
-                     scalefit="1" width="100%" />
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -841,9 +842,9 @@
                        scalefit="1" width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
+            <imagedata align="center" scalefit="0" width="100%" 
                        fileref="figs/print/eclipse_add-manual-depend.pdf"
-                       scalefit="1" width="100%" />
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -864,9 +865,9 @@
                        scalefit="1" width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
+            <imagedata align="center" scalefit="0" width="100%" 
                        fileref="figs/print/eclipse_updating-depends.pdf"
-                       scalefit="1" width="100%" />
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -886,9 +887,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_add-depend3.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_add-depend3.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1006,9 +1007,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_navigate.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_navigate.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1031,9 +1032,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_search-pom.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_search-pom.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1060,9 +1061,9 @@
                        scalefit="1" width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
+            <imagedata align="center" scalefit="0" width="100%" 
                        fileref="figs/print/eclipse_search-class.pdf"
-                       scalefit="1" width="100%" />
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1100,9 +1101,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_show-view.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_show-view.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1121,9 +1122,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_indexes.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%" 
+                       fileref="figs/print/eclipse_indexes.pdf" 
+                        />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1142,9 +1143,9 @@
                        width="100%" />
           </imageobject>
           <imageobject role="print">
-            <imagedata contentdepth="100%"
-                       fileref="figs/print/eclipse_index2.pdf" scalefit="1"
-                       width="100%" />
+            <imagedata align="center" scalefit="0" width="100%"
+                       fileref="figs/print/eclipse_index2.pdf"
+                       />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1194,8 +1195,8 @@
                      fileref="figs/web/eclipse_pom-editor.png" scalefit="1" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_pom-editor.pdf" scalefit="1" />
+          <imagedata align="center" scalefit="0" width="100%"
+                     fileref="figs/print/eclipse_pom-editor.pdf"/>
         </imageobject>
       </mediaobject>
     </figure>
@@ -1233,9 +1234,9 @@
                      scalefit="1" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
+          <imagedata align="center" scalefit="0" width="100%" 
                      fileref="figs/print/eclipse_pom-editor-parent.pdf"
-                     scalefit="1" />
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1264,7 +1265,7 @@
           <imagedata fileref="figs/web/eclipse_pom-editor-effective.png" />
         </imageobject>
         <imageobject role="print">
-          <imagedata fileref="figs/print/eclipse_pom-editor-effective.pdf" />
+          <imagedata align="center" scalefit="0" width="100%" fileref="figs/print/eclipse_pom-editor-effective.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1312,9 +1313,9 @@
                      scalefit="1" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
+          <imagedata align="center" scalefit="0" width="100%" 
                      fileref="figs/print/eclipse_pom-editor-dependencies.pdf"
-                     scalefit="1" />
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1335,9 +1336,9 @@
                      scalefit="1" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
+          <imagedata align="center" scalefit="0" width="100%" 
                      fileref="figs/print/eclipse_pom-editor-build.pdf"
-                     scalefit="1" />
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1399,9 +1400,9 @@
                      scalefit="1" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
+          <imagedata align="center" scalefit="0" width="100%" 
                      fileref="figs/print/eclipse_pom-editor-depend-tree.pdf"
-                     scalefit="1" />
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1434,7 +1435,7 @@
           <imagedata fileref="figs/web/eclipse_pom-editor-depend-tree-locate.png" />
         </imageobject>
         <imageobject role="print">
-          <imagedata fileref="figs/print/eclipse_pom-editor-depend-tree-locate.pdf" />
+          <imagedata align="center" scalefit="0" width="100%" fileref="figs/print/eclipse_pom-editor-depend-tree-locate.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1462,7 +1463,7 @@
           <imagedata fileref="figs/web/eclipse_pom-editor-graph.png" />
         </imageobject>
         <imageobject role="print">
-          <imagedata fileref="figs/print/eclipse_pom-editor-graph.pdf" />
+          <imagedata align="center" scalefit="0" width="100%" fileref="figs/print/eclipse_pom-editor-graph.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1482,7 +1483,7 @@
           <imagedata fileref="figs/web/eclipse_pom-editor-graph-radial.png" />
         </imageobject>
         <imageobject role="print">
-          <imagedata fileref="figs/print/eclipse_pom-editor-graph-radial.pdf" />
+          <imagedata align="center" scalefit="0" width="100%" fileref="figs/print/eclipse_pom-editor-graph-radial.pdf" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1511,9 +1512,9 @@
                      width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_preferences.pdf" scalefit="1"
-                     width="100%" />
+          <imagedata align="center" scalefit="0" width="100%" 
+                     fileref="figs/print/eclipse_preferences.pdf"
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1570,9 +1571,9 @@
                      scalefit="1" width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
+          <imagedata align="center" scalefit="0" width="100%" 
                      fileref="figs/print/eclipse_preference-goals.pdf"
-                     scalefit="1" width="100%" />
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1604,9 +1605,9 @@
                      width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_preferences2.pdf" scalefit="1"
-                     width="100%" />
+          <imagedata align="center" scalefit="0" width="100%" 
+                     fileref="figs/print/eclipse_preferences2.pdf"
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1650,9 +1651,9 @@
                      width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_decorate.pdf" scalefit="1"
-                     width="100%" />
+          <imagedata align="center" scalefit="0" width="100%" 
+                     fileref="figs/print/eclipse_decorate.pdf"
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1673,9 +1674,9 @@
                      width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_decorate2.pdf" scalefit="1"
-                     width="100%" />
+          <imagedata align="center" scalefit="0" width="100%" 
+                     fileref="figs/print/eclipse_decorate2.pdf"
+                     />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1694,9 +1695,9 @@
                      width="100%" />
         </imageobject>
         <imageobject role="print">
-          <imagedata contentdepth="100%"
-                     fileref="figs/print/eclipse_decorate3.pdf" scalefit="1"
-                     width="100%" />
+          <imagedata align="center" scalefit="0" width="100%" 
+                     fileref="figs/print/eclipse_decorate3.pdf"
+                     />
         </imageobject>
       </mediaobject>
     </figure>
