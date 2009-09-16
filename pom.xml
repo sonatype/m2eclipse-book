@@ -35,7 +35,7 @@
     <module>m2ebook-content</module>
     <module>m2ebook-pdf</module>
     <module>m2ebook-html</module>
-<!--    <module>m2ebook-site</module> -->
+    <module>m2ebook-site</module>
   </modules>
   
   <profiles>
