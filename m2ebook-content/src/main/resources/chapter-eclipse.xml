@@ -8,14 +8,11 @@
     <title>Enabling the Maven Console</title>
 
     <para>Before we begin to examine the features of m2eclipse, let’s first
-    enable the Maven console. Open the Console View by going to <menuchoice>
-        <guimenu>Window</guimenu>
-
-        <guisubmenu>Show View</guisubmenu>
-
-        <guimenuitem>Console</guimenuitem>
-      </menuchoice>. Then click on the little arrow on the right-hand side of
-    the Open Console icon and select Maven Console as shown below:</para>
+    enable the Maven console. Open the Console View by going to
+    <guimenu>Window</guimenu>, <guisubmenu>Show View</guisubmenu>,
+    <guimenuitem>Console</guimenuitem>. Then click on the little arrow on the
+    right-hand side of the Open Console icon and select Maven Console as shown
+    below:</para>
 
     <figure>
       <title>Enabling the Maven Console in Eclipse</title>
@@ -557,15 +554,12 @@
     </figure>
 
     <para>The dialog in <xref linkend="fig-eclipse-import" /> is displayed by
-    using the <menuchoice>
-        <guiicon>File</guiicon>
-
-        <guimenuitem>Import</guimenuitem>
-      </menuchoice> command in Eclipse and then filtering the options by
-    entering the word maven in the filter field. As noted above, there are
-    three options available for importing a Maven project into Eclipse
-    including: Maven Projects, Check out Maven Project from Subversion, and
-    Materialize Maven Projects.</para>
+    using the <guiicon>File</guiicon>, <guimenuitem>Import</guimenuitem>
+    command in Eclipse and then filtering the options by entering the word
+    maven in the filter field. As noted above, there are three options
+    available for importing a Maven project into Eclipse including: Maven
+    Projects, Check out Maven Project from Subversion, and Materialize Maven
+    Projects.</para>
 
     <para>Importing a Maven project from Subversion is identical to the
     creation of a Maven project from Subversion as discussed in the previous
@@ -1107,15 +1101,10 @@
 
       <para>The Maven Indexes View allows you to manually navigate to
       <acronym>POM</acronym>s in a remote repository and open them in Eclipse.
-      To see this View, go to <menuchoice>
-          <guiicon>View</guiicon>
-
-          <guisubmenu>Show View</guisubmenu>
-
-          <guimenuitem>Other</guimenuitem>
-        </menuchoice>, type the word "maven" into the search box and you
-      should see a view named Maven Indexes as shown in <xref
-      linkend="fig-eclipse-show-indexes" />:</para>
+      To see this View, go to <guiicon>View</guiicon>, <guisubmenu>Show
+      View</guisubmenu>, <guimenuitem>Other</guimenuitem>, type the word
+      "maven" into the search box and you should see a view named Maven
+      Indexes as shown in <xref linkend="fig-eclipse-show-indexes" />:</para>
 
       <figure id="fig-eclipse-show-indexes">
         <title>Show Maven Indexes View</title>
@@ -1810,13 +1799,9 @@
       <title>Opening the Maven Repository View</title>
 
       <para>To browse Maven repositories and to manipulate repository indexes
-      open the Maven Repositories view by selecting <menuchoice>
-          <guimenu>Windows</guimenu>
-
-          <guisubmenu>Show View</guisubmenu>
-
-          <guimenuitem>Other...</guimenuitem>
-        </menuchoice> as shown in <xref lang=""
+      open the Maven Repositories view by selecting
+      <guimenu>Windows</guimenu>, <guisubmenu>Show View</guisubmenu>,
+      <guimenuitem>Other...</guimenuitem> as shown in <xref lang=""
       linkend="fig-repo-view_show-view-other" />.</para>
 
       <figure id="fig-repo-view_show-view-other">
@@ -1828,7 +1813,8 @@
           </imageobject>
 
           <imageobject role="print">
-            <imagedata align="center" fileref="figs/print/repo-view_show-view-other.pdf"
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_show-view-other.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -1850,7 +1836,8 @@
           </imageobject>
 
           <imageobject role="print">
-            <imagedata align="center" fileref="figs/print/repo-view_show-view.pdf"
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_show-view.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
@@ -1990,15 +1977,9 @@
       <note>
         <para>You will only see the Repositories tab in your Form-based POM
         Editor, if you have set your Maven preferences to "Show advanced tabs
-        in the POM Editor" under <menuchoice>
-            <guimenu>Eclipse</guimenu>
-
-            <guimenu>Preferences...</guimenu>
-
-            <guimenuitem>Maven</guimenuitem>
-
-            <guimenuitem>POM Editor</guimenuitem>
-          </menuchoice>.</para>
+        in the POM Editor" under <guimenu>Eclipse</guimenu>,
+        <guimenu>Preferences...</guimenu>, <guimenuitem>Maven</guimenuitem>,
+        <guimenuitem>POM Editor</guimenuitem>.</para>
       </note>
 
       <figure id="fig-repo-view_adding-project-repo">
@@ -2054,7 +2035,8 @@
           </imageobject>
 
           <imageobject role="print">
-            <imagedata align="center" fileref="figs/print/repo-view_project-repos.pdf"
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_project-repos.pdf"
                        scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
