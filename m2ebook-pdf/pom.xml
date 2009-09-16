@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.sonatype.m2eclipsebook</groupId>
 		<artifactId>m2ebook-parent</artifactId>
-		<version>0.6.2</version>
+		<version>0.7-SNAPSHOT</version>
 	</parent>
 	<artifactId>m2ebook-pdf</artifactId>
 	<packaging>jar</packaging>
