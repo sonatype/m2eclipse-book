@@ -3,7 +3,11 @@
   <parent>
     <groupId>org.sonatype.m2eclipsebook</groupId>
     <artifactId>m2ebook-parent</artifactId>
+<<<<<<< HEAD:m2ebook-content/pom.xml
     <version>0.6.1</version>
+=======
+    <version>0.6.2</version>
+>>>>>>> m2ebook-parent-0.6.2:m2ebook-content/pom.xml
   </parent>
   <artifactId>m2ebook-content</artifactId>
   <packaging>jar</packaging>

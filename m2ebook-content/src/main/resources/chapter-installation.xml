@@ -21,16 +21,12 @@
 
     <para>You can install these prerequisites when you install m2eclipse, just
     add a new remote update site to Eclipse for each of the prerequisite
-    components. To install these prerequisites, go to <menuchoice>
-        <guiicon>Help</guiicon>
-
-        <guisubmenu>Software Updates</guisubmenu>
-
-        <guimenuitem>Find and Install...</guimenuitem>
-      </menuchoice>. Selecting this menu item will load the Install/Update
-    dialog box. Choose the "Search for new features to install" option and
-    click <guibutton>Next</guibutton>. You will then be presented with a list
-    of "Update sites to visit". Click <guibutton>New Remote
+    components. To install these prerequisites, go to <guiicon>Help</guiicon>,
+    <guisubmenu>Software Updates</guisubmenu>, <guimenuitem>Find and
+    Install...</guimenuitem>. Selecting this menu item will load the
+    Install/Update dialog box. Choose the "Search for new features to install"
+    option and click <guibutton>Next</guibutton>. You will then be presented
+    with a list of "Update sites to visit". Click <guibutton>New Remote
     Site...</guibutton>, and add a new update site for each new prerequisite.
     Add a new remote site for each plugin and then make sure that the remote
     site is selected. After you click <guibutton>Finish</guibutton>, Eclipse
@@ -40,21 +36,18 @@
 
     <para>Note that if you are using a recent build of Eclipse 3.4 (Ganymede)
     your plugin installation experience may be slightly different. In
-    Ganymede, you will select <menuchoice>
-        <guimenu>Help</guimenu>
-
-        <guimenuitem>Software Updates...</guimenuitem>
-      </menuchoice> which will load the "Software Updates and Add-ons" dialog.
-    In this dialog, choose the Available Software panel and click on
-    <guibutton>Add Site...</guibutton> which will load the simple "Add Site"
-    dialog. Enter the <acronym>URL</acronym> of the update site you wish to
-    add and click <guibutton>OK</guibutton>. In the "Software Updates and
-    Add-ons" dialog, the available plugins from an update site will appear as
-    soon as the site is added. You can then select the modules you want to
-    install and click the <guibutton>Install... </guibutton>button. Eclipse
-    will then resolve all the dependencies for the selected plugins, and ask
-    you to agree to the plugin license. After Eclipse installs new plugins, it
-    will likely ask you for permission to restart.</para>
+    Ganymede, you will select <guimenu>Help</guimenu>, <guimenu>Help</guimenu>
+    which will load the "Software Updates and Add-ons" dialog. In this dialog,
+    choose the Available Software panel and click on <guibutton>Add
+    Site...</guibutton> which will load the simple "Add Site" dialog. Enter
+    the <acronym>URL</acronym> of the update site you wish to add and click
+    <guibutton>OK</guibutton>. In the "Software Updates and Add-ons" dialog,
+    the available plugins from an update site will appear as soon as the site
+    is added. You can then select the modules you want to install and click
+    the <guibutton>Install... </guibutton>button. Eclipse will then resolve
+    all the dependencies for the selected plugins, and ask you to agree to the
+    plugin license. After Eclipse installs new plugins, it will likely ask you
+    for permission to restart.</para>
 
     <section id="installing-sect-install-subclipse">
       <title>Installing Subclipse</title>
@@ -167,28 +160,21 @@
       </itemizedlist></para>
 
     <para>To install m2eclipse, just add a the appropriate update site for
-    m2eclipse. Go to <menuchoice>
-        <guiicon>Help</guiicon>
-
-        <guisubmenu>Software Updates</guisubmenu>
-
-        <guimenuitem>Find and Install...</guimenuitem>
-      </menuchoice>. Selecting this menu item will load the Install/Update
-    dialog box. Choose the "Search for new features to install" option and
-    click <guibutton>Next</guibutton>. You will then be presented with a list
-    of "Update sites to visit". Click <guibutton>New Remote
-    Site...</guibutton>, and add a new update site for m2eclipse. Add a new
-    remote site for m2eclipse and then make sure that the remote site is
-    selected. After you click <guibutton>Finish</guibutton>, Eclipse will then
-    ask you to select plugins components to install. Select the components you
-    want to install and Eclipse will download, install, and configure
-    m2eclipse.</para>
+    m2eclipse. Go to <guiicon>Help</guiicon>, <guisubmenu>Software
+    Updates</guisubmenu>, <guimenuitem>Find and Install...</guimenuitem>.
+    Selecting this menu item will load the Install/Update dialog box. Choose
+    the "Search for new features to install" option and click
+    <guibutton>Next</guibutton>. You will then be presented with a list of
+    "Update sites to visit". Click <guibutton>New Remote Site...</guibutton>,
+    and add a new update site for m2eclipse. Add a new remote site for
+    m2eclipse and then make sure that the remote site is selected. After you
+    click <guibutton>Finish</guibutton>, Eclipse will then ask you to select
+    plugins components to install. Select the components you want to install
+    and Eclipse will download, install, and configure m2eclipse.</para>
 
     <para>If you've installed the plugin successfully, you should see a Maven
-    option in the list of preferences options when you go to <menuchoice>
-        <guiicon>Window</guiicon>
-
-        <guimenuitem>Preferences...</guimenuitem>
-      </menuchoice>.</para>
+    option in the list of preferences options when you go to
+    <guiicon>Window</guiicon>,
+    <guimenuitem>Preferences...</guimenuitem>.</para>
   </section>
 </chapter>
