@@ -28,6 +28,8 @@
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="chapter-installation.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-creating.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="chapter-eclipse.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <index></index>
