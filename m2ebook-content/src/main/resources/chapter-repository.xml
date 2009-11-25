@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="repository">
+  <title>Working with Maven Repositories</title>
+
+  <section id="repository-sect-working-repos">
+    <title>Working with Maven Repositories</title>
+
+    <para>m2eclipse also provides some tools to make working with Maven
+    repositories a bit easier. These tools provide functionality
+    for:<itemizedlist>
+        <listitem>
+          <para>Searching for Artifacts</para>
+        </listitem>
+
+        <listitem>
+          <para>Searching for Java classes</para>
+        </listitem>
+
+        <listitem>
+          <para>Indexing Maven repositories</para>
+        </listitem>
+      </itemizedlist></para>
+</section>
+
+    <section id="repository-sect-searching-artifacts">
+      <title>Searching For Maven Artifacts and Java classes</title>
+
+      <para>m2eclipse adds a couple of items to the Eclipse Navigation menu
+      that make searching for Maven Artifacts and Java classes easy work. Each
+      option is available by clicking on the <guimenu>Navigate</guimenu> menu
+      as shown in <xref linkend="fig-repository-nav-search" />:</para>
+
+      <figure id="fig-repository-nav-search">
+        <title>Searching for Artifacts and Classes</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/repository_navigate.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repository_navigate.pdf" scalefit="0"
+                       width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Notice the available options in <xref
+      linkend="fig-repository-nav-search" /> under the Eclipse
+      <guimenu>Navigate</guimenu> menu named <guimenuitem>Open Maven
+      POM</guimenuitem> and <guimenuitem>Open Type from Maven</guimenuitem>.
+      The <guimenuitem>Open Maven POM</guimenuitem> option allows you to
+      search the Maven repository for a given <acronym>POM</acronym> as shown
+      in <xref linkend="fig-repository-search-pom" />:</para>
+
+      <figure id="fig-repository-search-pom">
+        <title>Searching for a POM</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/repository_search-pom.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repository_search-pom.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Upon selecting an artifact and clicking <guibutton>OK</guibutton>,
+      the <acronym>POM</acronym> for that artifact is opened in Eclipse for
+      browsing or editing. This is handy when you need to take a quick look at
+      the <acronym>POM</acronym> for a given artifact.</para>
+
+      <para>The second m2eclipse option in the <guimenu>Navigate</guimenu>
+      menu is named <guimenuitem>Open Type from Maven</guimenuitem>. This
+      feature allows you to search for a Java class by name in a remote
+      repository. Upon opening this dialog, simply type ‘factorybean’ and
+      you’ll see many classes with the name <classname>FactoryBean</classname>
+      in them as shown in <xref linkend="fig-repository-search-class" />:</para>
+
+      <figure id="fig-repository-search-class">
+        <title>Searching the Repository for a Class</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/repository_search-class.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repository_search-class.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>This is a big time saving feature because it means that manually
+      searching through artifacts in a Maven repository for a particular class
+      is a thing of the past. If you need to use a specific class, just fire
+      up Eclipse, go to the <guimenu>Navigate</guimenu> menu and search for
+      the class. m2eclipse will show you the list of artifacts in which it
+      appears.</para>
+    </section>
+
+    <section id="repository-sect-indexing-repos">
+      <title>Indexing Maven Repositories</title>
+
+      <para>The Maven Indexes View allows you to manually navigate to
+      <acronym>POM</acronym>s in a remote repository and open them in Eclipse.
+      To see this View, go to <guiicon>View</guiicon>, <guisubmenu>Show
+      View</guisubmenu>, <guimenuitem>Other</guimenuitem>, type the word
+      "maven" into the search box and you should see a view named Maven
+      Indexes as shown in <xref linkend="fig-repository-show-indexes" />:</para>
+
+      <figure id="fig-repository-show-indexes">
+        <title>Show Maven Indexes View</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/repository_show-view.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repository_show-view.pdf" scalefit="0"
+                       width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Select this View and click <guibutton>OK</guibutton>. This will
+      show the Maven Indexes View as shown in <xref
+      linkend="fig-repository-indexes-view" />:</para>
+
+      <figure id="fig-repository-indexes-view">
+        <title>Maven Indexes View</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/repository_indexes.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center" fileref="figs/print/repository_indexes.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Additionally, <xref linkend="fig-repository-indexes-find-pom" />
+      shows the Maven Indexes View after manually navigating to locate a
+      POM:</para>
+
+      <figure id="fig-repository-indexes-find-pom">
+        <title>Locating a POM from the Indexes View</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/repository_index2.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center" fileref="figs/print/repository_index2.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>After finding the <varname>apache-camel</varname> artifact,
+      double-clicking on it will open it up in Eclipse for browsing or
+      editing.</para>
+
+      <para>These features make working with remote repositories from inside
+      of Eclipse so much easier and faster. After all the hours you may have
+      spent doing these types of tasks by manually over the last few years -
+      visiting repositories through a web browser, downloading artifacts and
+      grepping through them for classes and POMs - you'll find that m2eclipse
+      is a welcome change for the better.</para>
+    </section>
+
+  <section id="repository-sect-repo-view">
+    <title>Browsing and Manipulating Maven Repositories</title>
+
+    <para>The m2eclipse plugin allows you to browse and manipulate repository
+    indexes. Using the Maven Repository view in m2eclipse you can:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Browse your Local Maven repository</para>
+      </listitem>
+
+      <listitem>
+        <para>Browse global repositories such as the Central Maven
+        repository</para>
+      </listitem>
+
+      <listitem>
+        <para>Browse a repository which captures artifacts generated by Maven
+        projects in your Eclipse workspace</para>
+      </listitem>
+
+      <listitem>
+        <para>Rebuild a Nexus Index from scratch</para>
+      </listitem>
+
+      <listitem>
+        <para>Update a Nexus Index with incremental changes</para>
+      </listitem>
+
+      <listitem>
+        <para>Modify the scope of repository indexing with a "minimal" or
+        "full" index</para>
+      </listitem>
+
+      <listitem>
+        <para>Disable Indexing for a repository</para>
+      </listitem>
+
+      <listitem>
+        <para>Materialize a Maven project from information stored in a
+        POM</para>
+      </listitem>
+    </itemizedlist>
+
+    <section>
+      <title>Opening the Maven Repository View</title>
+
+      <para>To browse Maven repositories and to manipulate repository indexes
+      open the Maven Repositories view by selecting
+      <guimenu>Windows</guimenu>, <guisubmenu>Show View</guisubmenu>,
+      <guimenuitem>Other...</guimenuitem> as shown in <xref lang=""
+      linkend="fig-repo-view_show-view-other" />.</para>
+
+      <figure id="fig-repo-view_show-view-other">
+        <title>Opening a View in Eclipse</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_show-view-other.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_show-view-other.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Once you select <guimenuitem>Other...</guimenuitem> Eclipse will
+      display a dialog containing all available views. Select the Maven
+      Repositories view under the Maven folder in the <guilabel>Show
+      View</guilabel> dialog as shown in <xref
+      linkend="fig-repo-view_show-view" />.</para>
+
+      <figure id="fig-repo-view_show-view">
+        <title>Selecting the Maven Repositories View in the Show View
+        Dialog</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_show-view.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_show-view.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Once you have selected Maven Repositories and clicked on the OK
+      button, Eclipse will then load the Maven Repositories view. This view
+      contains three folders:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Local Repositories</term>
+
+          <listitem>
+            <para>This folder contains your local Maven repository which is
+            stored in ~/.m2/repository by default. It also contains a
+            repository that represents the Maven projects contained in your
+            Eclipse workspace.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Global Repositories</term>
+
+          <listitem>
+            <para>This folder contains any global Maven repositories that are
+            referenced by all Maven projects. This folder contains the Central
+            Maven repository under the repository identifier of "central". It
+            will also contain mirrors that have been configured in your Maven
+            Settings (<filename>~/.m2/settings.xml</filename>).</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Project Repositories</term>
+
+          <listitem>
+            <para>This folder contains repositories which are defined by your
+            projects. These repositories are present either in your project's
+            <filename>pom.xml</filename> file or in an active Maven
+            Profile.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+
+    <section>
+      <title>Browsing Global Repositories</title>
+
+      <para>If you have been using Maven, you are familiar with the Central
+      Maven repository. This is default repository from which Maven will
+      retrieve dependencies and other artifacts needed during a build. If you
+      expand the central repository, you will be able to browse the contents
+      of the repository and double click on specific artifacts.
+      Double-clicking on one of the artifacts shown in <xref
+      linkend="fig-repo-view_browsing-remote-repo" /> will load that
+      artifact's POM in the Form-based POM Editor.</para>
+
+      <figure id="fig-repo-view_browsing-remote-repo">
+        <title>Browsing a Global Repository</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_browsing-remote-repo.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_browsing-remote-repo.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>In addition to loading an artifact's POM in the Form-based POM
+      Editor, you can also right click on a artifact and choose
+      <guimenuitem>Materialize Project</guimenuitem>. If the POM for a
+      particular artifact contains valid SCM information, m2eclipse can
+      "materialize" the project from source control into your
+      workspace.</para>
+    </section>
+
+    <section>
+      <title>Browsing Your Workspace Repository</title>
+
+      <para>m2eclipse maintains an index of artifacts generated by your
+      Eclipse workspace. This "workspace" repository is shown in <xref
+      linkend="fig-repo-view_workspace-repo" /> under the Local Repository
+      folder. If you expand this folder, you will see artifacts that
+      correspond to your workspace project as shown in <xref
+      linkend="fig-repo-view_workspace-repo" />.</para>
+
+      <figure id="fig-repo-view_workspace-repo">
+        <title>Browsing the m2eclipse Workspace Repository</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_workspace-repo.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_workspace-repo.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+
+    <section>
+      <title>Browsing a Project Repository</title>
+
+      <para>The Maven Repositories view is also intelligent enough to keep
+      track of any repositories that have been added to your project via your
+      Maven Settings, an active Maven Profile, or that have been added
+      directly to a project's POM. To demonstrate this feature, add a
+      repository element to a pom.xml, by loading the Form-based POM Editor
+      and clicking on the Repositories tab. Click on the "Create..." button
+      and add a new repository with the following values as shown in <xref
+      linkend="fig-repo-view_adding-project-repo" />.</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Repository Identifier: flexmojos</para>
+        </listitem>
+
+        <listitem>
+          <para>Repository Name: Flexmojos Repository</para>
+        </listitem>
+
+        <listitem>
+          <para>URL:
+          http://repository.sonatype.org/content/groups/flexgroup/</para>
+        </listitem>
+      </itemizedlist>
+
+      <note>
+        <para>You will only see the Repositories tab in your Form-based POM
+        Editor, if you have set your Maven preferences to "Show advanced tabs
+        in the POM Editor" under <guimenu>Eclipse</guimenu>,
+        <guimenu>Preferences...</guimenu>, <guimenuitem>Maven</guimenuitem>,
+        <guimenuitem>POM Editor</guimenuitem>.</para>
+      </note>
+
+      <figure id="fig-repo-view_adding-project-repo">
+        <title>Adding a Repository to a Project's POM</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_adding-project-repo.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_adding-project-repo.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Save the POM and open the <filename>pom.xml</filename> tab in the
+      POM Editor. The project's <filename>pom.xml</filename> should contain
+      the repositories element shown in <xref
+      linkend="fig-repo-view_adding-project-repo-xml" />.</para>
+
+      <figure id="fig-repo-view_adding-project-repo-xml">
+        <title>Project POM with a Custom Repository</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_adding-project-repo-xml.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_adding-project-repo-xml.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Now that the <filename>pom.xml</filename> contains a custom
+      repository, click on the refresh icon shown in the upper right-hand of
+      <xref linkend="fig-repo-view_project-repos" />. The refresh icon looks
+      like two opposing yellow arrows, and clicking this icon will cause the
+      Maven Repositories view to refresh the list of repositories from the
+      selected project and your configured Maven settings.</para>
+
+      <figure id="fig-repo-view_project-repos">
+        <title>Browsing a Project Repository</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_project-repos.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_project-repos.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Once you have added a project repository and clicked on the
+      refresh icon in the Maven Respositories view, you will be able to view
+      the project-specific repository and manipulate the repository index for
+      this project-specific repository.</para>
+    </section>
+
+    <section>
+      <title>Browsing Your Local Repository</title>
+
+      <para>The Maven Repostitories view allows you to browse and manipulate
+      your local Maven repository index. m2eclipse maintains an index for the
+      contents of your local repository, you can use this interface to browse
+      artifacts that have been loaded into your local repository as shown in
+      <xref linkend="fig-repo-view_browsing-local-repo" />.</para>
+
+      <figure id="fig-repo-view_browsing-local-repo">
+        <title>Browsing Your Local Maven Repository</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_browsing-local-repo.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_browsing-local-repo.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+
+    <section>
+      <title>Manipulating a Repository Index</title>
+
+      <para>Every repository that m2eclipse uses is indexed by the Nexus
+      Indexer. If m2eclipse is using a remote repository, it will download a
+      Nexus index from the remote repository. If m2eclipse is managing a local
+      repository (local or workspace) it will use the open source Nexus
+      indexer to create and maintain a local index. This index is what allows
+      you to quickly search for and locate dependencies by artifactId,
+      groupId, version, or classname. You can manipulate the index that is
+      associated with a Maven repository by right-clicking on a repository in
+      the Maven Repositories view and selecting one of the following
+      actions:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Update Index</term>
+
+          <listitem>
+            <para>This will update the index by running an incremental update
+            or by downloading and index from a remote repository.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Rebiuld Index</term>
+
+          <listitem>
+            <para>This will rebuild an index for a local repository by
+            iterating through the contents of a repository and recreating a
+            Nexus index from scratch. This can be a useful tool if there is
+            another process outside of Eclipse that is going to be modifying a
+            local Maven repository.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Disable Index</term>
+
+          <listitem>
+            <para>Choosing this option causes m2eclipse to skip index
+            generation for a repository. This can come in handy if you have a
+            series of repositories which you do not want to include in
+            artifact searches. If your organization maintains a number of
+            specialized, segregated repositories that hold snapshots, you may
+            not want to include these artifacts in simple searches for
+            artifacts that contain a particular identifier or class.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <figure id="fig-repo-view_update-remote-index">
+        <title>Updating a Repository Index</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata fileref="figs/web/repo-view_update-remote-index.png" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/repo-view_update-remote-index.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para><xref linkend="fig-repo-view_update-remote-index" /> shows two
+      indexing options that control the scope of a particular Nexus
+      index:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Enable Min Index</term>
+
+          <listitem>
+            <para>Configures the Nexus Indexer to maintain a minimal index
+            that doesn't contain information about class names.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Enable Full Index</term>
+
+          <listitem>
+            <para>Configures the Nexus Indexer to maintain a full Index that
+            includes the class names contained within each artifact.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+  </section>
+</chapter>
