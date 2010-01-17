@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.sonatype.m2eclipsebook</groupId>
     <artifactId>m2ebook-parent</artifactId>
-    <version>0.6.2</version>
+    <version>0.7</version>
   </parent>
   <artifactId>m2ebook-content</artifactId>
   <packaging>jar</packaging>
@@ -41,7 +41,7 @@
         		  <goal>validate-chapter-ids</goal>
         		</goals>
             </execution> -->
-          <execution>
+<!--          <execution>
             <id>inject-examples</id>
             <phase>process-classes</phase>
             <goals>
@@ -53,7 +53,7 @@
             <goals>
               <goal>wrappify</goal>
             </goals>
-          </execution>
+          </execution> -->
         </executions>
       </plugin>
       <plugin>

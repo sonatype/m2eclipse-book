@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="preferences">
+  <title>m2eclipse Preferences</title>
+
+  <section id="preferences-sect-maven-preferences">
+    <title>Maven Preferences</title>
+
+    <para>The ability to adjust the Maven preferences and some Maven options
+    is an important aspect of developing with Maven and m2eclipse offers the
+    ability to tweak these items via the Maven preferences page inside of
+    Eclipse. Typically when using Maven on the command line, such preferences
+    and options are available from files in your <filename>~/.m2</filename>
+    directory and as command line options. m2eclipse provides access to some
+    of the most important preferences and options from the Eclipse
+    <acronym>IDE</acronym>. <xref linkend="fig-preferences-maven-preferences" />
+    shows the Maven preferences page in Eclipse:</para>
+
+    <figure id="fig-preferences-maven-preferences">
+      <title>Maven Preferences for Eclipse</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/preferences_preferences.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/preferences_preferences.pdf" scalefit="0"
+                     width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>The check boxes in the top section provide the ability
+    to:<itemizedlist>
+        <listitem>
+          <para>Run Maven in Offline mode, disabling any downloads from remote
+          repositories</para>
+        </listitem>
+
+        <listitem>
+          <para>Enable Debug output in the Maven Console</para>
+        </listitem>
+
+        <listitem>
+          <para>Download Source jars for artifacts from remote Maven
+          repositories</para>
+        </listitem>
+
+        <listitem>
+          <para>Download JavaDoc jars for artifacts from remote Maven
+          repositories</para>
+        </listitem>
+
+        <listitem>
+          <para>Download and Update local indexes for remote repositories on
+          startup</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>The next section offers a pop-up menu to select which goal you’d
+    like to be executed when a project is imported and when the source folders
+    for a given project are updated. The default goal is named
+    <varname>process-resources</varname> which copies and process the
+    resources for the project into the destination directory to make the
+    project ready for packaging. Customizing this list of goals can come in
+    handy if you need to run any custom goals which process resources or
+    generate supporting configuration.</para>
+
+    <para>If you need help selecting a goal, click the
+    <guibutton>Select...</guibutton> button to see the "Goals" dialog. The
+    dialog on the left-hand side of<xref
+    linkend="fig-preferences-goal-lifecycle" /> shows the Goals dialog with a list
+    of all the phases in the default Maven lifecycle.</para>
+
+    <figure id="fig-preferences-goal-lifecycle">
+      <title>Maven Goal Dialogs</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/preferences_preference-goals.png"
+                     scalefit="1" width="100%" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/preferences_preference-goals.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>When you see the Goals dialog for the first time, there's a chance
+    you might be overwhelmed by the number of goals it lists. There are
+    literally hundreds of Maven plugins for everything from generating a
+    database, to running integration tests, to performing static analysis, to
+    generating web services with XFire. There are over two hundred plugins
+    with selectable goals in the Goals dialog, the dialog on the right-hand
+    side of<xref linkend="fig-preferences-goal-lifecycle" /> shows the "Goals"
+    dialog with the Tomcat Maven plugin's goals highlighted. You can always
+    narrow the list of goals shown in this dialog by typing in some text to
+    the search dialog, as you type in text, m2eclipse is going to narrow the
+    list of available goals to goals which contain the text in the search
+    field.</para>
+
+    <para>Another Maven preference page is the Maven Installations
+    configuration page shown in <xref
+    linkend="fig-preferences-maven-installations" />:</para>
+
+    <figure id="fig-preferences-maven-installations">
+      <title>Maven Installations Preference Page</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/preferences_preferences2.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/preferences_preferences2.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>This page allows you to add other Maven installations to the Eclipse
+    environment. If you want to use a different version of Maven with the
+    m2eclipse plugin you can configure multiple installations of Maven from
+    this configuration page, this is very similar to the ability to add more
+    than one Java Virtual Machine to be run inside of Eclipse. An embedded
+    version of the Maven known as the Maven Embedder is already specified.
+    This is what is used to execute Maven inside of Eclipse. If you have
+    another installation of Maven which you would like to use instead of the
+    Maven Embedder, you can add another Maven runtime by clicking on the
+    <guibutton>Add..</guibutton> button. <xref
+    linkend="fig-preferences-maven-installations" /> shows a configuration page
+    that lists the Maven Embedder, Maven 2.0.9, and an installation of Maven
+    2.1-SNAPSHOT.</para>
+
+    <para>The Installations configuration page also allows you to specify the
+    location of the global Maven settings file. If you do not specify the
+    location of this file on this configuration page, Maven will use the
+    default global settings file found in
+    <filename>conf/settings.xml</filename> of the selected Maven installation.
+    You can also customize the location of your user settings file from the
+    default location of <filename>~/.m2/settings.xml</filename>, and you can
+    customize the location of your local Maven repository from the default
+    location of <filename>~/.m2/repository</filename>.</para>
+
+    <para>Also available in the Eclipse preferences is the ability to enable a
+    decorator named the Maven Version Decorator. This preference provides a
+    given project’s current version on the Eclipse Package Explorer and is
+    shown in <xref linkend="fig-preferences-mvn-decorate" />.</para>
+
+    <figure id="fig-preferences-mvn-decorate">
+      <title>Enabling the Maven Version Decorator</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/preferences_decorate.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/preferences_decorate.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>To enable this preference, simply check the Maven Version Decorator
+    option that is highlighted in <xref linkend="fig-preferences-mvn-decorate" />.
+    If the Maven Version Decorator is not enabled, a project will only list
+    it’s name and relative path in the Package Explorer as shown in <xref
+    linkend="fig-preferences-no-decorate" />:</para>
+
+    <figure id="fig-preferences-no-decorate">
+      <title>Package Explorer without Maven Version Decorator</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/preferences_decorate2.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/preferences_decorate2.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>Upon enabling the Maven Version Decorator, the project name will
+    include the current project version as shown in <xref
+    linkend="fig-preferences-decorated" />:</para>
+
+    <figure id="fig-preferences-decorated">
+      <title>Package Explorer with Maven Version Decorator Enabled</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/preferences_decorate3.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/preferences_decorate3.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>This is a helpful feature that provides the project version at a
+    glance instead of being required to open the <acronym>POM</acronym> to
+    locate the version element.</para>
+  </section>
+
+</chapter>

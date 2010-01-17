@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="running">
+  <title>Running Maven Builds</title>
+
+  <section id="running-sect-enabling-console">
+    <title>Enabling the Maven Console</title>
+
+    <para>Before we begin to examine the features of m2eclipse, let’s first
+    enable the Maven console. Open the Console View by going to
+    <guimenu>Window</guimenu>, <guisubmenu>Show View</guisubmenu>,
+    <guimenuitem>Console</guimenuitem>. Then click on the little arrow on the
+    right-hand side of the Open Console icon and select Maven Console as shown
+    below:</para>
+
+    <figure>
+      <title>Enabling the Maven Console in Eclipse</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/running_console.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/running_console.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>Maven Console shows the Maven output that normally appears on the
+    console when running Maven from the command line. It is useful to be able
+    to see what Maven is doing and to work with Maven debug output to diagnose
+    issues.</para>
+  </section>
+
+  <section id="running-sect-running-maven-builds">
+    <title>Running Maven Builds</title>
+
+    <para>m2eclipse modified the <guimenu>Run As...</guimenu> and
+    <guimenu>Debug As...</guimenu> menus to allow you to run a Maven build
+    within Eclipse. <xref linkend="fig-m2e-runas" /> shows the <guimenu>Run
+    As...</guimenu> menu for an m2eclipse project. From this menu you can run
+    one of the more common lifecycle phases like clean, install, or package.
+    You can also load up the Run configuration dialog window and configure a
+    Maven build with parameters and more options.</para>
+
+    <figure id="fig-m2e-runas">
+      <title>Running an Eclipse build with Run As..</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/running_run-menu.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/running_run-menu.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>If you need to configure a Maven build with more options, you can
+    choose <guimenuitem>Run Configurations...</guimenuitem> and create a new
+    Maven build. <xref linkend="fig-m2e-runconf" /> shows the Run dialog for
+    configuring a Maven build.</para>
+
+    <figure id="fig-m2e-runconf">
+      <title>Configuring a Maven Build as a Run Configuration</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/running_run-config.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/running_run-config.pdf" scalefit="0"
+                     width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>The Run configuration dialog allows you to specify multiple goals
+    and profiles, it exposes options like "skip tests" and "update snapshots",
+    and allows you to customize everything from the project to the JRE to the
+    environment variable. You can use this dialog to support any custom Maven
+    build that you wish to launch with m2eclipse.</para>
+  </section>
+
+</chapter>

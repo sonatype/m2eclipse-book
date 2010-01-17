@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="dependencies">
+  <title>Using m2eclipse</title>
+
+  <section id="whatever">
+    <section id="dependencies-sect-adding-updating">
+      <title>Adding and Updating Dependencies and Plugins</title>
+
+      <para>Let’s say we’d like to add a dependency or a plugin to the
+      <varname>camel-core</varname> <acronym>POM</acronym>. For the sake of
+      demonstration, we're going to add <varname>commons-lang</varname> as a
+      dependency. (Please note that the functionality for adding a dependency
+      or a plugin is exactly the same so we’ll demonstrate it by adding a
+      dependency.)</para>
+
+      <para>m2eclipse offers two options for adding dependencies to a project.
+      The first option is by manually editing the <acronym>POM</acronym> file
+      to type in the <acronym>XML</acronym> to add the dependency. The
+      downside to manually editing the <acronym>POM</acronym> file to add a
+      dependency is that you must already know the information about the
+      artifact, or use the features discussed in the next section to manually
+      locate the artifact information in the repository indexes. The upside is
+      that after manually adding the dependency and saving the
+      <acronym>POM</acronym>, the project’s Maven Dependencies container will
+      be automatically updated to include the new dependency. <xref
+      linkend="fig-dependencies-manual-add" /> shows how I added a dependency for
+      <varname>commons-lang</varname> to the <varname>camel-console</varname>
+      <acronym>POM</acronym> and the Maven Dependencies container was
+      automatically updated to included it:</para>
+
+      <figure id="fig-dependencies-manual-add">
+        <title>Manually Adding a Dependency to the Project's POM</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/dependencies_add-manual-depend.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/dependencies_add-manual-depend.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Manually adding a dependency works well but requires more work
+      than the second approach. Upon manually adding the dependency element to
+      the <acronym>POM</acronym>, the Eclipse progress in the lower right-hand
+      corner of the Eclipse workbench reflects the action as shown in <xref
+      linkend="fig-dependencies-update-depends" />:</para>
+
+      <figure id="fig-dependencies-update-depends">
+        <title>Updating Maven Dependencies</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/dependencies_updating-depends.png"
+                       scalefit="1" width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/dependencies_updating-depends.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>The second option for adding a dependency is much easier because
+      you don’t have to know any information about the artifact other than its
+      <varname>groupId</varname>. <xref linkend="fig-dependencies-search-depend" />
+      shows this functionality:</para>
+
+      <figure id="fig-dependencies-search-depend">
+        <title>Searching for a Dependency</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/dependencies_add-depend3.png" scalefit="1"
+                       width="100%" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/dependencies_add-depend3.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>By simply entering a <varname>groupId</varname> into the query
+      field, m2eclipse queries the repository indexes and even shows a version
+      of the artifact that is currently in my local Maven repository. This
+      option is preferred because it is such a tremendous time saver. With
+      m2eclipse, you no longer need to hunt through the central Maven
+      repository for an artifact version.</para>
+    </section>
+
+
+    <section id="dependencies-sect-downloading-source">
+      <title>Downloading Source</title>
+
+      <para>If the central Maven repository contains a source artifact for a
+      particular project, you can download the source from the repository and
+      expose it to the Eclipse environment. When you are trying to debug a
+      complex issue in Eclipse, nothing can be easier than being able to right
+      click on a third-party dependency and drill into the code in the Eclipse
+      debugger. Select this option, and m2eclipse will attempt to download the
+      source artifact from the Maven repository. If it is unable to retrieve
+      this source artifact, you should ask the maintainers of the project in
+      question to upload the appropriate Maven source bundle to the central
+      Maven repository.</para>
+    </section>
+
+    <section id="dependencies-sect-opening-project-pages">
+      <title>Opening Project Pages</title>
+
+      <para>A Maven <acronym>POM</acronym> contains some valuable
+      <acronym>URL</acronym>s which a developer may need to consult. These are
+      the project's web page, the <acronym>URL</acronym> for the source code
+      repository, a <acronym>URL</acronym> for a continuous integration system
+      like Hudson, and a <acronym>URL</acronym> for an issue tracker. If these
+      <acronym>URL</acronym>s are present in a project's
+      <acronym>POM</acronym>, m2eclipse will open these project pages in a
+      browser.</para>
+    </section>
+
+    <section id="dependencies-sect-resolving-dependencies">
+      <title>Resolving Dependencies</title>
+
+      <para>You can configure a project to resolve dependencies from a
+      workspace. This has the effect of altering the way that Maven locates
+      dependency artifacts. If a project is configured to resolve dependencies
+      from the workspace, these artifacts do not need to be present in your
+      local repository. Assume that project-a and project-b are both in the
+      same Eclipse workspace, and that project-a depends on project-b. If
+      workspace resolution is disabled, the m2eclipse Maven build for
+      <varname>project-a</varname> will only succeed if
+      <varname>project-b</varname>'s artifact is present in the local
+      repository. If workspace resolution is enabled, m2eclipse will resolve
+      the dependency via the Eclipse workspace. In other words, when workspace
+      resolution is enabled, project's don't have to be installed in the local
+      repository to relate to one another.</para>
+
+      <para>You can also disable dependency management. This has the effect of
+      telling m2eclipse to stop trying to manage your project's classpath, and
+      it will remove the Maven Dependencies classpath container from your
+      project. If you do this, you are essentially on your own when it comes
+      to managing your project's classpath.</para>
+    </section>
+  </section>
+
+  <section id="dependencies-sect-analyze-depend">
+    <title>Analyzing Project Dependencies in m2eclipse</title>
+
+    <para>The latest release of m2eclipse contains a <acronym>POM</acronym>
+    editor which provides some dependency analysis tools. These tools promise
+    to change the way people maintain and monitor a project's transitive
+    dependencies. One of the main attractions to Maven is the fact that it
+    manages a project's dependencies. If you are writing an application which
+    depends on the Spring Framework's Hibernate3 integration, all you need to
+    do is depend on the <varname>spring-hibernate3</varname> artifact from the
+    Central Maven Repository. Maven then reads this artifact's
+    <acronym>POM</acronym> and adds all of the necessary transitive
+    dependencies. While this is a great feature that attracts people to using
+    Maven in the first place, it can often become confusing with a project
+    starts to depend on tens of dependencies, each with tens of transitive
+    dependencies.</para>
+
+    <para>Problems start to happen when you depend on a project with a poorly
+    crafted <acronym>POM</acronym> which fails to flag dependencies as
+    optional, or when you start encountering conflicts between transitive
+    dependencies. If one of your requirements is to exclude a dependency like
+    <varname>commons-logging</varname> or the <varname>servlet-api</varname>,
+    or if you need to find out why a certain dependency is showing up under a
+    specific scope you will frequently need to invoke the
+    <varname>dependency:tree</varname> and
+    <varname>dependency:resolve</varname> goals from the command-line to track
+    down the offending transitive dependencies.</para>
+
+    <para>This is where the <acronym>POM</acronym> editor in m2eclipse comes
+    in handy. If you open a project with many dependencies, you can open the
+    Dependency Tree tab and see a two-column display of dependencies as shown
+    in <xref linkend="fig-dependencies-pom-editor-dependency-tree" />. The
+    left-side of the panel displays a tree of dependencies. The first level of
+    the tree consists of direct dependencies from your project, and each
+    subsequent level lists the dependencies of each dependency. The left-hand
+    side is a great way to figure out how a specific dependency made its way
+    into your project's resolved dependencies. The right-hand side of this
+    panel displays the resolved dependencies. This is the list of effective
+    dependencies after all conflicts and scopes have been applied, and it is
+    the effective list of dependencies that your project will use for
+    compilation, testing, and packaging.</para>
+
+    <figure id="fig-dependencies-pom-editor-dependency-tree">
+      <title>Dependency Tree Tab of the POM Editor</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/dependencies_pom-editor-depend-tree.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/dependencies_pom-editor-depend-tree.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>The feature which makes the Dependency Tree tab so valuable is that
+    it can be used as an investigative tool to figure out how a specific
+    dependency made it into the list of resolved dependencies. Searching and
+    filtering functionality available in the editor makes it really easy to
+    search and browse trough the project dependencies. You can use “Search”
+    entry field from the editor tool-bar and “Sort” and “Filter” actions from
+    “Dependency Hierarchy” and “Resolved Dependencies” sections to navigate
+    trough dependencies. <xref
+    linkend="fig-dependencies-pom-editor-locate-depend" /> shows what happens when
+    you click on commons-logging in the "Resolved Dependencies" list. When
+    filtering is enabled in “Dependencies Hierarchy” section, clicking on a
+    resolved dependency filters the hierarchy on the left-hand side of the
+    panel to show all of the node which contributed to the resolved
+    dependency. If you are trying to get rid of a resolved dependency, you can
+    use this tool to find out what dependencies (and what transitive
+    dependencies) are contributing the artifact to your resolved dependencies.
+    In other words, if you are trying to get rid of something like
+    <varname>commons-logging</varname> from your dependency set, the
+    Dependency Tree tab is the tool you will likely want to use.</para>
+
+    <figure id="fig-dependencies-pom-editor-locate-depend">
+      <title>Locating Dependencies in the Dependency Tree</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/dependencies_pom-editor-depend-tree-locate.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/dependencies_pom-editor-depend-tree-locate.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>m2eclipse also provides you with the ability to view your project's
+    dependencies as a graph. <xref linkend="fig-dependencies-pom-editor-graph" />
+    shows the dependencies of <varname>idiom-core</varname>. The top-most box
+    is the <varname>idiom-core</varname> project and the other dependencies
+    are shown below it. Direct dependencies are linked from the top box and
+    the transitive dependencies are linked from those. You can select a
+    specific node in the graph to highlight the linked dependencies, or you
+    can use the Search field at the top of the page to find matching
+    nodes.</para>
+
+    <para>Note that “open folder” icon on each graph node indicates that the
+    corresponding artifact is present in the Eclipse workspace and “jar” icon
+    indicates that the node's artifact is referenced from the Maven
+    repository.</para>
+
+    <figure id="fig-dependencies-pom-editor-graph">
+      <title>Viewing the Dependencies of a Project as a Graph</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/dependencies_pom-editor-graph.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/dependencies_pom-editor-graph.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>The graph presentation can be changed by right clicking in the
+    editor. You can choose to show artifact ids, group ids, versions, scopes,
+    or if you want to wrap node text or show icons. <xref
+    linkend="fig-dependencies-pom-editor-graph-radial" /> shows the same graph from
+    <xref linkend="fig-dependencies-pom-editor-graph" /> with a radial
+    layout.</para>
+
+    <figure id="fig-dependencies-pom-editor-graph-radial">
+      <title>Radial Layout of Dependency Graph</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/dependencies_pom-editor-graph-radial.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/dependencies_pom-editor-graph-radial.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+</chapter>
