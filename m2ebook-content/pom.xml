@@ -41,7 +41,7 @@
         		  <goal>validate-chapter-ids</goal>
         		</goals>
             </execution> -->
-          <execution>
+<!--          <execution>
             <id>inject-examples</id>
             <phase>process-classes</phase>
             <goals>
@@ -53,7 +53,7 @@
             <goals>
               <goal>wrappify</goal>
             </goals>
-          </execution>
+          </execution> -->
         </executions>
       </plugin>
       <plugin>
