@@ -23,7 +23,7 @@
     <title>m2eclipse</title>
 
     <para>The m2eclipse plugin (<ulink
-    url="http://m2eclipse.codehaus.org/">http://m2eclipse.codehaus.org/</ulink>)
+    url="http://m2eclipse.sonatype.org/">http://m2eclipse.sonatype.org/</ulink>)
     provides Maven integration for Eclipse. m2eclipse also has hooks into the
     features of both the Subclipse plugin (<ulink
     url="http://subclipse.tigris.org/">http://subclipse.tigris.org/</ulink>)
