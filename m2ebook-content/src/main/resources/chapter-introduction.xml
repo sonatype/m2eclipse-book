@@ -13,7 +13,7 @@
     url="http://www.eclipseplugincentral.com/">http://www.eclipseplugincentral.com/</ulink>)
     and an innumerable amount of organizations developing their own software
     on top of it. Quite simply, Eclipse is ubiquitous. The <ulink
-    url="http://m2eclipse.codehaus.org/">m2Eclipse</ulink> project, provides
+    url="http://m2eclipse.codehaus.org/">m2eclipse</ulink> project, provides
     support for Maven within the Eclipse <acronym>IDE</acronym>, and, in this
     chapter, we will explore the features it provides to help you use Maven
     with Eclipse.</para>
@@ -22,9 +22,9 @@
   <section id="introduction-sect-m2eclipse">
     <title>m2eclipse</title>
 
-    <para>The m2Eclipse plugins (<ulink
-    url="http://m2eclipse.codehaus.org/">http://m2eclipse.codehaus.org/</ulink>)
-    provide Maven integration for Eclipse. m2Eclipse also has hooks into the
+    <para>The m2eclipse plugin (<ulink
+    url="http://m2eclipse.sonatype.org/">http://m2eclipse.sonatype.org/</ulink>)
+    provides Maven integration for Eclipse. m2eclipse also has hooks into the
     features of both the Subclipse plugin (<ulink
     url="http://subclipse.tigris.org/">http://subclipse.tigris.org/</ulink>)
     and the Mylyn plugin (<ulink
@@ -82,11 +82,6 @@
         <listitem>
           <para>Integration with Web Tools Project
           (<acronym>WTP</acronym>)</para>
-        </listitem>
-
-        <listitem>
-          <para>Integration with AspectJ Development Tools
-          (<acronym>AJDT</acronym>)</para>
         </listitem>
 
         <listitem>
