@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
-<book id="book-m2eclipse"><?dbhtml filename="index.html"?>
+<book id="book-m2eclipse">
+  <?dbhtml filename="index.html"?>
+
   <title>${book.title}</title>
 
   <bookinfo>
@@ -16,33 +18,86 @@
     </editor>
 
     <abstract role="description-short">
-      <para>Developing with Eclipse and Maven is a book about m2eclipse.</para>
+      <para>Developing with Eclipse and Maven is a book about
+      m2eclipse, Maven, and Nexus.</para>
     </abstract>
   </bookinfo>
 
   <xi:include href="copyright.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-  <xi:include href="foreword.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <part label="I">
+    <title>Introduction to m2eclipse</title>
+    <partintro>
+      <para>This section contains an excerpt from the free m2eclipse book available from Sonatype.  To read the entire m2eclipse book, go to: http://books.sonatype.com</para>
+    </partintro>
 
-  <xi:include href="chapter-introduction.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="chapter-installation.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
+
   <xi:include href="chapter-creating.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
+
   <xi:include href="chapter-running.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
+
   <xi:include href="chapter-preferences.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-repository.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-dependencies.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
   <xi:include href="chapter-eclipse.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="appendix-license.xml"
+
+  </part>
+
+  <part label="II">
+    <title>Introduction to Apache Maven</title>
+    <partintro>
+      <para>This section contains excerpts from the free Apache Maven book available from Sonatype.  To read the entire Maven by Example book, go to: http://books.sonatype.com</para>
+    </partintro>
+
+  <xi:include href="mvnex-chapter-introduction.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="appendix-changes.xml"
+
+  <xi:include href="mvnex-chapter-installation.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+    <xi:include href="mvnex-chapter-simple-project.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+    <xi:include href="mvnex-chapter-customization.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+    <xi:include href="mvnex-chapter-web.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  </part>
+
+  <part label="II">
+    <title>Introduction to Nexus</title>
+    <partintro>
+      <para>This section contains excerpts from the free Nexus book available from Sonatype.  To read the entire Nexus book, go to: http://books.sonatype.com</para>
+    </partintro>
+
+  <xi:include href="nx-chapter-introduction.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="nx-chapter-repoman.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="nx-chapter-installation.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="nx-chapter-maven.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="nx-chapter-using.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="nx-chapter-configuring.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+
+  </part>
+
+
   <index></index>
 </book>
