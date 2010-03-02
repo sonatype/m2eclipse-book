@@ -40,9 +40,6 @@
   <xi:include href="chapter-running.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-  <xi:include href="chapter-preferences.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-
   <xi:include href="chapter-eclipse.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 
