@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.sonatype.m2eclipsebook</groupId>
 		<artifactId>m2ebook-parent</artifactId>
-		<version>0.9</version>
+		<version>0.9-SNAPSHOT</version>
 	</parent>
 	<artifactId>m2ebook-pdf</artifactId>
 	<packaging>jar</packaging>
@@ -211,6 +211,7 @@
 								<pdf>${basedir}/src/main/resources/m2e-book-cover.pdf</pdf>
 								<pdf>${basedir}/src/main/resources/title-page.pdf</pdf>
 								<pdf>${basedir}/src/main/resources/copyright-page.pdf</pdf>
+								<pdf>${basedir}/target/mse-quickstart.pdf</pdf>
 								<pdf>${basedir}/target/book-m2e.pdf</pdf>
 								<pdf>${basedir}/src/main/resources/blank-page.pdf</pdf>
 							</pdfs>

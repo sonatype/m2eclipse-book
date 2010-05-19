@@ -14,8 +14,9 @@
     and options are available from files in your <filename>~/.m2</filename>
     directory and as command line options. m2eclipse provides access to some
     of the most important preferences and options from the Eclipse
-    <acronym>IDE</acronym>. <xref linkend="fig-preferences-maven-preferences" />
-    shows the Maven preferences page in Eclipse:</para>
+    <acronym>IDE</acronym>. <xref
+    linkend="fig-preferences-maven-preferences" /> shows the Maven preferences
+    page in Eclipse:</para>
 
     <figure id="fig-preferences-maven-preferences">
       <title>Maven Preferences for Eclipse</title>
@@ -23,13 +24,13 @@
       <mediaobject>
         <imageobject role="web">
           <imagedata contentdepth="100%"
-                     fileref="figs/web/preferences_preferences.png" scalefit="1"
+                     fileref="figs/web/eclipse_preferences.png" scalefit="1"
                      width="100%" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/preferences_preferences.pdf" scalefit="0"
+                     fileref="figs/print/eclipse_preferences.pdf" scalefit="0"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -74,8 +75,8 @@
     <para>If you need help selecting a goal, click the
     <guibutton>Select...</guibutton> button to see the "Goals" dialog. The
     dialog on the left-hand side of<xref
-    linkend="fig-preferences-goal-lifecycle" /> shows the Goals dialog with a list
-    of all the phases in the default Maven lifecycle.</para>
+    linkend="fig-preferences-goal-lifecycle" /> shows the Goals dialog with a
+    list of all the phases in the default Maven lifecycle.</para>
 
     <figure id="fig-preferences-goal-lifecycle">
       <title>Maven Goal Dialogs</title>
@@ -83,13 +84,13 @@
       <mediaobject>
         <imageobject role="web">
           <imagedata contentdepth="100%"
-                     fileref="figs/web/preferences_preference-goals.png"
+                     fileref="figs/web/eclipse_preference-goals.png"
                      scalefit="1" width="100%" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/preferences_preference-goals.pdf"
+                     fileref="figs/print/eclipse_preference-goals.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
@@ -118,13 +119,13 @@
       <mediaobject>
         <imageobject role="web">
           <imagedata contentdepth="100%"
-                     fileref="figs/web/preferences_preferences2.png" scalefit="1"
+                     fileref="figs/web/eclipse_preferences2.png" scalefit="1"
                      width="100%" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/preferences_preferences2.pdf"
+                     fileref="figs/print/eclipse_preferences2.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
@@ -140,9 +141,9 @@
     another installation of Maven which you would like to use instead of the
     Maven Embedder, you can add another Maven runtime by clicking on the
     <guibutton>Add..</guibutton> button. <xref
-    linkend="fig-preferences-maven-installations" /> shows a configuration page
-    that lists the Maven Embedder, Maven 2.0.9, and an installation of Maven
-    2.1-SNAPSHOT.</para>
+    linkend="fig-preferences-maven-installations" /> shows a configuration
+    page that lists the Maven Embedder, Maven 2.0.9, and an installation of
+    Maven 2.1-SNAPSHOT.</para>
 
     <para>The Installations configuration page also allows you to specify the
     location of the global Maven settings file. If you do not specify the
@@ -165,21 +166,22 @@
       <mediaobject>
         <imageobject role="web">
           <imagedata contentdepth="100%"
-                     fileref="figs/web/preferences_decorate.png" scalefit="1"
+                     fileref="figs/web/eclipse_decorate.png" scalefit="1"
                      width="100%" />
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/preferences_decorate.pdf"
+          <imagedata align="center" fileref="figs/print/eclipse_decorate.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
     <para>To enable this preference, simply check the Maven Version Decorator
-    option that is highlighted in <xref linkend="fig-preferences-mvn-decorate" />.
-    If the Maven Version Decorator is not enabled, a project will only list
-    it’s name and relative path in the Package Explorer as shown in <xref
+    option that is highlighted in <xref
+    linkend="fig-preferences-mvn-decorate" />. If the Maven Version Decorator
+    is not enabled, a project will only list it’s name and relative path in
+    the Package Explorer as shown in <xref
     linkend="fig-preferences-no-decorate" />:</para>
 
     <figure id="fig-preferences-no-decorate">
@@ -188,12 +190,12 @@
       <mediaobject>
         <imageobject role="web">
           <imagedata contentdepth="100%"
-                     fileref="figs/web/preferences_decorate2.png" scalefit="1"
+                     fileref="figs/web/eclipse_decorate2.png" scalefit="1"
                      width="100%" />
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/preferences_decorate2.pdf"
+          <imagedata align="center" fileref="figs/print/eclipse_decorate2.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
@@ -209,12 +211,12 @@
       <mediaobject>
         <imageobject role="web">
           <imagedata contentdepth="100%"
-                     fileref="figs/web/preferences_decorate3.png" scalefit="1"
+                     fileref="figs/web/eclipse_decorate3.png" scalefit="1"
                      width="100%" />
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/preferences_decorate3.pdf"
+          <imagedata align="center" fileref="figs/print/eclipse_decorate3.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
@@ -224,5 +226,4 @@
     glance instead of being required to open the <acronym>POM</acronym> to
     locate the version element.</para>
   </section>
-
 </chapter>
