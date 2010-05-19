@@ -22,179 +22,176 @@
           <para>Indexing Maven repositories</para>
         </listitem>
       </itemizedlist></para>
-</section>
+  </section>
 
-    <section id="repository-sect-searching-artifacts">
-      <title>Searching For Maven Artifacts and Java classes</title>
+  <section id="repository-sect-searching-artifacts">
+    <title>Searching For Maven Artifacts and Java classes</title>
 
-      <para>m2eclipse adds a couple of items to the Eclipse Navigation menu
-      that make searching for Maven Artifacts and Java classes easy work. Each
-      option is available by clicking on the <guimenu>Navigate</guimenu> menu
-      as shown in <xref linkend="fig-repository-nav-search" />:</para>
+    <para>m2eclipse adds a couple of items to the Eclipse Navigation menu that
+    make searching for Maven Artifacts and Java classes easy work. Each option
+    is available by clicking on the <guimenu>Navigate</guimenu> menu as shown
+    in <xref linkend="fig-repository-nav-search" />:</para>
 
-      <figure id="fig-repository-nav-search">
-        <title>Searching for Artifacts and Classes</title>
+    <figure id="fig-repository-nav-search">
+      <title>Searching for Artifacts and Classes</title>
 
-        <mediaobject>
-          <imageobject role="web">
-            <imagedata contentdepth="100%"
-                       fileref="figs/web/repository_navigate.png" scalefit="1"
-                       width="100%" />
-          </imageobject>
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/eclipse_navigate.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
 
-          <imageobject role="print">
-            <imagedata align="center"
-                       fileref="figs/print/repository_navigate.pdf" scalefit="0"
-                       width="100%" />
-          </imageobject>
-        </mediaobject>
-      </figure>
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/eclipse_navigate.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
 
-      <para>Notice the available options in <xref
-      linkend="fig-repository-nav-search" /> under the Eclipse
-      <guimenu>Navigate</guimenu> menu named <guimenuitem>Open Maven
-      POM</guimenuitem> and <guimenuitem>Open Type from Maven</guimenuitem>.
-      The <guimenuitem>Open Maven POM</guimenuitem> option allows you to
-      search the Maven repository for a given <acronym>POM</acronym> as shown
-      in <xref linkend="fig-repository-search-pom" />:</para>
+    <para>Notice the available options in <xref
+    linkend="fig-repository-nav-search" /> under the Eclipse
+    <guimenu>Navigate</guimenu> menu named <guimenuitem>Open Maven
+    POM</guimenuitem> and <guimenuitem>Open Type from Maven</guimenuitem>. The
+    <guimenuitem>Open Maven POM</guimenuitem> option allows you to search the
+    Maven repository for a given <acronym>POM</acronym> as shown in <xref
+    linkend="fig-repository-search-pom" />:</para>
 
-      <figure id="fig-repository-search-pom">
-        <title>Searching for a POM</title>
+    <figure id="fig-repository-search-pom">
+      <title>Searching for a POM</title>
 
-        <mediaobject>
-          <imageobject role="web">
-            <imagedata contentdepth="100%"
-                       fileref="figs/web/repository_search-pom.png" scalefit="1"
-                       width="100%" />
-          </imageobject>
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/eclipse_search-pom.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
 
-          <imageobject role="print">
-            <imagedata align="center"
-                       fileref="figs/print/repository_search-pom.pdf"
-                       scalefit="0" width="100%" />
-          </imageobject>
-        </mediaobject>
-      </figure>
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/eclipse_search-pom.pdf" scalefit="0"
+                     width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
 
-      <para>Upon selecting an artifact and clicking <guibutton>OK</guibutton>,
-      the <acronym>POM</acronym> for that artifact is opened in Eclipse for
-      browsing or editing. This is handy when you need to take a quick look at
-      the <acronym>POM</acronym> for a given artifact.</para>
+    <para>Upon selecting an artifact and clicking <guibutton>OK</guibutton>,
+    the <acronym>POM</acronym> for that artifact is opened in Eclipse for
+    browsing or editing. This is handy when you need to take a quick look at
+    the <acronym>POM</acronym> for a given artifact.</para>
 
-      <para>The second m2eclipse option in the <guimenu>Navigate</guimenu>
-      menu is named <guimenuitem>Open Type from Maven</guimenuitem>. This
-      feature allows you to search for a Java class by name in a remote
-      repository. Upon opening this dialog, simply type ‘factorybean’ and
-      you’ll see many classes with the name <classname>FactoryBean</classname>
-      in them as shown in <xref linkend="fig-repository-search-class" />:</para>
+    <para>The second m2eclipse option in the <guimenu>Navigate</guimenu> menu
+    is named <guimenuitem>Open Type from Maven</guimenuitem>. This feature
+    allows you to search for a Java class by name in a remote repository. Upon
+    opening this dialog, simply type ‘factorybean’ and you’ll see many classes
+    with the name <classname>FactoryBean</classname> in them as shown in <xref
+    linkend="fig-repository-search-class" />:</para>
 
-      <figure id="fig-repository-search-class">
-        <title>Searching the Repository for a Class</title>
+    <figure id="fig-repository-search-class">
+      <title>Searching the Repository for a Class</title>
 
-        <mediaobject>
-          <imageobject role="web">
-            <imagedata contentdepth="100%"
-                       fileref="figs/web/repository_search-class.png"
-                       scalefit="1" width="100%" />
-          </imageobject>
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/eclipse_search-class.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
 
-          <imageobject role="print">
-            <imagedata align="center"
-                       fileref="figs/print/repository_search-class.pdf"
-                       scalefit="0" width="100%" />
-          </imageobject>
-        </mediaobject>
-      </figure>
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/eclipse_search-class.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
 
-      <para>This is a big time saving feature because it means that manually
-      searching through artifacts in a Maven repository for a particular class
-      is a thing of the past. If you need to use a specific class, just fire
-      up Eclipse, go to the <guimenu>Navigate</guimenu> menu and search for
-      the class. m2eclipse will show you the list of artifacts in which it
-      appears.</para>
-    </section>
+    <para>This is a big time saving feature because it means that manually
+    searching through artifacts in a Maven repository for a particular class
+    is a thing of the past. If you need to use a specific class, just fire up
+    Eclipse, go to the <guimenu>Navigate</guimenu> menu and search for the
+    class. m2eclipse will show you the list of artifacts in which it
+    appears.</para>
+  </section>
 
-    <section id="repository-sect-indexing-repos">
-      <title>Indexing Maven Repositories</title>
+  <section id="repository-sect-indexing-repos">
+    <title>Indexing Maven Repositories</title>
 
-      <para>The Maven Indexes View allows you to manually navigate to
-      <acronym>POM</acronym>s in a remote repository and open them in Eclipse.
-      To see this View, go to <guiicon>View</guiicon>, <guisubmenu>Show
-      View</guisubmenu>, <guimenuitem>Other</guimenuitem>, type the word
-      "maven" into the search box and you should see a view named Maven
-      Indexes as shown in <xref linkend="fig-repository-show-indexes" />:</para>
+    <para>The Maven Indexes View allows you to manually navigate to
+    <acronym>POM</acronym>s in a remote repository and open them in Eclipse.
+    To see this View, go to <guiicon>View</guiicon>, <guisubmenu>Show
+    View</guisubmenu>, <guimenuitem>Other</guimenuitem>, type the word "maven"
+    into the search box and you should see a view named Maven Indexes as shown
+    in <xref linkend="fig-repository-show-indexes" />:</para>
 
-      <figure id="fig-repository-show-indexes">
-        <title>Show Maven Indexes View</title>
+    <figure id="fig-repository-show-indexes">
+      <title>Show Maven Indexes View</title>
 
-        <mediaobject>
-          <imageobject role="web">
-            <imagedata contentdepth="100%"
-                       fileref="figs/web/repository_show-view.png" scalefit="1"
-                       width="100%" />
-          </imageobject>
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/eclipse_show-view.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
 
-          <imageobject role="print">
-            <imagedata align="center"
-                       fileref="figs/print/repository_show-view.pdf" scalefit="0"
-                       width="100%" />
-          </imageobject>
-        </mediaobject>
-      </figure>
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/eclipse_show-view.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
 
-      <para>Select this View and click <guibutton>OK</guibutton>. This will
-      show the Maven Indexes View as shown in <xref
-      linkend="fig-repository-indexes-view" />:</para>
+    <para>Select this View and click <guibutton>OK</guibutton>. This will show
+    the Maven Indexes View as shown in <xref
+    linkend="fig-repository-indexes-view" />:</para>
 
-      <figure id="fig-repository-indexes-view">
-        <title>Maven Indexes View</title>
+    <figure id="fig-repository-indexes-view">
+      <title>Maven Indexes View</title>
 
-        <mediaobject>
-          <imageobject role="web">
-            <imagedata contentdepth="100%"
-                       fileref="figs/web/repository_indexes.png" scalefit="1"
-                       width="100%" />
-          </imageobject>
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/eclipse_indexes.png" scalefit="1"
+                     width="100%" />
+        </imageobject>
 
-          <imageobject role="print">
-            <imagedata align="center" fileref="figs/print/repository_indexes.pdf"
-                       scalefit="0" width="100%" />
-          </imageobject>
-        </mediaobject>
-      </figure>
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/eclipse_indexes.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
 
-      <para>Additionally, <xref linkend="fig-repository-indexes-find-pom" />
-      shows the Maven Indexes View after manually navigating to locate a
-      POM:</para>
+    <para>Additionally, <xref linkend="fig-repository-indexes-find-pom" />
+    shows the Maven Indexes View after manually navigating to locate a
+    POM:</para>
 
-      <figure id="fig-repository-indexes-find-pom">
-        <title>Locating a POM from the Indexes View</title>
+    <figure id="fig-repository-indexes-find-pom">
+      <title>Locating a POM from the Indexes View</title>
 
-        <mediaobject>
-          <imageobject role="web">
-            <imagedata contentdepth="100%"
-                       fileref="figs/web/repository_index2.png" scalefit="1"
-                       width="100%" />
-          </imageobject>
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%" fileref="figs/web/eclipse_index2.png"
+                     scalefit="1" width="100%" />
+        </imageobject>
 
-          <imageobject role="print">
-            <imagedata align="center" fileref="figs/print/repository_index2.pdf"
-                       scalefit="0" width="100%" />
-          </imageobject>
-        </mediaobject>
-      </figure>
+        <imageobject role="print">
+          <imagedata align="center" fileref="figs/print/eclipse_index2.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
 
-      <para>After finding the <varname>apache-camel</varname> artifact,
-      double-clicking on it will open it up in Eclipse for browsing or
-      editing.</para>
+    <para>After finding the <varname>apache-camel</varname> artifact,
+    double-clicking on it will open it up in Eclipse for browsing or
+    editing.</para>
 
-      <para>These features make working with remote repositories from inside
-      of Eclipse so much easier and faster. After all the hours you may have
-      spent doing these types of tasks by manually over the last few years -
-      visiting repositories through a web browser, downloading artifacts and
-      grepping through them for classes and POMs - you'll find that m2eclipse
-      is a welcome change for the better.</para>
-    </section>
+    <para>These features make working with remote repositories from inside of
+    Eclipse so much easier and faster. After all the hours you may have spent
+    doing these types of tasks by manually over the last few years - visiting
+    repositories through a web browser, downloading artifacts and grepping
+    through them for classes and POMs - you'll find that m2eclipse is a
+    welcome change for the better.</para>
+  </section>
 
   <section id="repository-sect-repo-view">
     <title>Browsing and Manipulating Maven Repositories</title>

@@ -17,61 +17,7 @@
 
   <para>Tim O'Brien, Sonatype</para>
 
-  <para>February 15, 2010</para>
+  <para>May, 2010</para>
 
   <para>Edition: ${project.version}</para>
-
-  <section>
-    <title>Changes in Edition 0.8</title>
-
-    <para>The following changes were introduced in Edition 0.8 on February 15,
-    2010:</para>
-
-    <itemizedlist>
-      <listitem>
-        <para>Updated book to cover m2eclipse 0.10.0. (<ulink
-        url="https://issues.sonatype.org/browse/MEBOOK-49">MEBOOK-49</ulink>)</para>
-      </listitem>
-
-      <listitem>
-        <para>Updated <xref linkend="installing-sect-install-subclipse" />
-        (<ulink
-        url="https://issues.sonatype.org/browse/MEBOOK-52">MEBOOK-52</ulink>)</para>
-      </listitem>
-
-      <listitem>
-        <para>Updated <xref linkend="installing-sect-install-mylyn" /> (<ulink
-        url="https://issues.sonatype.org/browse/MEBOOK-53">MEBOOK-53</ulink>)</para>
-      </listitem>
-
-      <listitem>
-        <para>Updated <xref linkend="installing-sect-install-wtp" /> (<ulink
-        url="https://issues.sonatype.org/browse/MEBOOK-54">MEBOOK-54</ulink>)</para>
-      </listitem>
-
-      <listitem>
-        <para>Added <xref linkend="installing-sect-eclipse" /> (<ulink
-        url="https://issues.sonatype.org/browse/MEBOOK-57">MEBOOK-57</ulink>)</para>
-      </listitem>
-
-      <listitem>
-        <para>Update <xref linkend="installing" /> to provide instructions for
-        an Eclipse 3.5 plugin installation. The initial versions of this book
-        discuss Eclipse 3.2 which had a different approach to installing
-        Eclipse plugins. (<ulink
-        url="https://issues.sonatype.org/browse/MEBOOK-56">MEBOOK-56</ulink>)</para>
-      </listitem>
-
-      <listitem>
-        <para>Removed reference to AJDT support. (<ulink
-        url="https://issues.sonatype.org/browse/MEBOOK-50">MEBOOK-50</ulink>)</para>
-      </listitem>
-
-      <listitem>
-        <para><xref linkend="installing" /> now discusses the Core and Extras
-        update sites. (<ulink
-        url="https://issues.sonatype.org/browse/MEBOOK-55">MEBOOK-55</ulink>)</para>
-      </listitem>
-    </itemizedlist>
-  </section>
 </preface>
