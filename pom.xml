@@ -36,6 +36,7 @@
   </developers>
   <modules>
     <module>m2ebook-content</module>
+    <module>m2ebook-epub</module>
     <module>m2ebook-pdf</module>
     <module>m2ebook-html</module>
     <module>m2ebook-site</module>
