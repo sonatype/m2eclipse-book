@@ -40,6 +40,10 @@
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="chapter-eclipse.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-mse-intro.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-mse-quickstart.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="appendix-license.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="appendix-changes.xml"
