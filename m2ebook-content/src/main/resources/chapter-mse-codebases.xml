@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.sonatype.com/tmp/docbook/xml/4.5/docbookx.dtd">
+<chapter id="mse-codebases">
+  <title>Configuring Codebases</title>
+
+  <section id="mse-codebases-intro">
+    <title>Introduction</title>
+
+    <para>Maven Studio for Eclipse (MSE) gives you the ability to capture
+    common configuration and projects for your developers with the Developer
+    Onboarding feature. Using the Developer Onboarding feature, you can very
+    quickly configure and deliver a common configuration across your entire
+    enterprise.</para>
+
+  </section>
+</chapter>

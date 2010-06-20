@@ -55,7 +55,7 @@
       installed, the versions of individual components of the Eclipse
       framework, and an inventory of all option or 3rd party plugins installed
       in a given environment. When you use MSE to simplify your environment,
-      you publish a Lineup to Nexus Team Edition. </para>
+      you publish a Lineup to Nexus Team Edition.</para>
     </section>
 
     <section>
@@ -66,11 +66,11 @@
       For example, if your lineup needs to checkout projects from two internal
       corporate Subversion servers, your Lineup would include two Source Trees
       pointing to two Subversion locations. A Source Tree can contain one or
-      more Roots. </para>
+      more Roots.</para>
     </section>
 
     <section>
-      <title>What is a Source Tree Root? </title>
+      <title>What is a Source Tree Root?</title>
 
       <para>A Root is a location within a SCM repository which is imported
       into an Eclipse installation as a Maven project. If a Source Tree does
@@ -78,14 +78,14 @@
       directory in which Maven Studio for Eclipse will look for a Maven POM to
       import. If you want to control the directories from which a project will
       be imported from a Source Tree, you would define one or more Source Tree
-      Roots. </para>
+      Roots.</para>
 
       <para>For example, if you configured a Source Tree to point to the
       Subversion URL http://yourserver.com/svn/trunk, and you configured a
       Root at project-a/ and a Root at project-b/, MSE will checkout the
       source from these two directories and import these directories as Maven
       projects. Every defined Root must contain a Maven pom.xml file for a
-      successful import. </para>
+      successful import.</para>
     </section>
 
     <section>
@@ -95,7 +95,7 @@
       Codebase and publish this Codebase to a repository on Nexus Team
       Edition. Once this Codebase has been published, the Build Engineer can
       then send a an e-mail to team members directing them to a one-click
-      installation. </para>
+      installation.</para>
 
       <figure id="fig-mse-quickstart-mse-random">
         <title>Maven Studio for Eclipse Interacting with Nexus Team
@@ -163,18 +163,17 @@
       <itemizedlist>
         <listitem>
           <para>Nexus Team Edition must be installed on a server that does not
-          have Nexus Open Source or Nexus Professional installed on it.
-          </para>
+          have Nexus Open Source or Nexus Professional installed on it.</para>
         </listitem>
 
         <listitem>
           <para>You are running a Java 6 Java Development Kit downloaded from
-          Oracle on the server that will run Nexus Team Edition. </para>
+          Oracle on the server that will run Nexus Team Edition.</para>
         </listitem>
 
         <listitem>
           <para>You will need administrative privileges on the server running
-          Nexus Team Edition. </para>
+          Nexus Team Edition.</para>
         </listitem>
       </itemizedlist>
     </section>
@@ -191,13 +190,13 @@
         <listitem>
           <para>You have installed a Java Development Kit version 1.6.0_18 or
           higher from Oracle. Maven Studio for Eclipse requires a JDK version
-          of 1.6.0_18. </para>
+          of 1.6.0_18.</para>
         </listitem>
 
         <listitem>
           <para>If you are installing Maven Studio for Eclipse into an
           existing Eclipse installation, you must remove any previously
-          installed version of the m2eclipse plugin. </para>
+          installed version of the m2eclipse plugin.</para>
         </listitem>
       </itemizedlist>
     </section>
@@ -214,7 +213,7 @@
 
       <para>If you are reading this quickstart guide, you should have received
       an e-mail from Sonatype containing instructions for downloading Nexus
-      Team Edition. </para>
+      Team Edition.</para>
 
       <para>Download the nexus-team-webapp-1.6.1.1-bundle.tar.gz or
       nexus-webapp-1.6.1.1-bundle.zip archive to the server which is going to
@@ -230,12 +229,12 @@
       <itemizedlist>
         <listitem>
           <para>On a Linux machine, you might install Nexus Team Edition in
-          /usr/local/nexus-team-1.6.1.1 or /opt/nexus-team-1.6.1.1. </para>
+          /usr/local/nexus-team-1.6.1.1 or /opt/nexus-team-1.6.1.1.</para>
         </listitem>
 
         <listitem>
           <para>On a Windows machine, you might choose to install Nexus Team
-          Edition in c:\Program Files\Nexus Team. </para>
+          Edition in c:\Program Files\Nexus Team.</para>
         </listitem>
       </itemizedlist>
     </section>
@@ -248,17 +247,17 @@
 
       <itemizedlist>
         <listitem>
-          <para>On Windows, run nexus.bat to start Nexus. </para>
+          <para>On Windows, run nexus.bat to start Nexus.</para>
         </listitem>
 
         <listitem>
           <para>On OSX or Linux, run nexus start to start Nexus, and nexus
-          stop to stop Nexus. </para>
+          stop to stop Nexus.</para>
         </listitem>
       </itemizedlist>
 
       <note>
-        <para> On Windows, you may be prompted to allow the service to modify
+        <para>On Windows, you may be prompted to allow the service to modify
         the Windows Firewall.</para>
       </note>
     </section>
@@ -299,9 +298,9 @@
       <title>Open the Nexus Server Configuration Panel</title>
 
       <para>To configure your Nexus Server, open up the Server configuration
-      panel by selecting Administration → Server from the Nexus menu. </para>
+      panel by selecting Administration → Server from the Nexus menu.</para>
 
-      <figure id="fig-mse-quickstart-login">
+      <figure id="fig-mse-quickstart-srvr-config">
         <title>Opening the Server Configuration Panel</title>
 
         <mediaobject>
@@ -324,7 +323,7 @@
       <title>Configure Proxy Settings</title>
 
       <para>If your Nexus Server needs to use an HTTP Proxy, you must
-      configure the proxy settings in the Nexus Server configuration. </para>
+      configure the proxy settings in the Nexus Server configuration.</para>
 
       <figure id="fig-mse-quickstart-proxy-settings">
         <title>Opening the Server Configuration Panel</title>
@@ -359,9 +358,9 @@
       (eclipse-cs) plugin. Later on in this guide, you will be creating a
       custom Lineup which includes the Eclipse Checkstyle plugin. Go to
       Views/Repositories -&gt; Repositories, and click on the Add... button.
-      Select Proxy Repository. </para>
+      Select Proxy Repository.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-adding-proxy">
         <title>Adding a New P2 Proxy Repository</title>
 
         <mediaobject>
@@ -386,7 +385,7 @@
       <para>Once you’ve created the New Proxy repository, configure the
       following parameters for the new repository:</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-new-proxy-repo">
         <title>Configuring New Proxy Repository for Checkstyle Plugin</title>
 
         <mediaobject>
@@ -419,7 +418,7 @@
       Tasks in the Nexus Menu. Locate the “Publish P2 Lineup” Job in the list
       of configured tasks. Right-click on this task, and select Run.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-open-scheduled">
         <title>Opening the Scheduled Tasks Configuration Panel</title>
 
         <mediaobject>
@@ -447,7 +446,7 @@
       <para>After running the job, click on the Refresh button in the
       Scheduled Tasks panel as shown in the following figure.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-running-p2">
         <title>Running the P2 Lineup Publishing Task</title>
 
         <mediaobject>
@@ -471,7 +470,7 @@
       completed, the status will change to SUBMITTED as shown in the following
       figure.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-verify-completion">
         <title>Verify the Completion of the P2 Lineup Publishing Task</title>
 
         <mediaobject>
@@ -515,7 +514,7 @@
       all Nexus Managed Repositories, select Nexus Managed Repositories from
       the repository type drop down.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-view-managed">
         <title>Viewing Nexus Managed Repositories</title>
 
         <mediaobject>
@@ -541,7 +540,7 @@
       Repository. This repository contains the sample Apache Maven
       lineup.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-select-onboard">
         <title>Selecting the Onboarding Repositories</title>
 
         <mediaobject>
@@ -561,19 +560,19 @@
     </section>
 
     <section>
-      <title>Click on the MSE Installer for the Maven Lineup </title>
+      <title>Click on the MSE Installer for the Maven Lineup</title>
 
       <para>Maven Studio for Eclipse ships with a demonstration project: the
       Apache Maven project. The first thing you will want to do is materialize
       one of these lineups to get a fully functioning installation of Maven
-      Studio for Eclipse. </para>
+      Studio for Eclipse.</para>
 
       <para>Once you select the Onboarding Project Repository, go to the
       Browse Storage tab and navigate to the
       org/sonatype/mse/codebases/demo-maven/0.0.1 folder. Right-click on the
-      mse-codebase.jnlp file and choose Download. </para>
+      mse-codebase.jnlp file and choose Download.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-download-demo">
         <title>Downloading the Demo Maven Installer</title>
 
         <mediaobject>
@@ -600,7 +599,7 @@
       you are running the MSE Installer, you will be asked to verify that the
       MSE Installer is trusted.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-mat-work">
         <title>Running the MSE Installer</title>
 
         <mediaobject>
@@ -625,9 +624,9 @@
       <para>You will then be asked to supply credentials for any source code
       repository or server involved in the installation process. Check the
       Anonymous access checkbox to the right of the Username field and click
-      on the Next button. </para>
+      on the Next button.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-svn-creds">
         <title>Supply Subversion and Source Control Credentials</title>
 
         <mediaobject>
@@ -649,7 +648,7 @@
       connect to the source code repository and Nexus. Click Next on the
       following dialog:</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-validation-panel">
         <title>Successful Validation of MSE Installer Requirements</title>
 
         <mediaobject>
@@ -677,7 +676,7 @@
       You can Supply custom directories or accept the default values supplied
       by the MSE installer.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-installer-dirs">
         <title>Supplying Installation Directories for MSE Installer</title>
 
         <mediaobject>
@@ -707,17 +706,16 @@
       <note>
         <para>Windows may prompt you to authorize the Eclipse IDE the first
         time it has been launched. You may see a firewall dialog asking for
-        permission to execute Eclipse. You should approve this request.
-        </para>
+        permission to execute Eclipse. You should approve this request.</para>
       </note>
 
       <para>Once the Eclipse IDE is visible, give the tool a few minutes to
       update indexes and to checkout project source code from source control.
       Once this process is finished, you should see a list of projects in the
       Apache Maven project. Once the Eclipse workspace has been materialized,
-      you can start to work with the projects it checked out. </para>
+      you can start to work with the projects it checked out.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-projects-eclipse">
         <title>Maven Projects Displayed in Eclipse</title>
 
         <mediaobject>
@@ -743,7 +741,7 @@
       Master Password and Password Recovery options in Eclipse. Click Yes in
       the Secure Storage dialog.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-master-password">
         <title>Creating a Master Password for Eclipse Password
         Recovery</title>
 
@@ -766,7 +764,7 @@
       allow you to recover the master password for this Eclipse workspace.
       Once you’ve typed in these questions and answer, click OK.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-password-recovery">
         <title>Configuring Password Recovery</title>
 
         <mediaobject>
@@ -797,15 +795,15 @@
 
     <para>Next, you are going to use the custom lineup capabilities of Maven
     Studio for Eclipse to define a custom lineup which will checkout source
-    code from a Subversion repository. </para>
+    code from a Subversion repository.</para>
 
     <section>
-      <title>Create a New MSE Lineup Project </title>
+      <title>Create a New MSE Lineup Project</title>
 
       <para>To create a new MSE Lineup, click on File -&gt; New --&gt;
       Other... in Eclipse as shown in the figure below.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-new-lineup-project">
         <title>Creating a New Lineup Project (Select New -&gt; Other)</title>
 
         <mediaobject>
@@ -830,7 +828,7 @@
       <para>Next, select New P2 Lineup from the Maven Studio for Eclipse
       folder in the wizard selection dialog.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-lineup-wizard">
         <title>Creating a New Lineup Project (Select New P2 Lineup
         Wizard)</title>
 
@@ -851,7 +849,7 @@
     </section>
 
     <section>
-      <title>Configure Nexus and Lineup Coordinates </title>
+      <title>Configure Nexus and Lineup Coordinates</title>
 
       <para>Clicking Next will display a dialog that contains the Nexus Server
       URL, the Nexus credentials used to connect to Nexus, and the Lineup
@@ -862,7 +860,7 @@
       to “com.sample” or choose a group identifier that makes sense for your
       organization. Click on Next.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-lineup-coord">
         <title>Supply Lineup Coordinates and Nexus Credentials</title>
 
         <mediaobject>
@@ -897,7 +895,7 @@
       check the “Load Installable Units from Current Eclipse Installation”
       checkbox.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-runtime-platform">
         <title>Select Runtime Platform and Memory</title>
 
         <mediaobject>
@@ -918,19 +916,19 @@
       <note>
         <para>If you select “Load Installable Units from Current Eclipse
         Installation”, Maven Studio for Eclipse will use the current Eclipse
-        installation as a template for your new P2 Lineup. </para>
+        installation as a template for your new P2 Lineup.</para>
       </note>
     </section>
 
     <section>
-      <title> Configure the Contents of the Lineup</title>
+      <title>Configure the Contents of the Lineup</title>
 
       <para>The next step in the P2 Lineup wizard is the Lineup Editor. This
       interface is where you configure the contents of the P2 Lineup. You can
       configure which Eclipse components and plugins are installed in a
       materialized Eclipse installation.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-contents-p2">
         <title>Configuring Contents of a P2 Lineup</title>
 
         <mediaobject>
@@ -959,7 +957,7 @@
       <para>If you selected “Load Installable Units from Current Eclipse
       Installation” in the previous step, this list should contain Eclipse
       plugins, components, and update sites configured in your current Eclipse
-      installation. </para>
+      installation.</para>
     </section>
 
     <section>
@@ -967,7 +965,7 @@
 
       <para>Click on the Add... button in the Lineup Editor.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-configuring-p2">
         <title>Adding the Checkstyle Repository to the Lineup Editor</title>
 
         <mediaobject>
@@ -998,7 +996,7 @@
       Work with: field, press Enter, and then select the most recent version
       of the Checkstyle plugin.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-adding-checkstyle">
         <title>Adding the Checkstyle Installable Unit to the Lineup
         Editor</title>
 
@@ -1026,7 +1024,7 @@
       on Next, Maven Studio for Eclipse will verify that it has access to the
       appropriate proxy repositories on Nexus Team server.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-verify-lineup-summary">
         <title>Verifying the Lineup Summary</title>
 
         <mediaobject>
@@ -1047,7 +1045,7 @@
       <para>Clicking Finish will create the P2 Lineup in your workspace under
       the Artifact ID of your new lineup.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-new-codebase">
         <title>Viewing Your New Codebase in the Eclipse IDE</title>
 
         <mediaobject>
@@ -1099,7 +1097,7 @@
       <para>Maximize the Codebase Overview by clicking on the maximize button
       as shown below.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-maximize-codebase-overview">
         <title>Maximizing the Codebase Overview</title>
 
         <mediaobject>
@@ -1120,7 +1118,7 @@
       <para>Once you have maximized the Codebase Overview, you will see the
       following form.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-codebase-overview">
         <title>Codebase Overview</title>
 
         <mediaobject>
@@ -1143,9 +1141,9 @@
       <title>Create a New Source Tree</title>
 
       <para>A Source Tree is a collection of projects checked out from source
-      control. </para>
+      control.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-new-source-tree">
         <title>Creating a New Source Tree</title>
 
         <mediaobject>
@@ -1173,7 +1171,7 @@
       <para>Once you create a new Source Tree, the Codebase Overview will
       switch to a form that allows you to configure a new Source Tree. This
       dialog will show information about the source tree, the SCM location,
-      Roots in the Source Tree, and information about the project. </para>
+      Roots in the Source Tree, and information about the project.</para>
     </section>
 
     <section>
@@ -1184,7 +1182,7 @@
       location:
       http://svn.apache.org/repos/asf/commons/proper/lang/trunk</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-commons-source-tree">
         <title>Configuring the Commons Source Tree</title>
 
         <mediaobject>
@@ -1216,7 +1214,7 @@
 
       <para>Click on OK.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-commons-feed">
         <title>Configuring the Commons Feed URL</title>
 
         <mediaobject>
@@ -1252,7 +1250,7 @@
       <para>In the upper right-hand corner of the P2 Lineup Overview form you
       should see a Publish button next to a server icon.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-publish-button">
         <title>Publish Button on Codebase Overview</title>
 
         <mediaobject>
@@ -1285,7 +1283,7 @@
       Descriptor dialog. In this dialog you will supply the Base URL of your
       Nexus Team server, a Nexus username, and a Nexus password.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-publish-codebase-nx-creds">
         <title>Publish Codebase Descriptor</title>
 
         <mediaobject>
@@ -1310,7 +1308,7 @@
       <para>Click OK, and Maven Studio for Eclipse will publish the Codebase
       to your Nexus Team Server.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-publishing-codebase">
         <title>Published Codebase Descriptor</title>
 
         <mediaobject>
@@ -1351,7 +1349,7 @@
       com/mycompany/baselineup/1.0 folder. Right-click on the
       mse-codebase.jnlp file and select Download.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-select-published-codebase">
         <title>Select Published Codebase Descriptor</title>
 
         <mediaobject>
@@ -1378,7 +1376,7 @@
       should leave Anonymous access checked and click on the Next button to
       continue.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-custom-subversion-creds">
         <title>Supply Subversion Credentials to MSE Installer</title>
 
         <mediaobject>
@@ -1405,8 +1403,8 @@
       checkbox and supply your Nexus credentials. If you have not configured a
       new Nexus user, use the default credentials admin/admin123.</para>
 
-      <figure id="fig-mse-quickstart-nexus-credentials">
-        <title>Supply Subversion Credentials to MSE Installer</title>
+      <figure id="fig-mse-quickstart-custom-nexus-creds">
+        <title>Supply Nexus Credentials to MSE Installer</title>
 
         <mediaobject>
           <imageobject role="web">
@@ -1425,14 +1423,14 @@
     </section>
 
     <section>
-      <title>Configure Materialization Directories </title>
+      <title>Configure Materialization Directories</title>
 
       <para>Nexus supplies the directories for the materialization. If you
       want to override the default directories, specify an installation
       directory for the Eclipse installation and a workspace for your projects
-      and workspace-specific configuration. </para>
+      and workspace-specific configuration.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-custom-install-dirs">
         <title>Choosing Installation Directories in the MSE Installer</title>
 
         <mediaobject>
@@ -1460,7 +1458,7 @@
       same functionality to create custom, one-click solutions for developer
       on-boarding.</para>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-materialized-custom">
         <title>A Materialized, Custom, Eclipse Workspace</title>
 
         <mediaobject>
@@ -1478,7 +1476,7 @@
         </mediaobject>
       </figure>
 
-      <figure id="fig-mse-quickstart-proxy-settings">
+      <figure id="fig-mse-quickstart-checkstyle-final">
         <title>Checkstyle View from Materialized Workspae</title>
 
         <mediaobject>

@@ -5,7 +5,49 @@
   <title>${book.title}</title>
 
   <bookinfo>
+    <isbn>9780984243310</isbn>
+
     <edition>${project.version}</edition>
+
+    <author>
+      <surname>Sonatype, Inc.</surname>
+    </author>
+
+    <author>
+      <surname>O'Brien</surname>
+
+      <firstname>Tim</firstname>
+    </author>
+
+    <author>
+      <surname>Van Zyl</surname>
+
+      <firstname>Jason</firstname>
+    </author>
+
+    <author>
+      <surname>Fedorenko</surname>
+
+      <firstname>Igor</firstname>
+    </author>
+
+    <author>
+      <surname>Fox</surname>
+
+      <firstname>Brian</firstname>
+    </author>
+
+    <author>
+      <surname>Seddon</surname>
+
+      <firstname>Rich</firstname>
+    </author>
+
+    <author>
+      <surname>Yocum</surname>
+
+      <firstname>Dan</firstname>
+    </author>
 
     <editor>
       <othername>Tim O'Brien</othername>
@@ -15,38 +57,93 @@
       </affiliation>
     </editor>
 
-    <abstract role="description-short">
-      <para>Developing with Eclipse and Maven is a book about m2eclipse.</para>
+    <copyright>
+      <year>2010</year>
+
+      <holder>Sonatype, Inc.</holder>
+    </copyright>
+
+    <date>2010-06-01</date>
+
+    <publisher>
+      <publishername>Sonatype, Inc.</publishername>
+
+      <address><street>800 W. El Camino Real, Suite 400</street><city>Mountain View</city><state>CA</state><postcode>94040</postcode></address>
+    </publisher>
+
+    <abstract>
+      <para>Sonatype's m2eclipse plugin provides first-class support for Maven projects in the Eclipse IDE.   This book covers m2eclipse as well as Sonatype's Maven Studio for Eclipse.</para>
     </abstract>
+
+    <subjectset>
+      <subject>
+        <subjectterm>COM018000</subjectterm>
+      </subject>
+    </subjectset>
+
+    <mediaobject role="cover">
+      <imageobject remap="lrg" role="front-large">
+        <imagedata fileref="covers/cvr_lrg.jpg" format="JPEG" width="600px" />
+      </imageobject>
+
+      <imageobject remap="s" role="front">
+        <imagedata fileref="covers/cvr_s.gif" format="GIF" />
+      </imageobject>
+
+      <imageobject remap="xs" role="front-small">
+        <imagedata fileref="covers/cvr_xs.gif" format="GIF" />
+      </imageobject>
+
+      <imageobject remap="cs" role="thumbnail">
+        <imagedata fileref="covers/cvr_cs.gif" format="GIF" />
+      </imageobject>
+    </mediaobject>
   </bookinfo>
 
   <xi:include href="copyright.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
   <xi:include href="foreword.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-  <xi:include href="chapter-introduction.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-installation.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-creating.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-running.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-preferences.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-repository.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-dependencies.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-eclipse.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-mse-intro.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="chapter-mse-quickstart.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="appendix-license.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="appendix-changes.xml"
+  <part>
+    <title>Sonatype m2eclipse</title>
+    <partintro>
+      <para>The first portion of this book deals with the Sonatype m2eclipse plugin.</para>
+    </partintro>
+
+    <xi:include href="chapter-introduction.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-installation.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-creating.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-running.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-preferences.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-repository.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-dependencies.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-eclipse.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+</part>
+  <part>
+    <title>Maven Studio for Eclipse</title>
+    <partintro>
+      <para>The second portion of this book deals with Maven Studio for Eclipse.</para>
+</partintro>
+
+
+    <xi:include href="chapter-mse-intro.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-mse-quickstart.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="chapter-mse-codebases.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    </part>
+    <xi:include href="appendix-license.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="appendix-changes.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <index></index>
 </book>

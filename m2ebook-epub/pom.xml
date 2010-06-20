@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-	<groupId>org.sonatype.nexusbook</groupId>
+	<groupId>org.sonatype.m2eclipsebook</groupId>
 	<artifactId>m2ebook-parent</artifactId>
 	<version>0.10-SNAPSHOT</version>
   </parent>
@@ -58,7 +58,7 @@
 				<configuration>
 					<sourceDirectory>${basedir}/target/docbook</sourceDirectory>
 					<targetDirectory>${basedir}/target/epub</targetDirectory>
-					<includes>book-nexus.xml</includes>
+					<includes>book-m2e.xml</includes>
 					<xincludeSupported>true</xincludeSupported>
                     <bookFile>${project.build.directory}/book-m2e.epub</bookFile>
                     <htmlStylesheet>epub-custom.css</htmlStylesheet>

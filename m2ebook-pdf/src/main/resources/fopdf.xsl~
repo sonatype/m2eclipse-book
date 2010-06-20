@@ -41,8 +41,8 @@
       ################################################### -->
 
   <!-- Paper type, no headers on blank pages, no double sided printing -->
-  <xsl:param name="page.height" select="'9.681in'"/>
-  <xsl:param name="page.width" select="'7.444in'"/>
+    <xsl:param name="page.height" select="'11.00in'"/>
+    <xsl:param name="page.width" select="'8.5in'"/>
   <xsl:param name="headers.on.blank.pages">0</xsl:param>
   <xsl:param name="footers.on.blank.pages">0</xsl:param>
 
@@ -324,13 +324,13 @@
   <xsl:attribute-set name="formal.title.properties" use-attribute-sets="normal.para.spacing">
     <xsl:attribute name="font-weight">bold</xsl:attribute>
     <xsl:attribute name="font-size">
-      <xsl:value-of select="$body.font.master"/>
-      <xsl:text>pt</xsl:text>
+      <xsl:text>7.8pt</xsl:text>
     </xsl:attribute>
     <xsl:attribute name="hyphenate">false</xsl:attribute>
     <xsl:attribute name="space-after.minimum">0.4em</xsl:attribute>
     <xsl:attribute name="space-after.optimum">0.6em</xsl:attribute>
     <xsl:attribute name="space-after.maximum">0.8em</xsl:attribute>
+    <xsl:attribute name="text-align">center</xsl:attribute>
   </xsl:attribute-set>
 
   <!--###################################################
