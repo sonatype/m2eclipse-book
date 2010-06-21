@@ -20,7 +20,172 @@
     <section>
       <title>The Cost of New Developer Onboarding</title>
 
-      <para></para>
+      <para>It typically takes a new developer five days before they can start
+      contributing to a project. During this 5-day period, a developer will
+      complete the tasks described below and illustrated in <xref
+      linkend="fig-mse-manual-onboard" />:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Day 1 Workstation Setup</term>
+
+          <listitem>
+            <para>Setup a workstation, installing baseline requirements such
+            as a Java Development Kit and other languages or fundamental
+            frameworks.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Day 2 Downloading Components</term>
+
+          <listitem>
+            <para>Download all of the components required for a development
+            environment, this often includes components like:</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Source Control tools (Subversion, Git, Clearcase, or
+                CVS)</para>
+              </listitem>
+
+              <listitem>
+                <para>Integrated Development Environments (Eclipse IDE)</para>
+              </listitem>
+
+              <listitem>
+                <para>Automated Testing Tools (Selenium)</para>
+              </listitem>
+
+              <listitem>
+                <para>Application Servers / Containers (Websphere, Jetty,
+                Tomcat)</para>
+              </listitem>
+
+              <listitem>
+                <para>Build Tools (Maven, Ant)</para>
+              </listitem>
+
+              <listitem>
+                <para>Databases (Oracle, MySQL, SQL Server)</para>
+              </listitem>
+
+              <listitem>
+                <para>Scripting Languages (Ruby, Python, Perl)</para>
+              </listitem>
+
+              <listitem>
+                <para>General Utilities (cygwin, emacs, other
+                utilities)</para>
+              </listitem>
+            </itemizedlist>
+
+            <para>The best-case scenario is an organization which maintains a
+            detailed list of software components required in a development
+            environment. In most organizations this information isn't firmly
+            fixed in time as different developers set up environments as they
+            are introduced to a product. New programmers will often notice a
+            slight variation in the versions of components used by other
+            programmers in the same group. Example: a senior developer who has
+            been on the team for years might still use Eclipse 3.4, while
+            newer developers might just download the latest version of Eclipse
+            3.5.1.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Day 2 Self-directed Learning</term>
+
+          <listitem>
+            <para>Developers not directly familiar with tools like Maven will
+            need to learn how to install and configure these tools. Most new
+            developers spend at least half a day familiarizing themselves with
+            the installation and configuration process for new development
+            infrastructure.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Day 3 Installing Software</term>
+
+          <listitem>
+            <para>Once all of the required software has been downloaded, it
+            must be installed and configured. Eclipse must be installed and
+            configured, a local testing database must be configured, the IDE
+            settings must be customized to account for specific standards used
+            by the organization.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Day 3 Ad-hoc Training</term>
+
+          <listitem>
+            <para>After setting up and environment, a developer will usually
+            require the assistance of other members of the development team.
+            Ad-hoc training sessions will involve other developers
+            communicating standards and software: "Have you used JUnit before,
+            this is how we run a unit test."</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Day 4 Source Code</term>
+
+          <listitem>
+            <para>It is just at Day 4 that a developer starts to think about
+            accessing source code. More dicussions with members of the same
+            group about source code are usually accompanied by an overview of
+            the various source control systems and structure of the various
+            groups. Checking out source code is as much about learning about
+            the organizational structure of a code base as it is about
+            learning how that code maps to project groups. Who is responsible
+            for various components, how is the source checked out of source
+            control, and how often is it updated.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Day 4 Build System</term>
+
+          <listitem>
+            <para>Once the code is properly checked out and imported into your
+            IDE, a developer will need to build an entire system. If the
+            organization has already standardized on a tool like Apache Maven,
+            this could be as simple as typing in "mvn clean install" at the
+            command prompt. Most organizations require some level of
+            customization for a build to work properly. Whether this means
+            that a developer needs to fully understand a custom Ant build or
+            just find out how to configure Maven settings to connect to a
+            Nexus repository, there is usually some work involved in figuring
+            out how the build works and how it should be configured
+            properly.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Day 5 Configuring Development Environment</term>
+
+          <listitem>
+            <para>Once a developer can build the code, the next step is to
+            configure a local development environment. If a developer is
+            working on an enterprise application, this may involve setting up
+            a local instance of a database and populating that database with
+            test data.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Day 5 Integrating 3rd Party Projects</term>
+
+          <listitem>
+            <para>If an enterprise application depends on 3rd-party open
+            source projects, a developer will often checkout relevant source
+            code from open source projects and configure them alongside the
+            development environment for internal code.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
 
       <figure id="fig-mse-manual-onboard">
         <title>A Representative 5-Day, Manual Onboarding</title>
@@ -108,7 +273,35 @@
     <section>
       <title>Managing Developer Workspace Complexity</title>
 
-      <para></para>
+      <para>Developers spend most of their time connecting components within a
+      development environment to one another. As open source software tools
+      and components have created a wealth of choices, these tools have also
+      increased the cognitive burden on software developers. Gone are the days
+      when a developer could simply install Java, Eclipse, and Maven and just
+      start to code. In today's software development environment, a developer
+      needs to not only configure an IDE, she needs to connect that IDE to a
+      collection of infrastructure resources like JIRA and Confluence,
+      configure the system to interact with source control, and install any
+      number of supporting components.</para>
+
+      <para>As most developers only configure a workstation once or twice a
+      year, the true complexity is always somewhat surprising. Developers
+      don't realize exactly how much time is wasted on workstation setup until
+      they've wasted an entire day downloading and installing the various
+      software components involved in an environment. This process is not
+      unlike process most Java developer used to use to obtain dependencies
+      for a Java project. </para>
+
+      <para>Before the arrival of Maven, a software developer had to manually
+      download and configure a set of libraries, a set of dependencies. Maven
+      Studio for Eclipse takes one of the central ideas of Maven, the idea
+      that you can describe your project and let Maven take care of
+      downloading components from a central repository, and it applies this
+      concept to your development environment. Instead of asking your
+      developers to download, configure, and connect an increasing number of
+      components. Use Maven Studio, capture your development environment in a
+      descriptive codebase, and let Maven Studio for Eclipse take care of the
+      details.</para>
 
       <figure id="fig-mse-component-explosion">
         <title>Consolidating Complexity into Eclipse IDE</title>
