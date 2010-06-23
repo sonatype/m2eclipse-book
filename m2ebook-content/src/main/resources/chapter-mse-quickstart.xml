@@ -1495,4 +1495,59 @@
       </figure>
     </section>
   </section>
+
+  <section>
+    <title>Troubleshooting Codebase Materialization</title>
+
+    <para>This section attempts to summarize some of the problems that can
+    occur during Nexus Team Edition installation and Codebase materialization.
+    If you encounter any problems or difficulties running through this
+    quickstart chapter, please contact Sonatype at <ulink
+    url="mailto:book@sonatype.org">book@sonatype.org</ulink>.</para>
+
+    <section>
+      <title>Reset Subversion Connection</title>
+
+      <para>The demonstration codebase contains source trees which depend upon
+      public Subversion servers hosted by the Apache Software Foundation.
+      Although these servers are some of the most reliable and widely used
+      source control systems you will find, you might experience problems
+      during materialization if your connection is reset.</para>
+
+      <figure id="fig-mse-svn-connect-reset">
+        <title>Subversion Connect Reset During Materialization</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-trouble-svn-connection-reset.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-codebase-sourcetree-overview.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>After the MSE Installer starts a newly installed Eclipse instance,
+      it will attempt to checkout source code from the source trees configured
+      in the codebase. If you see the error dialog shown in <xref
+      linkend="fig-mse-svn-connect-reset" />, restart the materialization
+      process. The connection to a Subversion server could be reset by either
+      the server or the client, and the most likely scenario is that there was
+      some brief downtime on the server-side. Running the materialization
+      again should be enough to fix this problem.</para>
+
+      <para>If the problem continues to happen even after a retry, you might
+      want to investigate any process or system that mght be running locally
+      to monitor and secure a network. Checking out a large project from a
+      public Subversion server can involve a single, long-lived connection to
+      a remote server. Make sure that there are no security systems
+      terminating the connection to the remote Subversion server on your end
+      of the connection.</para>
+    </section>
+  </section>
 </chapter>

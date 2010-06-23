@@ -8,30 +8,39 @@
     <title>Introduction</title>
 
     <para>Maven Studio for Eclipse currently provides Developer Onboarding, a
-    feature fully defined in <xref linkend="mse-intro-devonboard" />.</para>
+    feature fully introduced and defined in <xref
+    linkend="mse-intro-devonboard" />. For more information about Maven Studio
+    for Eclipse, please contact <ulink
+    url="mailto:info@sonatype.com">info@sonatype.com</ulink>.</para>
   </section>
 
   <section id="mse-intro-devonboard">
     <title>Developer Onboarding</title>
 
     <para>Developer Onboarding can be defined as the process of bringing a
-    developer "onboard" a particular development project.</para>
+    developer "onboard" a particular development project. This process usually
+    encompasses setting up the tools used during development - an Integrated
+    Development Environments, compilers, and other tools used to design,
+    write, test, debug, and deploy code. This section describes some of the
+    challenges involved in Developer Onboarding, and provides some context for
+    the Developer Onboarding feature now available in Maven Studio for
+    Eclipse.</para>
 
     <section>
       <title>The Cost of New Developer Onboarding</title>
 
-      <para>It typically takes a new developer five days before they can start
-      contributing to a project. During this 5-day period, a developer will
-      complete the tasks described below and illustrated in <xref
-      linkend="fig-mse-manual-onboard" />:</para>
+      <para>On average, it typically takes a new developer five days before
+      they can start contributing to a project. During this 5-day period, a
+      developer will complete the tasks described below and illustrated in
+      <xref linkend="fig-mse-manual-onboard" />:</para>
 
       <variablelist>
         <varlistentry>
           <term>Day 1 Workstation Setup</term>
 
           <listitem>
-            <para>Setup a workstation, installing baseline requirements such
-            as a Java Development Kit and other languages or fundamental
+            <para>Setup a workstation, install baseline requirements such as a
+            Java Development Kit and other languages or fundamental
             frameworks.</para>
           </listitem>
         </varlistentry>
@@ -84,7 +93,7 @@
             detailed list of software components required in a development
             environment. In most organizations this information isn't firmly
             fixed in time as different developers set up environments as they
-            are introduced to a product. New programmers will often notice a
+            are introduced to a project. New programmers will often notice a
             slight variation in the versions of components used by other
             programmers in the same group. Example: a senior developer who has
             been on the team for years might still use Eclipse 3.4, while
@@ -124,8 +133,8 @@
             <para>After setting up and environment, a developer will usually
             require the assistance of other members of the development team.
             Ad-hoc training sessions will involve other developers
-            communicating standards and software: "Have you used JUnit before,
-            this is how we run a unit test."</para>
+            communicating standards and software: "Have you used JUnit before?
+            This is how we run a unit test."</para>
           </listitem>
         </varlistentry>
 
@@ -202,8 +211,6 @@
           </imageobject>
         </mediaobject>
       </figure>
-
-      <para></para>
     </section>
 
     <section>
@@ -252,7 +259,7 @@
       in the first days to learn about projects and architecture. They can
       start to engage a group socially, participating in development
       discussions and decisions instead of disappearing into a cave to install
-      software. </para>
+      software.</para>
 
       <para>This new ability to get prouctive quickly also changes the way in
       which developers are added to a project. When you know it will only take
@@ -290,7 +297,7 @@
       they've wasted an entire day downloading and installing the various
       software components involved in an environment. This process is not
       unlike process most Java developer used to use to obtain dependencies
-      for a Java project. </para>
+      for a Java project.</para>
 
       <para>Before the arrival of Maven, a software developer had to manually
       download and configure a set of libraries, a set of dependencies. Maven
@@ -408,7 +415,7 @@
       environment in the middle of an active product development cycle. If a
       new version of Eclipse is introduced which improves performance, or if a
       new version of Maven is made available that enables greater flexibility,
-      managers are not likely to approve any changes. </para>
+      managers are not likely to approve any changes.</para>
 
       <para>The following, fictional dialog captures the reality of a
       development group with a manual, high-risk strategy for testing and
@@ -458,7 +465,7 @@
       of time following a loosely documented, ad-hoc process for running
       manual updates. In this scenario, the build engineer is often identified
       as the enemy of project stability and the team resists changes to the
-      development environment. </para>
+      development environment.</para>
     </section>
 
     <section>
@@ -522,7 +529,7 @@
       materialize a codebase. If a new version of Eclipse or a critical tool
       from a vendor is updated, you will be able to quickly test and deploy
       this fix across your department wthout having to make the case to
-      management to set aside time for the upgrade. </para>
+      management to set aside time for the upgrade.</para>
 
       <para>Maven Studio for Eclipse enables much greater flexibility within
       constrained development cycles because it makes development environment

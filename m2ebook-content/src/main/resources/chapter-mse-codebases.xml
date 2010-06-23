@@ -12,6 +12,101 @@
     Onboarding feature. Using the Developer Onboarding feature, you can very
     quickly configure and deliver a common configuration across your entire
     enterprise.</para>
+  </section>
 
+  <section>
+    <title>Configuring Security Realms</title>
+
+    <para></para>
+
+    <figure id="fig-mse-add-security-realm">
+      <title>Adding a New Security Realm</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-new-security-realm.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-new-security-realm.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Configuring a Source Tree</title>
+
+    <para></para>
+
+    <figure id="fig-mse-source-tree-overview">
+      <title>Configuring an MSE Codebase Source Tree</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-sourcetree-overview.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-sourcetree-overview.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Adding a Maven Profile</title>
+
+    <para></para>
+
+    <figure id="fig-mse-add-maven-profile">
+      <title>Adding a Maven Profile</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-add-maven-profile.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-add-maven-profile.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Adding a New Feed URL</title>
+
+    <para></para>
+
+    <figure id="fig-mse-add-feed-url">
+      <title>Adding a New Feed URL</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-add-feed-url.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-add-feed-url.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
   </section>
 </chapter>
