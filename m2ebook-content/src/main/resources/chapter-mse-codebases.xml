@@ -15,27 +15,203 @@
   </section>
 
   <section>
-    <title>Configuring Security Realms</title>
+    <title>Managing Codebase Resource Locations</title>
 
     <para></para>
 
-    <figure id="fig-mse-add-security-realm">
-      <title>Adding a New Security Realm</title>
+    <figure id="fig-mse-codebase-resources">
+      <title>Configuring Codebase Resources</title>
 
       <mediaobject>
         <imageobject role="web">
           <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-new-security-realm.png"
+                     fileref="figs/web/mse-codebase-resources.png"
                      scalefit="1" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/mse-codebase-new-security-realm.pdf"
+                     fileref="figs/print/mse-codebase-resources.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
+
+    <section>
+      <title>Publishing Eclipse Preferences</title>
+
+      <para></para>
+
+      <figure id="fig-mse-export-preferences">
+        <title>Configuring Eclipse Preferences for a Codebase</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-codebase-eclipse-preferences.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-codebase-eclipse-preferences.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+
+    <section>
+      <title>Pointing to a P2 Lineup</title>
+
+      <para></para>
+    </section>
+
+    <section>
+      <title>Publishing Maven Settings</title>
+
+      <para></para>
+    </section>
+  </section>
+
+  <section>
+    <title>Configuring Codebase Information</title>
+
+    <para></para>
+
+    <figure id="mse-fig-codebase-info">
+      <title>Configuring Codebase Information</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-information.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-information.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Managing Codebase Source Trees</title>
+
+    <para></para>
+
+    <figure id="fig-mse-configuring-source-trees">
+      <title>Configuring Codebase Source Trees</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-source-trees.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-source-trees.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Setting Codebase Prerequisites</title>
+
+    <para></para>
+
+    <figure id="fig-mse-codebase-prerequisites">
+      <title>Configuring Codebase Prerequisites</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-prerequisites.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-prerequisites.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Configuring Codebase Security</title>
+
+    <para></para>
+
+    <figure id="fig-mse-codebase-realms">
+      <title>Configuring Codebase Realms</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-security-realms.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-security-realms.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Configuring a Codebase</title>
+
+    <para></para>
+
+    <figure id="fig-mse-codebase-overview">
+      <title>Codebase Overview</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-overview.png" scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-overview.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para></para>
+
+    <figure id="fig-mse-codebase-project-files">
+      <title>Codebase Project Files</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-files.png" scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-files.pdf" scalefit="0"
+                     width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para></para>
   </section>
 
   <section>
@@ -63,6 +239,35 @@
   </section>
 
   <section>
+    <title>Configuring Security Realms</title>
+
+    <para>A security realm is a set of credentials used to access a remote
+    server. If you use the same username and password to access Nexus,
+    Subversion, and other resources in your environment, your custom Codebase
+    would contain a single Security Realm. If you use a different set of
+    credentials to access source control and Nexus, you would configure two
+    Security Realms. </para>
+
+    <figure id="fig-mse-add-security-realm">
+      <title>Adding a New Security Realm</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-new-security-realm.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-new-security-realm.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
     <title>Adding a Maven Profile</title>
 
     <para></para>
@@ -80,6 +285,175 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/print/mse-codebase-add-maven-profile.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Creating a New MSE Codebase</title>
+
+    <para></para>
+
+    <figure id="fig-mse-new-codebase-wizard">
+      <title>Selecting the New Codebase Project Wizard</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-wizard.png" scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-wizard.pdf" scalefit="0"
+                     width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Creating a New P2 Lineup</title>
+
+    <para></para>
+
+    <figure id="fig-mse-p2-lineup-wizard">
+      <title>Selecting the New P2 Lineup Wizard</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-p20-lineup-wizard.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-p20-lineup-wizard.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para></para>
+
+    <figure id="fig-mse-lineup-setup">
+      <title>Initial Screen of Lineup Wizard: Lineup Setup</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-p2-lineup-setup.png" scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-p2-lineup-setup.pdf" scalefit="0"
+                     width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para></para>
+
+    <figure id="fig-mse-add-installable-unit">
+      <title>Add an Installable Unit to a P2 Lineup</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-p2-add-installable-unit.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-p2-add-installable-unit.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para></para>
+
+    <figure id="fig-mse-add-repository-to-lineup">
+      <title>Add a Repository to a P2 Lineup</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-p2-add-repository.png" scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-p2-add-repository.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para></para>
+
+    <figure id="fig-mse-summary-new-p2">
+      <title>Summary of New P2 Lineup Identifiers</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-new-codebase-wizard.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-new-codebase-wizard.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section>
+    <title>Publishing an MSE Codebase to Nexus Team Edition</title>
+
+    <para></para>
+
+    <figure id="fig-mse-codebase-publish-button">
+      <title>Codebase Publish Button</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-publish-button.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-publish-button.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para></para>
+
+    <figure id="fig-mse-publish-codebase-dialog">
+      <title>Publish Codebase Dialog</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-publish-dialog.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-publish-dialog.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
