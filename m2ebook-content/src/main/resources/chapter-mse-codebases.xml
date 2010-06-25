@@ -2,7 +2,7 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.sonatype.com/tmp/docbook/xml/4.5/docbookx.dtd">
 <chapter id="mse-codebases">
-  <title>Configuring Codebases</title>
+  <title>Managing MSE Codebases and P2 Lineups</title>
 
   <section id="mse-codebases-intro">
     <title>Introduction</title>
@@ -15,9 +15,430 @@
   </section>
 
   <section>
-    <title>Managing Codebase Resource Locations</title>
+    <title>Creating a MSE Codebase</title>
+
+    <para>There are two ways to create an MSE Codebase:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Create a new P2 Lineup</term>
+
+        <listitem>
+          <para>You can create a new P2 Lineup which captures an Eclipse
+          configuration including all components and plugins installed in
+          Eclipse. After creating and publishing a new P2 Lineup, Maven Studio
+          for Eclipse will create a new Codebase and associate it with your
+          new P2 Lineup.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Create a new MSE Codebase</term>
+
+        <listitem>
+          <para>Alternatively, you can create a new MSE Codebase. This newly
+          created MSE Codebase will have an empty P2 Lineup URL which will
+          need to be populated using a URL of a previously published P2
+          Lineup.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>The following sections outline the details of both of these
+    approaches.</para>
+
+    <section>
+      <title>Creating a New P2 Lineup</title>
+
+      <para></para>
+
+      <figure id="fig-mse-p2-lineup-wizard">
+        <title>Selecting the New P2 Lineup Wizard</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-codebase-p20-lineup-wizard.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-codebase-p20-lineup-wizard.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para></para>
+
+      <figure id="fig-mse-lineup-setup">
+        <title>Initial Screen of Lineup Wizard: Lineup Setup</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-p2-lineup-setup.png" scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-p2-lineup-setup.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para></para>
+
+      <figure id="fig-mse-add-installable-unit">
+        <title>Add an Installable Unit to a P2 Lineup</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-p2-add-installable-unit.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-p2-add-installable-unit.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para></para>
+
+      <figure id="fig-mse-add-repository-to-lineup">
+        <title>Add a Repository to a P2 Lineup</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-p2-add-repository.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-p2-add-repository.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para></para>
+
+      <figure id="fig-mse-summary-new-p2">
+        <title>Summary of New P2 Lineup Identifiers</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-codebase-new-codebase-wizard.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-codebase-new-codebase-wizard.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+
+    <section>
+      <title>Creating a New MSE Codebase</title>
+
+      <para></para>
+
+      <figure id="fig-mse-new-codebase-wizard">
+        <title>Selecting the New Codebase Project Wizard</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-codebase-wizard.png" scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-codebase-wizard.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+  </section>
+
+  <section>
+    <title>Configuring a MSE Codebase</title>
+
+    <para>Once you create a codebase, you will see the Codebase Overview shown
+    in <xref linkend="fig-mse-codebase-overview" />. The MSE Codebase
+    settings, MSE Source Trees, resources, and security are all configured
+    from this interface. Once a Codebase has been properly configured, the
+    codebase is saved as an XML file and then published to Nexus Team edition.
+    The Codebase editor contains the following sections:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Codebase Information</term>
+
+        <listitem>
+          <para>This section contains identifiers, URLs, a name, a
+          description, and a logo for the MSE Codebase. This section is
+          described in more detail in <xref
+          linkend="mse-codebase-sect-code-info" />.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Source Trees</term>
+
+        <listitem>
+          <para>An MSE Codebase contains one or more Source Trees. A source
+          tree is a location in a source control server like Git or Subversion
+          and it corresponds to a project or set of projects in an Eclipse
+          environment. This section is described in more detail in <xref
+          linkend="mse-codebase-sect-source-tree" />.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Locations</term>
+
+        <listitem>
+          <para>Locations holds URLs and resources which are associated with
+          an MSE Codebase. The P2 Lineup Location points to a file hosted by
+          Nexus Team Edition which describes the configuration of Eclipse, and
+          the Maven Settings and Eclipse Preferences associate configuration
+          data with an MSE Codebase. This section is described in more detail
+          in <xref linkend="mse-codebase-sect-location" />.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Prerequisites</term>
+
+        <listitem>
+          <para>This section contains configuration values which affect the
+          operation of Eclipse. This section is described in more detail in
+          <xref linkend="mse-codebase-sect-prereqs" />.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Realms</term>
+
+        <listitem>
+          <para>When the MSE Installer connects to remote resources to
+          download settings, configuration, source control, or P2 Lineups, it
+          stores credentials in Security Realms. This list of realms will be
+          used to populate realm dropdownds throughout the Codebase and Source
+          Tree editors. This section is described in more detail in .</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <figure id="fig-mse-codebase-overview">
+      <title>Codebase Overview</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-overview.png" scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-overview.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>At the bottom of the Codebase Editor, you will see a series of tabs
+    for each of the configured MSE Source Trees. Source trees are locations in
+    a source control system which correspond to one of more projects in an
+    Eclipse workspace. The process for creating and managing source trees is
+    described in more detail in <xref
+    linkend="mse-codebase-sect-source-tree" />.</para>
+
+    <para>Once a Codebase has been configured and saved, Maven Studio for
+    Eclipse will have a project in the Project Explorer named after the
+    Artifact ID of your Codebase which contains up to three files:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>mse-codebase.xml</term>
+
+        <listitem>
+          <para>This is the MSE Codebase descriptor, it is the XML file which
+          is published to Nexus Team Edition, and which is used to configured
+          the Java WebStart JNLP application which is used to start the MSE
+          Installer.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>mse-codebase-preferences.jar</term>
+
+        <listitem>
+          <para>If you have configured the MSE Codebase editor to generate,
+          publish, and associate Eclipse preferences with an MSE Codebase,
+          this JAR file will contain an export of the selected Eclipse
+          preferences.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>mse-codebase-icon.png</term>
+
+        <listitem>
+          <para>This is the 48x48 icon which is used to represent this MSE
+          Codebase in an MSE Catalog.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <figure id="fig-mse-codebase-project-files">
+      <title>Codebase Project Files</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-files.png" scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-files.pdf" scalefit="0"
+                     width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
 
     <para></para>
+  </section>
+
+  <section id="mse-codebase-sect-code-info">
+    <title>Configuring Codebase Information</title>
+
+    <para>The Codebase Information section shown in <xref
+    linkend="mse-fig-codebase-info" /> contains identifiers, URLs, a name, a
+    description, and an application icon for the Codebase. This section
+    contains the following fields:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Group Id</term>
+
+        <listitem>
+          <para>The group Id is an arbitrary, organization or project-specific
+          identifier which generally matches the reversed, period-delimited
+          domain name of an organization plus any additional project
+          identifiers. Examples: com.google, com.sonatype.nexus,
+          org.apache.maven.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Artifact Id</term>
+
+        <listitem>
+          <para>The Codebase project identifier. This artifact id is used to
+          identify a project.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <figure id="mse-fig-codebase-info">
+      <title>Configuring Codebase Information</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-information.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-information.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+
+  <section id="mse-codebase-sect-location">
+    <title>Managing Codebase Resource Locations</title>
+
+    <para>In the MSE Codebase editor, the Locations section shown in <xref
+    linkend="fig-mse-codebase-resources" /> tracks important configuration
+    resources which can be associated with a Codebase. The resources
+    are:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Security Realm</term>
+
+        <listitem>
+          <para>The MSE Installer will use a single security realm to access
+          all of the resources listed in the Location section. Although there
+          are no restrictions for the URLs used in this section, the MSE
+          Installer was designed with the expectation that all external
+          configuration resources would be downloaded from the same Nexus
+          server.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>P2 Lineup Location</term>
+
+        <listitem>
+          <para>If you created your MSE Codebase using the New P2 Lineup
+          wizard, the P2 Lineup wizard finished and then immediately loaded a
+          new MSE Codebase with this field pre-populated. If you created a new
+          MSE Codebase using the New MSE Codebase wizard, this field will be
+          empty and you will need to supply a URL from Nexus Team
+          edition.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Maven Settings</term>
+
+        <listitem>
+          <para>This field contains a URL for your Maven Settings. Nexus
+          Professional provides support for managing user-specific Maven
+          Settings. To learn more about using Nexus Professional to manage and
+          distribute Maven Settings, read <ulink
+          url="http://www.sonatype.com/books/nexus-book/reference/security.html">"Managing
+          Maven Settings"</ulink> chapter in <ulink
+          url="http://www.sonatype.com/books/nexus-book/reference/security.html">Repository
+          Management with Nexus</ulink>. If you are using the default Maven
+          Settings location in Nexus, your URL will resemble the following
+          URL:
+          http://localhost:8081/nexus/service/local/templates/settings/default/content</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Eclipse Preferences</term>
+
+        <listitem>
+          <para>An MSE Codebase can distribute a set of common Eclipse
+          preferences to cature common configuration settings that cover code
+          standards, Aspect-oriented programming settings, and m2eclipse
+          configuration.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
 
     <figure id="fig-mse-codebase-resources">
       <title>Configuring Codebase Resources</title>
@@ -40,7 +461,59 @@
     <section>
       <title>Publishing Eclipse Preferences</title>
 
-      <para></para>
+      <para>The MSE Codebase editor can capture your Eclipse preferences and
+      publish them to a Nexus repository manager. Open the Eclipse Preferences
+      dialog shown in <xref linkend="fig-mse-export-preferences" /> by
+      clicking on the Select... button in <xref
+      linkend="fig-mse-codebase-resources" />. </para>
+
+      <para>To publish Eclipse preferences from the current Eclipse
+      installation, select "Export workspace preferences" and select all of
+      the preference categories you want to publish in this MSE Codebase. The
+      available preferences categories:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>PROXY</term>
+
+          <listitem>
+            <para>Proxy configuration captures proxy configuration under
+            General -&gt; Network Connections from the Eclipse
+            preferences.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>JDT</term>
+
+          <listitem>
+            <para>Selecting this group captures all configuration under the
+            "Java" category from the Eclipse preferences.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>M2E</term>
+
+          <listitem>
+            <para>Selecting this group captures all configuration under the
+            "Maven" category from the Eclipse preferences.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para>After configuring a codebase to publish Eclipse settings, save
+      your Codebase and you should see a file named
+      mse-codebase-preferences.jar associated with the MSE Codebase in the
+      Project Explorer. When the Codebase is published to Nexus Team edition,
+      this preferences JAR file will be published to the repository manager
+      and associated with the published MSE Codebase.</para>
+
+      <para>You can associate an MSE Codebase with a set of previous published
+      Eclipse preferences by selecting "External URL" and supplying the URL to
+      a set of Eclipse preferences. The most common scenarios for using an
+      existing, external URL is when an MSE Codebase is referencing Eclipse
+      preferences from another MSE Codebase.</para>
 
       <figure id="fig-mse-export-preferences">
         <title>Configuring Eclipse Preferences for a Codebase</title>
@@ -62,70 +535,89 @@
     </section>
 
     <section>
-      <title>Pointing to a P2 Lineup</title>
-
-      <para></para>
-    </section>
-
-    <section>
       <title>Publishing Maven Settings</title>
 
-      <para></para>
+      <para>An important component of Maven configuration is a Maven Settings
+      file usually stored in <filename>~/.m2/settings.xml</filename>. This
+      file contains credentials, profiles, and preferences which can use used
+      to customize configuration variables for individual developers. Nexus
+      Team Edition and Nexus Professional Edition provide you with the ability
+      to store and managed Maven Settings files for developers. If you have
+      configured Maven Settings in Nexus, you should supply the Template URL
+      to the MSE Codebase editor. When the MSE Installer materializes a new
+      Eclipse installation it will download a settings.xml from the Template
+      URL and interpolate that template with two substitution
+      variables:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>\${baseurl}</term>
+
+          <listitem>
+            <para>This is the Base URL for the Nexus server responsible for
+            delivering the Maven Settings template. If you codebase is
+            configured to download Maven Settings from
+            "http://central.example.org/nexus/server/local/templates/settings/default/content",
+            the \${baseurl} will be replaced with
+            "http://central.example.org/nexus/".</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>\${userId}</term>
+
+          <listitem>
+            <para>This is the user identifier for the user making the request
+            for Maven Settings. If your MSE Code contains a security realm for
+            Nexus, this \${userId} value in a settings.xml template will be
+            replaced with the username supplied to the MSE Installer for the
+            Nexus realm.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para><xref linkend="mse-fig-codebase-info" /> shows the Maven Settings
+      configuration panel from Nexus Team Edition. To configure an MSE
+      Codebase to download the "enterprise-webapp-team" Maven Settings
+      template, you would supply the URL listed in the Template URL column to
+      the MSE Codebase editor.</para>
+
+      <figure id="mse-fig-codebase-info">
+        <title>Configuring Codebase Information</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-codebase-settings-in-nexus.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-codebase-settings-in-nexus.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>To learn more about using Nexus Professional to manage and
+      distribute Maven Settings, read <ulink
+      url="http://www.sonatype.com/books/nexus-book/reference/security.html">"Managing
+      Maven Settings"</ulink> chapter in <ulink
+      url="http://www.sonatype.com/books/nexus-book/reference/security.html">Repository
+      Management with Nexus</ulink>.</para>
     </section>
   </section>
 
-  <section>
-    <title>Configuring Codebase Information</title>
-
-    <para></para>
-
-    <figure id="mse-fig-codebase-info">
-      <title>Configuring Codebase Information</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-information.png"
-                     scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-information.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-  </section>
-
-  <section>
-    <title>Managing Codebase Source Trees</title>
-
-    <para></para>
-
-    <figure id="fig-mse-configuring-source-trees">
-      <title>Configuring Codebase Source Trees</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-source-trees.png"
-                     scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-source-trees.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-  </section>
-
-  <section>
+  <section id="mse-codebase-sect-prereqs">
     <title>Setting Codebase Prerequisites</title>
 
-    <para></para>
+    <para>The Codebase editor contains a section to configure prerequisites.
+    The Required Memory field shown in <xref
+    linkend="fig-mse-codebase-prerequisites" /> allows you to configure the
+    validation criteria which must be satisfied before the MSE Installer will
+    materialize a codebase. The MSE Installer will test the workstation to see
+    if it has sufficient memory to perform a materialization.</para>
 
     <figure id="fig-mse-codebase-prerequisites">
       <title>Configuring Codebase Prerequisites</title>
@@ -144,6 +636,39 @@
         </imageobject>
       </mediaobject>
     </figure>
+  </section>
+
+  <section id="mse-codebase-sect-source-tree">
+    <title>Managing Codebase Source Trees</title>
+
+    <para>A Source Tree is a location in source control which corresponds to
+    one or more projects in an Eclipse environment. To add a new Source Tree,
+    click on the Create.. button next to the Source Trees section of the
+    Codebase editor as shown in <xref
+    linkend="fig-mse-configuring-source-trees" />.</para>
+
+    <figure id="fig-mse-configuring-source-trees">
+      <title>Configuring Codebase Source Trees</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-source-trees.png"
+                     scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/mse-codebase-source-trees.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>To delete a Source Tree from an MSE Codebase, select the Codebase in
+    the Source Trees section of the MSE Codebase editor and click on the
+    Delete button. Eclipse will then present you with a confirmation dialog to
+    make sure that you really want to delete the selected Source Tree.</para>
   </section>
 
   <section>
@@ -170,51 +695,7 @@
     </figure>
   </section>
 
-  <section>
-    <title>Configuring a Codebase</title>
-
-    <para></para>
-
-    <figure id="fig-mse-codebase-overview">
-      <title>Codebase Overview</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-overview.png" scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-overview.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <para></para>
-
-    <figure id="fig-mse-codebase-project-files">
-      <title>Codebase Project Files</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-files.png" scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-files.pdf" scalefit="0"
-                     width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <para></para>
-  </section>
-
-  <section>
+  <section id="mse-codebase-sect-source-tree">
     <title>Configuring a Source Tree</title>
 
     <para></para>
@@ -285,131 +766,6 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/print/mse-codebase-add-maven-profile.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-  </section>
-
-  <section>
-    <title>Creating a New MSE Codebase</title>
-
-    <para></para>
-
-    <figure id="fig-mse-new-codebase-wizard">
-      <title>Selecting the New Codebase Project Wizard</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-wizard.png" scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-wizard.pdf" scalefit="0"
-                     width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-  </section>
-
-  <section>
-    <title>Creating a New P2 Lineup</title>
-
-    <para></para>
-
-    <figure id="fig-mse-p2-lineup-wizard">
-      <title>Selecting the New P2 Lineup Wizard</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-p20-lineup-wizard.png"
-                     scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-p20-lineup-wizard.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <para></para>
-
-    <figure id="fig-mse-lineup-setup">
-      <title>Initial Screen of Lineup Wizard: Lineup Setup</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-p2-lineup-setup.png" scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-p2-lineup-setup.pdf" scalefit="0"
-                     width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <para></para>
-
-    <figure id="fig-mse-add-installable-unit">
-      <title>Add an Installable Unit to a P2 Lineup</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-p2-add-installable-unit.png"
-                     scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-p2-add-installable-unit.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <para></para>
-
-    <figure id="fig-mse-add-repository-to-lineup">
-      <title>Add a Repository to a P2 Lineup</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-p2-add-repository.png" scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-p2-add-repository.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <para></para>
-
-    <figure id="fig-mse-summary-new-p2">
-      <title>Summary of New P2 Lineup Identifiers</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-new-codebase-wizard.png"
-                     scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-new-codebase-wizard.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
