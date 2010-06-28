@@ -324,13 +324,13 @@
   <xsl:attribute-set name="formal.title.properties" use-attribute-sets="normal.para.spacing">
     <xsl:attribute name="font-weight">bold</xsl:attribute>
     <xsl:attribute name="font-size">
-      <xsl:value-of select="$body.font.master"/>
-      <xsl:text>pt</xsl:text>
+      <xsl:text>9pt</xsl:text>
     </xsl:attribute>
     <xsl:attribute name="hyphenate">false</xsl:attribute>
     <xsl:attribute name="space-after.minimum">0.4em</xsl:attribute>
     <xsl:attribute name="space-after.optimum">0.6em</xsl:attribute>
     <xsl:attribute name="space-after.maximum">0.8em</xsl:attribute>
+    <xsl:attribute name="text-align">center</xsl:attribute>
   </xsl:attribute-set>
 
   <!--###################################################

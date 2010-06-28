@@ -2,10 +2,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head profile="http://gmpg.org/xfn/11">
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <title>Nexus Book: ${title}</title>
+    <title>m2eclipse Book: ${title}</title>
     <!-- style -->
     <style type="text/css" media="screen">@import url( http://www.sonatype.com/people/wp-content/themes/inove/style.css );</style>
     <style type="text/css" media="screen">@import url( ../css/typography.css );</style>		
@@ -30,7 +31,7 @@
 		<ul id="menus">
 			<li class="current_page_item"><a class="home" title="Home" href="http://www.sonatype.com">Home</a></li>
 			<li><a class="lastmenu" href="http://books.sonatype.com/">Books</a></li>
-			<li><a class="lastmenu" href="http://www.sonatype.com/books/nexus-book/reference/">Nexus Book</a></li>
+			<li><a class="lastmenu" href="http://www.sonatype.com/books/m2eclipse-book/reference/">m2eclipse Book</a></li>
 			<li><a class="lastmenu" href="#">${title}</a></li>
 		</ul>
 
@@ -112,11 +113,11 @@
 	<!-- showcase -->
 			<div class="widget">
 						<div class="content">
-				<center><img src="http://www.sonatype.com/system/files/images/nexus-book-cover.png" width="150"/></center>
+				<center><img src="http://www.sonatype.com/system/files/images/m2e-book-cover.png" width="150"/></center>
 <ul>
-  <li><a href="http://www.sonatype.com/nexus/documentation/download-book?file=books/nexus-book.pdf">Download the Nexus Book PDF</a></li>
-  <li><a href="http://www.lulu.com/product/paperback/repository-management-with-nexus/6242018">Purchase a Printed Copy</a></li>
-  <li><a href="https://issues.sonatype.org/browse/NXBOOK">Report a Typo or an Error</a></li>
+  <li><a href="http://www.sonatype.com/m2eclipse/documentation/download-book?file=books/m2eclipse-book.pdf">Download the m2eclipse Book PDF</a></li>
+  <li><a href="http://www.lulu.com/product/paperback/m2eclipse-maven-integration-for-eclipse/5644745">Purchase a Printed Copy</a></li>
+  <li><a href="https://issues.sonatype.org/browse/MEBOOK">Report a Typo or an Error</a></li>
 </ul>
 </div>
 		</div>
@@ -203,6 +204,26 @@ pageTracker._trackPageview();
 _lf_remora();
 </script>
 <script id="aptureScript" type="text/javascript" src="http://www.apture.com/js/apture.js?siteToken=Khl1Be7" charset="utf-8"></script>
+
+<script type="text/javascript">
+var _sf_async_config={uid:3539,domain:"sonatype.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+"http://www.sonatype.com/tmp/docbook/xml/4.5/docbookx.dtd">
 <preface id="foreword">
   <title>Foreword: ${project.version}</title>
 
@@ -17,7 +17,38 @@
 
   <para>Tim O'Brien, Sonatype</para>
 
-  <para>May, 2010</para>
+  <para>June, 2010</para>
 
   <para>Edition: ${project.version}</para>
+
+  <section>
+    <title>Changes in Edition 1.0</title>
+
+    <para>The following changes were introduced in Edition 1.0 in June
+    2010:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Added a new part to the book on Maven Studio for Eclipse.</para>
+      </listitem>
+
+      <listitem>
+        <para>Added Maven Studio for Eclipse chapters to the book.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><xref linkend="mse-intro" /></para>
+          </listitem>
+
+          <listitem>
+            <para><xref linkend="mse-quickstart" /></para>
+          </listitem>
+
+          <listitem>
+            <para><xref linkend="mse-codebases" /></para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+  </section>
 </preface>

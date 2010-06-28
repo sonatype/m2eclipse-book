@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.sonatype.m2eclipsebook</groupId>
   <artifactId>m2ebook-parent</artifactId>
-  <version>0.9</version>
+  <version>1.0</version>
   <packaging>pom</packaging>
   <name>Developing with Eclipse and Maven</name>
   <description>A book about m2eclipse</description>
@@ -21,6 +21,7 @@
     <core.update.site>http://m2eclipse.sonatype.org/sites/m2e</core.update.site>
     <extras.update.site>http://m2eclipse.sonatype.org/sites/m2e-extras</extras.update.site>
     <m2eclipse.version>0.10.0</m2eclipse.version>
+    <docbkx-tools.version>2.0.11-SNAPSHOT</docbkx-tools.version>
   </properties>
   <developers>
     <developer>
@@ -36,6 +37,7 @@
   </developers>
   <modules>
     <module>m2ebook-content</module>
+    <module>m2ebook-epub</module>
     <module>m2ebook-pdf</module>
     <module>m2ebook-html</module>
     <module>m2ebook-site</module>
