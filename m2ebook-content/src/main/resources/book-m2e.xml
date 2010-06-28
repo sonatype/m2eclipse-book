@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.sonatype.com/tmp/docbook/xml/4.5/docbookx.dtd">
-<book id="book-m2eclipse"><?dbhtml filename="index.html"?>
+<book id="book-m2eclipse">
+  <?dbhtml filename="index.html"?>
+
   <title>${book.title}</title>
 
   <bookinfo>
@@ -26,6 +28,12 @@
     </author>
 
     <author>
+      <surname>Bentmann</surname>
+
+      <firstname>Benjamin</firstname>
+    </author>
+
+    <author>
       <surname>Fedorenko</surname>
 
       <firstname>Igor</firstname>
@@ -38,9 +46,45 @@
     </author>
 
     <author>
+      <surname>Kleint</surname>
+
+      <firstname>Milos</firstname>
+    </author>
+
+    <author>
+      <surname>Lynch</surname>
+
+      <firstname>Peter</firstname>
+    </author>
+
+    <author>
+      <surname>Piggott</surname>
+
+      <firstname>Matthew</firstname>
+    </author>
+
+    <author>
+      <surname>Platonoff</surname>
+
+      <firstname>Dmitry</firstname>
+    </author>
+
+    <author>
+      <surname>Rapicault</surname>
+
+      <firstname>Pascal</firstname>
+    </author>
+
+    <author>
       <surname>Seddon</surname>
 
       <firstname>Rich</firstname>
+    </author>
+
+    <author>
+      <surname>Tatavu</surname>
+
+      <firstname>Vlad</firstname>
     </author>
 
     <author>
@@ -72,7 +116,9 @@
     </publisher>
 
     <abstract>
-      <para>Sonatype's m2eclipse plugin provides first-class support for Maven projects in the Eclipse IDE.   This book covers m2eclipse as well as Sonatype's Maven Studio for Eclipse.</para>
+      <para>Sonatype's m2eclipse plugin provides first-class support for Maven
+      projects in the Eclipse IDE. This book covers m2eclipse as well as
+      Sonatype's Maven Studio for Eclipse.</para>
     </abstract>
 
     <subjectset>
@@ -106,44 +152,60 @@
 
   <part>
     <title>Sonatype m2eclipse</title>
+
     <partintro>
-      <para>The first portion of this book deals with the Sonatype m2eclipse plugin.</para>
+      <para>The first portion of this book deals with the Sonatype m2eclipse
+      plugin.</para>
     </partintro>
 
     <xi:include href="chapter-introduction.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-installation.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-creating.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-running.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-preferences.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-repository.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-dependencies.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-eclipse.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
-</part>
+  </part>
+
   <part>
     <title>Maven Studio for Eclipse</title>
-    <partintro>
-      <para>The second portion of this book deals with Maven Studio for Eclipse.</para>
-</partintro>
 
+    <partintro>
+      <para>The second portion of this book deals with Maven Studio for
+      Eclipse.</para>
+    </partintro>
 
     <xi:include href="chapter-mse-intro.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-mse-quickstart.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="chapter-mse-codebases.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
-    </part>
-    <xi:include href="appendix-license.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
-    <xi:include href="appendix-changes.xml"
+  </part>
+
+  <xi:include href="appendix-license.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="appendix-changes.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
   <index></index>
 </book>

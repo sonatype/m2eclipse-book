@@ -50,7 +50,18 @@
     <section>
       <title>Creating a New P2 Lineup</title>
 
-      <para></para>
+      <para>When you create a new P2 Lineup, you are configuring the Eclipse
+      installation which will be associated with an MSE Codebase. This
+      includes the versions of all components and plugins which will be
+      installed by the MSE Installer. Your configuration will be validated
+      against a Nexus Team Edition server to ensure that users will have
+      access to P2 Proxy repositories for all the components required by your
+      P2 Lineup.</para>
+
+      <para>To create a new P2 Lineup in Eclipse, go to File -&gt; New and
+      select Other... This will display the wizard selection dialog. Expand
+      the Maven Studio for Eclipse folder, and select New P2 Lineup as shown
+      in <xref linkend="fig-mse-p2-lineup-wizard" />.</para>
 
       <figure id="fig-mse-p2-lineup-wizard">
         <title>Selecting the New P2 Lineup Wizard</title>
@@ -70,7 +81,12 @@
         </mediaobject>
       </figure>
 
-      <para></para>
+      <para>The initial screen of the new P2 Lineup Wizard shown in <xref
+      linkend="fig-mse-lineup-setup" /> captures lineup coordinates and
+      information about the target Nexus Team Edition server. A P2 Lineup is
+      published to Nexus and stored with a set of lineup coordinates: Group
+      Id, Artifact Id, and Version. These coordinates uniquely identify a
+      published P2 Lineup. </para>
 
       <figure id="fig-mse-lineup-setup">
         <title>Initial Screen of Lineup Wizard: Lineup Setup</title>
@@ -89,7 +105,83 @@
         </mediaobject>
       </figure>
 
-      <para></para>
+      <para>Clicking Next loads the Lineup Editor shown in <xref
+      linkend="fig-mse-lineup-editor" />. The Lineup Editor displays two
+      sections: Installable Units and Repositories. The Installable Units
+      section configures the plugins and components which are going to be
+      installed as a part of the MSE Codebase materialization. There are two
+      components which will always be a part of every MSE Codebase:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Maven Studio Materialization Support</term>
+
+          <listitem>
+            <para>This component contains the framework which supports MSE
+            Codebase materialization. The verion number 0.0.0 tells Eclipse to
+            use the latest available version.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Sonatype Studio Base IDE Lineup</term>
+
+          <listitem>
+            <para>This component combines the basic features of Sonatype
+            Studio including support for Subversion, Git, and support for the
+            Sonatype m2eclipse component.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para>The Repositories section of the Lineup Edition contains all of the
+      repositories required for a successful MSE Codebase materialization. You
+      can add new repositories to this list to support the installation of
+      addition installable units. For example, in <xref
+      linkend="fig-mse-lineup-editor" />, the Repositories section contains an
+      extra repository http://eclipse-cs.sf.net/update. This repository
+      corresponds to the Eclipse Checkstyle Plugin-in feature listed under
+      Installable Units.</para>
+
+      <para>The Validate button in the Lineup Editor causes Maven Studio to
+      connect to Nexus Team Edition and verify that all repositories and
+      installable units are available. If you have added a new repository to
+      the Lineup Editor, you will also need to add a new P2 Proxy repository
+      to Nexus Team Edition. The Manage Nexus repositories link below the
+      Repositories section will load the repositories list in Nexus Team
+      Edition. If you need to add additional P2 Proxy repositories to support
+      custom lineups, click on this Manage Nexus Repositories button and
+      create any appropriate repositories in your Nexus Team Edition
+      installation.</para>
+
+      <figure id="fig-mse-lineup-editor">
+        <title>Editing a New P2 Lineup</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/quickstart-create-new-lineup-lineup-editor.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/quickstart-create-new-lineup-lineup-editor.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>To a new an installable unit to a P2 Lineup, click on Add... next
+      to the list of Installable Units in the Lineup Editor shown in <xref
+      linkend="fig-mse-lineup-editor" />. Clicking on Add... will load the Add
+      Installable Unit dialog shown in <xref
+      linkend="fig-mse-add-installable-unit" />. Select an existing
+      repository, or paste a new Update Site URL into the Work with dropdown
+      field, then select the appropriate Installable Units in this dialog.
+      Clicking on OK will then return you to the P2 Lineup Editor with the
+      Installation Units select added to the list of Installable Units
+      configured for your new P2 Lineup.</para>
 
       <figure id="fig-mse-add-installable-unit">
         <title>Add an Installable Unit to a P2 Lineup</title>
@@ -109,7 +201,12 @@
         </mediaobject>
       </figure>
 
-      <para></para>
+      <para>To add a repository to a P2 Lineup, click on Add... next to the
+      list of repositories shown in <xref linkend="fig-mse-lineup-editor" />.
+      This will display the Add Repository dialog shown in <xref
+      linkend="fig-mse-add-repository-to-lineup" />. When you add a repository
+      to a P2 Lineup, you need to make sure that Nexus Team Edition has a
+      matching P2 Proxy repository.</para>
 
       <figure id="fig-mse-add-repository-to-lineup">
         <title>Add a Repository to a P2 Lineup</title>
@@ -129,7 +226,13 @@
         </mediaobject>
       </figure>
 
-      <para></para>
+      <para>Once you are finished configuring you new P2 Lineup in the Lineup
+      Editor shown in <xref linkend="fig-mse-lineup-editor" /> click Next. You
+      will then see the New MSE Codebase Descriptor dialog shown in <xref
+      linkend="fig-mse-summary-new-p2" />. Clicking Finish will cause Sonatype
+      Studio to publish the new P2 Lineup to Nexus Team Edition and open a new
+      MSE Codebase Overview form with the P2 Lineup field populated with the
+      results of this wizard.</para>
 
       <figure id="fig-mse-summary-new-p2">
         <title>Summary of New P2 Lineup Identifiers</title>
@@ -153,7 +256,11 @@
     <section>
       <title>Creating a New MSE Codebase</title>
 
-      <para></para>
+      <para>If you already have a P2 Lineup configured, and you want to create
+      a new MSE Codebase. You can create a new MSE Codebase directly by going
+      to File -&gt; New, selecting Other.... Expand the Maven Studio for
+      Eclipse folder and then select New Codebase Project as shown in <xref
+      linkend="fig-mse-new-codebase-wizard" />.</para>
 
       <figure id="fig-mse-new-codebase-wizard">
         <title>Selecting the New Codebase Project Wizard</title>
@@ -321,8 +428,6 @@
         </imageobject>
       </mediaobject>
     </figure>
-
-    <para></para>
   </section>
 
   <section id="mse-codebase-sect-code-info">
@@ -351,7 +456,73 @@
 
         <listitem>
           <para>The Codebase project identifier. This artifact id is used to
-          identify a project.</para>
+          identify a codebase as an Eclipse project. Examples: developers
+          working in the Ecommerce group would materialize a Codebase with an
+          artifactId of "ecommerce".</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Version</term>
+
+        <listitem>
+          <para>A version adheres to the following format: "&lt;Major
+          Version&gt;.&lt;Minor Version&gt;.&lt;Point Release&gt;". Examples:
+          The first version of the "ecommerce" codebase may have a version
+          number "1.0.0". A small update to this codebase would have the
+          version number "1.1.0", and a major revision would have a version of
+          "2.0.0.".</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <variablelist>
+      <varlistentry>
+        <term>Name</term>
+
+        <listitem>
+          <para>This field stores a descriptive name for a codebase.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Description</term>
+
+        <listitem>
+          <para>This field contains a short, paragraph-long description of a
+          codebase.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Image</term>
+
+        <listitem>
+          <para>Every codebase can be associated with a 48x48 icon. Although
+          this icon is not currently displayed by Nexus Team Edition or the
+          MSE Installer, this icon will be visible in the upcoming Maven
+          Studio for Eclipse Catalog feature.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <variablelist>
+      <varlistentry>
+        <term>Homepage</term>
+
+        <listitem>
+          <para>This field contains a URL to the homepage associated with a
+          codebase. This can be a page specific to the project or workgroup
+          which is using this Codebase.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Documentation</term>
+
+        <listitem>
+          <para>This field contains a URL to a documentation page to be
+          associated with a Codebase.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -582,7 +753,7 @@
       template, you would supply the URL listed in the Template URL column to
       the MSE Codebase editor.</para>
 
-      <figure id="mse-fig-codebase-info">
+      <figure id="mse-fig-settings-template">
         <title>Configuring Codebase Information</title>
 
         <mediaobject>
@@ -674,7 +845,12 @@
   <section>
     <title>Configuring Codebase Security</title>
 
-    <para></para>
+    <para>Each Codebase is associated with one or more Security Realms. The
+    MSE Installer stores credentials in secure storage in Security Realms.
+    Create security realms for each resource that requires a separate set of
+    credentials. The Realms section of the Codebase Overview, as shown in
+    <xref linkend="fig-mse-codebase-realms" />, contains the list of all
+    realms used throughout an MSE Codebae.</para>
 
     <figure id="fig-mse-codebase-realms">
       <title>Configuring Codebase Realms</title>
@@ -693,41 +869,11 @@
         </imageobject>
       </mediaobject>
     </figure>
-  </section>
 
-  <section id="mse-codebase-sect-source-tree">
-    <title>Configuring a Source Tree</title>
-
-    <para></para>
-
-    <figure id="fig-mse-source-tree-overview">
-      <title>Configuring an MSE Codebase Source Tree</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-sourcetree-overview.png"
-                     scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-sourcetree-overview.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-  </section>
-
-  <section>
-    <title>Configuring Security Realms</title>
-
-    <para>A security realm is a set of credentials used to access a remote
-    server. If you use the same username and password to access Nexus,
-    Subversion, and other resources in your environment, your custom Codebase
-    would contain a single Security Realm. If you use a different set of
-    credentials to access source control and Nexus, you would configure two
-    Security Realms. </para>
+    <para>To add a new Security Realm to a Codebase, click on the Create...
+    button shown in <xref linkend="fig-mse-codebase-realms" /> and supply a
+    new name for the Security Realm in the dialog shown in <xref
+    linkend="fig-mse-add-security-realm" />.</para>
 
     <figure id="fig-mse-add-security-realm">
       <title>Adding a New Security Realm</title>
@@ -748,34 +894,130 @@
     </figure>
   </section>
 
-  <section>
-    <title>Adding a Maven Profile</title>
+  <section id="mse-codebase-sect-tree">
+    <title>Configuring a Source Tree</title>
 
-    <para></para>
+    <para>Every MSE Codebase can contain one or more Source Trees. A Source
+    Tree is a location in source control containing one or more Maven
+    projects. To illustrate the relationship between a Codebase and a Source
+    Tree, consider the example illustrated in <xref
+    linkend="fig-mse-two-codebases" />. A company has two MSE Codebases: one
+    codebase is used by a team which develops a web application, another
+    codebase is used by a team which develops a client-side application
+    written in Swing. Both teams use a common library, and both teams maintain
+    a separate Subversion repository which contains team-specific code. Each
+    team would have a custom MSE Codebase with two Source Trees, and both of
+    these codebases would include a Source Tree for the Common Library
+    project.</para>
 
-    <figure id="fig-mse-add-maven-profile">
-      <title>Adding a Maven Profile</title>
+    <figure id="fig-mse-two-codebases">
+      <title>Two Codebases with an Overlapping Source Tree</title>
 
       <mediaobject>
         <imageobject role="web">
           <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-add-maven-profile.png"
+                     fileref="figs/web/codebase-source-trees.png" scalefit="1" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/codebase-source-trees.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>To open the Source Tree editor, go to the Codebase Overview, and
+    click on one of the Source Tree tabs below the Codebase Overview as shown
+    in <xref linkend="fig-mse-codebase-overview" />. If there are no Source
+    Trees to edit, create a Source Tree by following the directions in <xref
+    linkend="mse-codebase-sect-source-tree" />. The Source Tree editor is
+    shown in <xref linkend="fig-mse-source-tree-overview" />.</para>
+
+    <figure id="fig-mse-source-tree-overview">
+      <title>Configuring an MSE Codebase Source Tree</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata contentdepth="100%"
+                     fileref="figs/web/mse-codebase-sourcetree-overview.png"
                      scalefit="1" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/mse-codebase-add-maven-profile.pdf"
+                     fileref="figs/print/mse-codebase-sourcetree-overview.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
+
+    <section>
+      <title>Adding a Maven Profile</title>
+
+      <para>The Source Tree editor allows you to add a Maven Profile which
+      will be made active for every project in a particular Source Tree. To
+      add a new Maven Profile to a Source Tree, click on the Create button in
+      th Profiles section of the Source Tree Overview shown in <xref
+      linkend="fig-mse-source-tree-overview" />. Once you click create, type
+      in the name of the profile you want activated into the dialog shown in
+      <xref linkend="fig-mse-add-maven-profile" />.</para>
+
+      <figure id="fig-mse-add-maven-profile">
+        <title>Adding a Maven Profile</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-codebase-add-maven-profile.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-codebase-add-maven-profile.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+
+    <section>
+      <title>Adding a New Feed URL</title>
+
+      <para>The Source Tree editor allows you to add feeds which will be made
+      available to developers working with this materialized MSE Codebase. To
+      add a new Feed URL, click on Create in the Feed section of the Source
+      Tree Overview shown in <xref linkend="fig-mse-source-tree-overview" />.
+      </para>
+
+      <figure id="fig-mse-add-feed-url">
+        <title>Adding a New Feed URL</title>
+
+        <mediaobject>
+          <imageobject role="web">
+            <imagedata contentdepth="100%"
+                       fileref="figs/web/mse-codebase-add-feed-url.png"
+                       scalefit="1" />
+          </imageobject>
+
+          <imageobject role="print">
+            <imagedata align="center"
+                       fileref="figs/print/mse-codebase-add-feed-url.pdf"
+                       scalefit="0" width="100%" />
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
   </section>
 
   <section>
     <title>Publishing an MSE Codebase to Nexus Team Edition</title>
 
-    <para></para>
+    <para>An MSE Codebase is published to Nexus Team Edition where it is then
+    made available to clients for materialization. To publish an MSE Codebase,
+    open the Codebase Overview and click on the Publish button shown in <xref
+    linkend="fig-mse-codebase-publish-button" />.</para>
 
     <figure id="fig-mse-codebase-publish-button">
       <title>Codebase Publish Button</title>
@@ -795,7 +1037,13 @@
       </mediaobject>
     </figure>
 
-    <para></para>
+    <para>Clicking the Publish button will show the Publish Codebase
+    Descriptor dialog shown in <xref
+    linkend="fig-mse-publish-codebase-dialog" />. This dialog contains the URL
+    and credentials that Maven Studio for Eclipse will use to connect to Nexus
+    Team Edition. Clicking on the Publish button in this dialog will then
+    cause Maven Studio for Eclipse to connect to Nexus Team Edition and
+    transfer the codebase to Nexus Team Edition.</para>
 
     <figure id="fig-mse-publish-codebase-dialog">
       <title>Publish Codebase Dialog</title>
@@ -810,30 +1058,6 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/print/mse-codebase-publish-dialog.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-  </section>
-
-  <section>
-    <title>Adding a New Feed URL</title>
-
-    <para></para>
-
-    <figure id="fig-mse-add-feed-url">
-      <title>Adding a New Feed URL</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata contentdepth="100%"
-                     fileref="figs/web/mse-codebase-add-feed-url.png"
-                     scalefit="1" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/mse-codebase-add-feed-url.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
