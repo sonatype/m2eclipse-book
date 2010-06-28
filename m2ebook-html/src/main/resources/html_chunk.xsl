@@ -63,11 +63,11 @@
         <xsl:if test="name(preceding-sibling::*[1]) = 'author'">
             <xsl:text>, </xsl:text>
         </xsl:if>
-        <span class="{name(.)}">
+        <div class="{name(.)}">
             <xsl:call-template name="person.name"/> 
-            (<xsl:value-of select="affiliation"/>)
+            <!-- (<xsl:value-of select="affiliation"/> -->
             <xsl:apply-templates mode="titlepage.mode" select="./contrib"/>
-        </span>
+        </div>
     </xsl:template>
     <xsl:template match="authorgroup" mode="titlepage.mode">
         <div class="{name(.)}">
