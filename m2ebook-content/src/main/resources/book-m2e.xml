@@ -15,6 +15,8 @@
       <surname>Sonatype, Inc.</surname>
     </author>
 
+    <authorgroup>
+
     <author>
       <surname>O'Brien</surname>
 
@@ -100,7 +102,7 @@
         <orgname>${project.organization.name}</orgname>
       </affiliation>
     </editor>
-
+    </authorgroup>
     <copyright>
       <year>2010</year>
 

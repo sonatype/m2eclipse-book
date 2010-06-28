@@ -90,7 +90,22 @@ div#main h3.author {
          margin-bottom:  0px;
 }
 
+div#main h3.editor {
+         font-size: 1.0em;  
+         margin-bottom:  0px;
+}
+
 .author {       
+        float:  left;
+        margin-left:  10px;
+}
+
+.editedby {
+        float:  left;
+        margin-left:  10px;
+}
+
+.editor {       
         float:  left;
         margin-left:  10px;
 }
@@ -108,5 +123,6 @@ div#main h3.author {
 }
 
 .copyright {
+   float: left;
    margin-left: 50px;
 }

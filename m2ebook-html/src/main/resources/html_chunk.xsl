@@ -60,9 +60,13 @@
         procedure before
     </xsl:param>
     <xsl:template match="author" mode="titlepage.mode">
-        <xsl:if test="name(preceding-sibling::*[1]) = 'author'">
-            <xsl:text>, </xsl:text>
-        </xsl:if>
+        <div class="{name(.)}">
+            <xsl:call-template name="person.name"/> 
+            <!-- (<xsl:value-of select="affiliation"/> -->
+            <xsl:apply-templates mode="titlepage.mode" select="./contrib"/>
+        </div>
+    </xsl:template>
+    <xsl:template match="editor" mode="titlepage.mode">
         <div class="{name(.)}">
             <xsl:call-template name="person.name"/> 
             <!-- (<xsl:value-of select="affiliation"/> -->
