@@ -1,62 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+"http://www.sonatype.com/tmp/docbook/xml/4.5/docbookx.dtd">
 <chapter id="installing">
   <title>Installing m2eclipse</title>
 
-  <section id="installing-sect-intro">
-    <title>Introduction</title>
+  <section id="installing-sect-eclipse">
+    <title>Installing the Eclipse IDE</title>
 
-    <para>To install the m2Eclipse plugin, you will need to install some
-    prerequisites. You will need to be running Eclipse 3.2 or higher,
-    <acronym>JDK</acronym> 1.4 or higher, and you will also need to make sure
-    that Eclipse is running on a <acronym>JDK</acronym> and not a
-    <acronym>JRE</acronym>. Once you have Eclipse and a compatible
-    <acronym>JDK</acronym>, you will need to install two Eclipse plugins:
-    Subclipse and Mylyn.</para>
+    <para>Sonatype recommends installing m2eclipse on Eclipse 3.5, and to use
+    m2eclipse you will need to install the JDK. To download an Eclipse IDE
+    distribution:<orderedlist>
+        <listitem>
+          <para>Go to <ulink
+          url="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/</ulink>
+          in a web browser.</para>
+        </listitem>
+
+        <listitem>
+          <para>Download an Eclipse distribution. Note: If you want to use the
+          m2eclipse WTP integration, download the Eclipse IDE for JavaEE
+          Developers distribution.</para>
+        </listitem>
+
+        <listitem>
+          <para>Install Eclipse - for more information about installing the
+          Eclipse IDE, see the <ulink
+          url="http://wiki.eclipse.org/Eclipse/Installation">Eclipse
+          Wiki</ulink>.</para>
+        </listitem>
+      </orderedlist></para>
+  </section>
+
+  <section id="installing-sect-install-m2eclipse">
+    <title>Installing m2eclipse Core Components</title>
+
+    <para>To install m2eclipse, use the following Eclipse update site to
+    install the core of the m2eclipse plugin. This Core update site contains a
+    single component: "Maven Integration for Eclipse (Required)". When you
+    install this component you will be installing all of the core Wizards, the
+    POM Editor, Maven Repository integration, and Maven
+    integration:<itemizedlist>
+        <listitem>
+          <para>m2eclipse Plugin: <ulink
+          url="${core.update.site}">${core.update.site}</ulink></para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>To install this plugin in the Eclipse IDE:</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Select Help &gt; Install New Software. This should display the
+        "Install" dialog.</para>
+      </listitem>
+
+      <listitem>
+        <para>Paste the Update Site URL into the field named "Work with:" and
+        press Enter. Pressing Enter should cause Eclipse to update list of
+        available plugins and components.</para>
+      </listitem>
+
+      <listitem>
+        <para>Choose the component listed under m2eclipse: "Maven Integration
+        for Eclipse (Required)".</para>
+      </listitem>
+
+      <listitem>
+        <para>Click Next. Eclipse will then check to see if there are any
+        issues which would prevent a successful installation.</para>
+      </listitem>
+
+      <listitem>
+        <para>Click Next and agree to the terms of the Eclipse Public License
+        v1.0.</para>
+      </listitem>
+
+      <listitem>
+        <para>Click Finish to begin the installation process.</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Eclipse will then download and install the necessary components.
+    Once the installation process is finished, Eclipse will ask you if you
+    want to restart the IDE. Sonatype strongly recommends that you restart
+    your IDE after installing m2eclipse.</para>
+
+    <warning>
+      <para>You cannot upgrade from m2eclipse 0.9.8 or m2eclipse 0.9.9 to
+      m2eclipse 0.10.0. If you are running m2eclipse 0.9.8 or 0.9.9 you must
+      either uninstall m2eclipse from your Eclipse installation or start with
+      a fresh installation of Eclipse.</para>
+    </warning>
+
+    <para>If you've installed the plugin successfully, you should see a Maven
+    option in the list of preference categories when you go to
+    <guiicon>Window</guiicon>,
+    <guimenuitem>Preferences...</guimenuitem>.</para>
+  </section>
+
+  <section>
+    <title>Installing m2eclipse Extras</title>
+
+    <para>In addition to the core m2eclipse components, the following optional
+    components are available from a separate update site. If you plan to use
+    m2eclipse to materialize projects from Subversion or CVS, integrate Maven
+    with the Eclipse Web Tools Project (WTP), or use the m2eclipse Mylyn
+    integration you will need to install the following, extra
+    components:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Maven SCM Integration</para>
+      </listitem>
+
+      <listitem>
+        <para>Maven SCM handler for Team/CVS</para>
+      </listitem>
+
+      <listitem>
+        <para>Maven SCM handler for Subclipse</para>
+      </listitem>
+
+      <listitem>
+        <para>Maven issue tracking configurator for Mylyn 3.x</para>
+      </listitem>
+
+      <listitem>
+        <para>Maven Integration for WTP</para>
+      </listitem>
+
+      <listitem>
+        <para>M2Eclipse Extensions Development Support</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>To install optional m2eclipse components, use the m2eclipse Extras
+    update site. This update site contains the following m2eclipse
+    components:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>m2eclipse Extras Update Site: <ulink
+        url="${extras.update.site}">${extras.update.site}</ulink></para>
+      </listitem>
+    </itemizedlist>
   </section>
 
   <section id="installing-sect-prereq">
-    <title>Installing Prerequisites</title>
+    <title>Installing Optional Prerequisites</title>
 
-    <para>You can install these prerequisites when you install m2eclipse, just
-    add a new remote update site to Eclipse for each of the prerequisite
-    components. To install these prerequisites, go to <guiicon>Help</guiicon>,
-    <guisubmenu>Software Updates</guisubmenu>, <guimenuitem>Find and
-    Install...</guimenuitem>. Selecting this menu item will load the
-    Install/Update dialog box. Choose the "Search for new features to install"
-    option and click <guibutton>Next</guibutton>. You will then be presented
-    with a list of "Update sites to visit". Click <guibutton>New Remote
-    Site...</guibutton>, and add a new update site for each new prerequisite.
-    Add a new remote site for each plugin and then make sure that the remote
-    site is selected. After you click <guibutton>Finish</guibutton>, Eclipse
-    will then ask you to select plugins components to install. Select the
-    components you want to install and Eclipse will download, install, and
-    configure your plugins.</para>
+    <para>Several of the extra components listed in the previous section
+    require third-party plugins to be installed prior to installation. You can
+    install these prerequisites when you install m2eclipse, just add a new
+    remote update site to Eclipse for each of the prerequisite components.
+    </para>
 
-    <para>Note that if you are using a recent build of Eclipse 3.4 (Ganymede)
-    your plugin installation experience may be slightly different. In
-    Ganymede, you will select <guimenu>Help</guimenu>, <guimenu>Help</guimenu>
-    which will load the "Software Updates and Add-ons" dialog. In this dialog,
-    choose the Available Software panel and click on <guibutton>Add
-    Site...</guibutton> which will load the simple "Add Site" dialog. Enter
-    the <acronym>URL</acronym> of the update site you wish to add and click
-    <guibutton>OK</guibutton>. In the "Software Updates and Add-ons" dialog,
-    the available plugins from an update site will appear as soon as the site
-    is added. You can then select the modules you want to install and click
-    the <guibutton>Install... </guibutton>button. Eclipse will then resolve
-    all the dependencies for the selected plugins, and ask you to agree to the
-    plugin license. After Eclipse installs new plugins, it will likely ask you
-    for permission to restart.</para>
+    <para>To install these prerequisites, select <guimenu>Help</guimenu>,
+    <guimenu>Install New Software...</guimenu> which will load the "Software
+    Updates and Add-ons" dialog. In this dialog, choose the Available Software
+    panel and click on <guibutton>Add Site...</guibutton> which will load the
+    simple "Add Site" dialog. Enter the <acronym>URL</acronym> of the update
+    site you wish to add and click <guibutton>OK</guibutton>. In the "Software
+    Updates and Add-ons" dialog, the available plugins from an update site
+    will appear as soon as the site is added. You can then select the modules
+    you want to install and click the <guibutton>Install...
+    </guibutton>button. Eclipse will then resolve all the dependencies for the
+    selected plugins, and ask you to agree to the plugin license. After
+    Eclipse installs new plugins, you should restart the IDE.</para>
 
     <section id="installing-sect-install-subclipse">
       <title>Installing Subclipse</title>
 
-      <para>To install Subclipse, use the Eclipse plugin update site listed
-      below.<itemizedlist>
+      <para>When you install Subclipse, you will need to make a decision about
+      Subversion compatibility. If you are using Subversion 1.5.x client
+      features, you will need to install Subclipse version 1.4. If you are
+      using Subversion 1.6.x client features, you will need to install
+      Subclipse version 1.6. </para>
+
+      <para>To install Subclipse, use one of the Eclipse plugin update sites
+      listed below.<itemizedlist>
           <listitem>
-            <para>Subclipse 1.2: <ulink
-            url="http://subclipse.tigris.org/update_1.2.x">http://subclipse.tigris.org/update_1.2.x</ulink></para>
+            <para>Subclipse 1.4 (for Subversion 1.5 compatibility): <ulink
+            url="http://subclipse.tigris.org/update_1.4.x">http://subclipse.tigris.org/update_1.4.x</ulink></para>
+          </listitem>
+
+          <listitem>
+            <para>Subclipse 1.6 (for Subversion 1.6 compatibility): <ulink
+            url="http://subclipse.tigris.org/update_1.6.x">http://subclipse.tigris.org/update_1.6.x</ulink></para>
           </listitem>
         </itemizedlist></para>
 
@@ -69,24 +199,18 @@
     <section id="installing-sect-install-mylyn">
       <title>Installing Mylyn</title>
 
-      <para>To install JIRA integration with Mylyn, add the Mylyn extras
-      Eclipse update URL, you'll want to do this if your organization uses
-      <ulink url="http://www.atlassian.com/software/jira/">Atlassian's
+      <para>To install JIRA or Trac integration with Mylyn, add the Mylyn
+      extras Eclipse update URL, you'll want to do this if your organization
+      uses <ulink url="http://www.atlassian.com/software/jira/">Atlassian's
       JIRA</ulink> for issue tracking. To install Mylyn use the following
       update sites:<itemizedlist>
           <listitem>
-            <para>Mylyn (Eclipse 3.3): <ulink
-            url="http://download.eclipse.org/tools/mylyn/update/e3.3">http://download.eclipse.org/tools/mylyn/update/e3.3
-            </ulink></para>
-          </listitem>
-
-          <listitem>
-            <para>Mylyn (Eclipse 3.4): <ulink
+            <para>Mylyn (Eclipse 3.4, 3.5, and 3.6M4): <ulink
             url="http://download.eclipse.org/tools/mylyn/update/e3.4">http://download.eclipse.org/tools/mylyn/update/e3.4</ulink></para>
           </listitem>
 
           <listitem>
-            <para>Mylyn Extras (JIRA Support): <ulink
+            <para>Mylyn Extras (JIRA and Trac Support): <ulink
             url="http://download.eclipse.org/tools/mylyn/update/extras">http://download.eclipse.org/tools/mylyn/update/extras</ulink></para>
           </listitem>
         </itemizedlist></para>
@@ -96,85 +220,18 @@
       url="http://www.eclipse.org/mylyn/">http://www.eclipse.org/mylyn/</ulink>.</para>
     </section>
 
-    <section id="installing-sect-install-aspectj">
-      <title>Installing AspectJ Development Tools (AJDT)</title>
-
-      <para>If you are installing the 0.9.4 release of m2eclipse, you may also
-      want to install both the Web Tools Platform (<acronym>WTP</acronym>) and
-      the AspectJ Development Tools (<acronym>AJDT</acronym>). To install the
-      <acronym>AJDT</acronym> use one of the following update URLs in
-      Eclipse:<itemizedlist>
-          <listitem>
-            <para>AJDT (Eclipse 3.3): <ulink
-            url="http://download.eclipse.org/tools/ajdt/33/update">http://download.eclipse.org/tools/ajdt/33/update</ulink></para>
-          </listitem>
-
-          <listitem>
-            <para>AJDT (Eclipse 3.4): <ulink
-            url="http://download.eclipse.org/tools/ajdt/34/dev/update">http://download.eclipse.org/tools/ajdt/34/dev/update</ulink></para>
-          </listitem>
-        </itemizedlist></para>
-
-      <para>For more information about the AJDT project, see the AJDT
-      project's web site at <ulink
-      url="http://www.eclipse.org/ajdt/">http://www.eclipse.org/ajdt/</ulink>.</para>
-    </section>
-
     <section id="installing-sect-install-wtp">
       <title>Installing the Web Tools Platform (WTP)</title>
 
-      <para>To install the Web Tools Platform (<acronym>WTP</acronym>). Use
-      one of the following update URLs in Eclipse, or just look for the Web
-      Tools Project in the Discovery Site which should already be in your
-      Eclipse remote update sites list.<itemizedlist>
-          <listitem>
-            <para>WTP: <ulink
-            url="http://download.eclipse.org/webtools/updates/">http://download.eclipse.org/webtools/updates/</ulink></para>
-          </listitem>
-        </itemizedlist></para>
+      <para>To install the Web Tools Platform (<acronym>WTP</acronym>).
+      Install the "Eclipse IDE for Java EE Developers" from <ulink
+      url="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/</ulink>,
+      or download a WTP release from <ulink
+      url="http://download.eclipse.org/webtools/downloads/">http://download.eclipse.org/webtools/downloads/</ulink>.</para>
 
       <para>For more information about the Web Tools Platform, see the Web
       Tools Platform project's web site at <ulink
       url="http://www.eclipse.org/webtools/">http://www.eclipse.org/webtools/</ulink>.</para>
     </section>
-  </section>
-
-  <section id="installing-sect-install-m2eclipse">
-    <title>Installing m2eclipse</title>
-
-    <para>Once you've installed the prerequisites, you can install the
-    m2eclipse plugin from the following Eclipse update URL:<itemizedlist>
-        <listitem>
-          <para>m2eclipse Plugin: <ulink
-          url="http://m2eclipse.sonatype.org/update/">http://m2eclipse.sonatype.org/update/</ulink></para>
-        </listitem>
-      </itemizedlist></para>
-
-    <para>If you would like to install the latest snapshot development version
-    of the plugin, you should use the update-dev <acronym>URL</acronym>
-    instead of the previous <acronym>URL</acronym>:<itemizedlist>
-        <listitem>
-          <para>m2eclipse Plugin (Development Snapshot): <ulink
-          url="http://m2eclipse.sonatype.org/update-dev/">http://m2eclipse.sonatype.org/update-dev/</ulink></para>
-        </listitem>
-      </itemizedlist></para>
-
-    <para>To install m2eclipse, just add a the appropriate update site for
-    m2eclipse. Go to <guiicon>Help</guiicon>, <guisubmenu>Software
-    Updates</guisubmenu>, <guimenuitem>Find and Install...</guimenuitem>.
-    Selecting this menu item will load the Install/Update dialog box. Choose
-    the "Search for new features to install" option and click
-    <guibutton>Next</guibutton>. You will then be presented with a list of
-    "Update sites to visit". Click <guibutton>New Remote Site...</guibutton>,
-    and add a new update site for m2eclipse. Add a new remote site for
-    m2eclipse and then make sure that the remote site is selected. After you
-    click <guibutton>Finish</guibutton>, Eclipse will then ask you to select
-    plugins components to install. Select the components you want to install
-    and Eclipse will download, install, and configure m2eclipse.</para>
-
-    <para>If you've installed the plugin successfully, you should see a Maven
-    option in the list of preferences options when you go to
-    <guiicon>Window</guiicon>,
-    <guimenuitem>Preferences...</guimenuitem>.</para>
   </section>
 </chapter>

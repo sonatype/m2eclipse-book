@@ -16,100 +16,100 @@
     </author>
 
     <authorgroup>
+      <author>
+        <surname>O'Brien</surname>
 
-    <author>
-      <surname>O'Brien</surname>
+        <firstname>Tim</firstname>
+      </author>
 
-      <firstname>Tim</firstname>
-    </author>
+      <author>
+        <surname>Van Zyl</surname>
 
-    <author>
-      <surname>Van Zyl</surname>
+        <firstname>Jason</firstname>
+      </author>
 
-      <firstname>Jason</firstname>
-    </author>
+      <author>
+        <surname>Bentmann</surname>
 
-    <author>
-      <surname>Bentmann</surname>
+        <firstname>Benjamin</firstname>
+      </author>
 
-      <firstname>Benjamin</firstname>
-    </author>
+      <author>
+        <surname>Fedorenko</surname>
 
-    <author>
-      <surname>Fedorenko</surname>
+        <firstname>Igor</firstname>
+      </author>
 
-      <firstname>Igor</firstname>
-    </author>
+      <author>
+        <surname>Fox</surname>
 
-    <author>
-      <surname>Fox</surname>
+        <firstname>Brian</firstname>
+      </author>
 
-      <firstname>Brian</firstname>
-    </author>
+      <author>
+        <surname>Kleint</surname>
 
-    <author>
-      <surname>Kleint</surname>
+        <firstname>Milos</firstname>
+      </author>
 
-      <firstname>Milos</firstname>
-    </author>
+      <author>
+        <surname>Lynch</surname>
 
-    <author>
-      <surname>Lynch</surname>
+        <firstname>Peter</firstname>
+      </author>
 
-      <firstname>Peter</firstname>
-    </author>
+      <author>
+        <surname>Piggott</surname>
 
-    <author>
-      <surname>Piggott</surname>
+        <firstname>Matthew</firstname>
+      </author>
 
-      <firstname>Matthew</firstname>
-    </author>
+      <author>
+        <surname>Platonoff</surname>
 
-    <author>
-      <surname>Platonoff</surname>
+        <firstname>Dmitry</firstname>
+      </author>
 
-      <firstname>Dmitry</firstname>
-    </author>
+      <author>
+        <surname>Rapicault</surname>
 
-    <author>
-      <surname>Rapicault</surname>
+        <firstname>Pascal</firstname>
+      </author>
 
-      <firstname>Pascal</firstname>
-    </author>
+      <author>
+        <surname>Seddon</surname>
 
-    <author>
-      <surname>Seddon</surname>
+        <firstname>Rich</firstname>
+      </author>
 
-      <firstname>Rich</firstname>
-    </author>
+      <author>
+        <surname>Tatavu</surname>
 
-    <author>
-      <surname>Tatavu</surname>
+        <firstname>Vlad</firstname>
+      </author>
 
-      <firstname>Vlad</firstname>
-    </author>
+      <author>
+        <surname>Yocum</surname>
 
-    <author>
-      <surname>Yocum</surname>
+        <firstname>Dan</firstname>
+      </author>
 
-      <firstname>Dan</firstname>
-    </author>
+      <editor>
+        <othername>Tim O'Brien</othername>
 
-    <editor>
-      <othername>Tim O'Brien</othername>
-
-      <affiliation>
-        <orgname>${project.organization.name}</orgname>
-      </affiliation>
-    </editor>
+        <affiliation>
+          <orgname>${project.organization.name}</orgname>
+        </affiliation>
+      </editor>
     </authorgroup>
+
     <copyright>
       <year>2010</year>
 
       <holder>Sonatype, Inc.</holder>
     </copyright>
 
-    <date>2010-06-01</date>
+    <date>2010-07-05</date>
 
     <publisher>
       <publishername>Sonatype, Inc.</publishername>

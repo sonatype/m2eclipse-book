@@ -7,9 +7,9 @@
   <section id="installing-sect-eclipse">
     <title>Installing the Eclipse IDE</title>
 
-    <para>Sonatype recommends installing m2eclipse on Eclipse 3.5, and to use
-    m2eclipse you will need to install the JDK. To download an Eclipse IDE
-    distribution:<orderedlist>
+    <para>Sonatype recommends installing m2eclipse on Eclipse 3.5 or Eclipse
+    3.6, and to make use of m2eclipse you will need to install the JDK. To
+    download an Eclipse IDE distribution:<orderedlist>
         <listitem>
           <para>Go to <ulink
           url="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/</ulink>
@@ -86,10 +86,10 @@
     your IDE after installing m2eclipse.</para>
 
     <warning>
-      <para>You cannot upgrade from m2eclipse 0.9.8 or m2eclipse 0.9.9 to
-      m2eclipse 0.10.0. If you are running m2eclipse 0.9.8 or 0.9.9 you must
-      either uninstall m2eclipse from your Eclipse installation or start with
-      a fresh installation of Eclipse.</para>
+      <para>You cannot upgrade from m2eclipse 0.9 to m2eclipse 0.10. If you
+      are running m2eclipse 0.9.8 or 0.9.9 you must either uninstall m2eclipse
+      from your Eclipse installation or start with a fresh installation of
+      Eclipse.</para>
     </warning>
 
     <para>If you've installed the plugin successfully, you should see a Maven
@@ -152,8 +152,8 @@
     <para>Several of the extra components listed in the previous section
     require third-party plugins to be installed prior to installation. You can
     install these prerequisites when you install m2eclipse, just add a new
-    remote update site to Eclipse for each of the prerequisite components.
-    </para>
+    remote update site to Eclipse for each of the prerequisite
+    components.</para>
 
     <para>To install these prerequisites, select <guimenu>Help</guimenu>,
     <guimenu>Install New Software...</guimenu> which will load the "Software
@@ -175,7 +175,7 @@
       Subversion compatibility. If you are using Subversion 1.5.x client
       features, you will need to install Subclipse version 1.4. If you are
       using Subversion 1.6.x client features, you will need to install
-      Subclipse version 1.6. </para>
+      Subclipse version 1.6.</para>
 
       <para>To install Subclipse, use one of the Eclipse plugin update sites
       listed below.<itemizedlist>
