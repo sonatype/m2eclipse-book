@@ -236,140 +236,52 @@
   </section>
 
   <section>
-    <title></title>
+    <title>Installing m2eclipse with the Eclipse Marketplace</title>
 
-    <para></para>
+    <para>The Eclipse Marketplace makes it easy to install m2eclipse and
+    m2eclipse (Extras) in Eclipse 3.6 (Helios). To open the Eclipse
+    Marketplace, go to the Eclipse Help menu and select Eclipse Marketplace...
+    as shown in <xref linkend="fig-install-eclipse-marketplace" />.</para>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-eclipse-marketplace">
+      <title>Opening the Eclipse Marketplace</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-restart-maven-integration.png" />
+          <imagedata fileref="figs/web/install-marketplace.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-restart-maven-integration.pdf"
+                     fileref="figs/print/install-marketplace.pdf" scalefit="0"
+                     width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>The first time you open the Eclipse Marketplace, you will be asked
+    to select a Marketplace. Select the Eclipse Marketplace as shown in <xref
+    linkend="fig-install-select-marketplace" />.</para>
+
+    <figure id="fig-install-select-marketplace">
+      <title>Selecting the Eclipse Marketplace</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/install-select-marketplace.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/install-select-marketplace.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata fileref="figs/web/install-agree-extras-license.png" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/install-agree-extras-license.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata fileref="figs/web/install-restart-extras.png" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/install-restart-extras.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata fileref="figs/web/install-agree-maven-integration-license.png" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/install-agree-maven-integration-license.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata fileref="figs/web/install-uninstall-core.png" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/install-uninstall-core.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata fileref="figs/web/install-select-extras-features.png" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/install-select-extras-features.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata fileref="figs/web/install-ignore-extras-warning.png" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/install-ignore-extras-warning.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
-
-      <mediaobject>
-        <imageobject role="web">
-          <imagedata fileref="figs/web/install-ignore-maven-integration-warning.png" />
-        </imageobject>
-
-        <imageobject role="print">
-          <imagedata align="center"
-                     fileref="figs/print/install-ignore-maven-integration-warning.pdf"
-                     scalefit="0" width="100%" />
-        </imageobject>
-      </mediaobject>
-    </figure>
-
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-selecting-extras-marketplace">
+      <title>Selecting Maven Integration for Eclipse (Extras) from the Eclipse
+      Marketplace</title>
 
       <mediaobject>
         <imageobject role="web">
@@ -384,24 +296,74 @@
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-selecting-extras-components">
+      <title>Selecting m2eclipse (Extras) Components to Install</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-select-maven-integration-features.png" />
+          <imagedata fileref="figs/web/install-select-extras-features.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-select-maven-integration-features.pdf"
+                     fileref="figs/print/install-select-extras-features.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-agree-extras-license">
+      <title>Agreeing to Software License During m2eclipse (Extras)
+      Installation</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/install-agree-extras-license.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/install-agree-extras-license.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <figure id="fig-install-ignore-extras-warning">
+      <title>Ignoring Warning During m2eclipse (Extras) Installation</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/install-ignore-maven-integration-warning.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/install-ignore-maven-integration-warning.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <figure id="fig-install-restart-extras">
+      <title>Restarting Eclipse after m2eclipse (Extras) Installation</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/install-restart-maven-integration.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/install-restart-maven-integration.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <figure id="fig-selecting-m2eclipse-marketplace">
+      <title>Selecting Maven Integration for Eclipse from Eclipse
+      Marketplace</title>
 
       <mediaobject>
         <imageobject role="web">
@@ -416,72 +378,73 @@
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-selecting-core-components">
+      <title>Selecting the Core m2eclipse Feature for Installation</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-restart-subclipse-eclipse.png" />
+          <imagedata fileref="figs/web/install-uninstall-core.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-restart-subclipse-eclipse.pdf"
+                     fileref="figs/print/install-uninstall-core.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-agree-core-license">
+      <title>Agreeing to Software License During m2eclipse
+      Installation</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-ignore-subclipse-warning.png" />
+          <imagedata fileref="figs/web/install-agree-maven-integration-license.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-ignore-subclipse-warning.pdf"
+                     fileref="figs/print/install-agree-maven-integration-license.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-ignore-warning">
+      <title>Ignoring Warning During m2eclipse Installation</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-select-subclipse-features.png" />
+          <imagedata fileref="figs/web/install-ignore-extras-warning.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-select-subclipse-features.pdf"
+                     fileref="figs/print/install-ignore-extras-warning.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-restart-core">
+      <title>Restarting Eclipse after m2eclipse Installation</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-agree-subclipse-license.png" />
+          <imagedata fileref="figs/web/install-restart-extras.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-agree-subclipse-license.pdf"
+                     fileref="figs/print/install-restart-extras.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-subclipse-marketplace">
+      <title>Selecting Subclipse from the Eclipse Marketplace</title>
 
       <mediaobject>
         <imageobject role="web">
@@ -496,40 +459,74 @@
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-subclipse-components">
+      <title>Selecting Subclipse Components to Install</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-uninstall-restart.png" />
+          <imagedata fileref="figs/web/install-select-subclipse-features.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-uninstall-restart.pdf"
+                     fileref="figs/print/install-select-subclipse-features.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-subclipse-license">
+      <title>Agreeing to Subclipse Software License</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-uninstall-extras.png" />
+          <imagedata fileref="figs/web/install-agree-subclipse-license.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-uninstall-extras.pdf"
+                     fileref="figs/print/install-agree-subclipse-license.pdf"
                      scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-subclipse-install-warning">
+      <title>Ignoring the Installation Warning During Subclipse
+      Installation</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/install-ignore-subclipse-warning.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/install-ignore-subclipse-warning.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <figure id="fig-install-subclipse-restart">
+      <title>Restarting Eclipse after Subclipse Installation</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/install-restart-subclipse-eclipse.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/install-restart-subclipse-eclipse.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <figure id="fig-install-select-to-uninstall">
+      <title>Selecting Maven Integration for Eclipse Components to
+      Uninstall</title>
 
       <mediaobject>
         <imageobject role="web">
@@ -544,18 +541,52 @@
       </mediaobject>
     </figure>
 
-    <figure id="fig-creating-new">
-      <title>Creating a New Project with m2eclipse Wizards</title>
+    <figure id="fig-install-selecting-core-components">
+      <title>Selecting Components to Install for Maven Integration for Eclipse
+      Installation</title>
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/install-marketplace.png" />
+          <imagedata fileref="figs/web/install-select-maven-integration-features.png" />
         </imageobject>
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-marketplace.pdf" scalefit="0"
-                     width="100%" />
+                     fileref="figs/print/install-select-maven-integration-features.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <figure id="fig-install-selecting-extras-features-to-uninstall">
+      <title>Selecting Maven Integration for Eclipse (Extras) Features to
+      Uninstall</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/install-uninstall-extras.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/install-uninstall-extras.pdf"
+                     scalefit="0" width="100%" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <figure id="fig-install-restart-uninstall">
+      <title>Restarting Eclipse after Uinstallation</title>
+
+      <mediaobject>
+        <imageobject role="web">
+          <imagedata fileref="figs/web/install-uninstall-restart.png" />
+        </imageobject>
+
+        <imageobject role="print">
+          <imagedata align="center"
+                     fileref="figs/print/install-uninstall-restart.pdf"
+                     scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
