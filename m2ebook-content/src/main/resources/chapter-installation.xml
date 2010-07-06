@@ -31,7 +31,7 @@
       </orderedlist></para>
   </section>
 
-  <section>
+  <section id="install-sect-marketplace">
     <title>Installing m2eclipse in Eclipse 3.6 (Helios) with the Eclipse
     Marketplace</title>
 
