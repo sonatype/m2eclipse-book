@@ -700,10 +700,10 @@
 
     <para>If you are uninstalling "Maven Integration for Eclipse", the Eclipse
     IDE will prompt you to select the feature you wish to uninstall as shown
-    in <xref linkend="fig-install-selecting-core-components" />. Select the
+    in <xref linkend="fig-install-selecting-core-components2" />. Select the
     feature to uninstall, and click on Next to continue.</para>
 
-    <figure id="fig-install-selecting-core-components">
+    <figure id="fig-install-selecting-core-components2">
       <title>Selecting Components to Install for Maven Integration for Eclipse
       Installation</title>
 
