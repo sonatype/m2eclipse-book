@@ -4,7 +4,7 @@
   <artifactId>m2ebook-parent</artifactId>
   <version>1.2-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Developing with Eclipse and Maven</name>
+  <name>Developing with Eclipse and Maven Parent Project</name>
   <description>A book about m2eclipse</description>
   <url>http://m2eclipse.sonatype.org/book</url>
   <organization>

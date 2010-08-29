@@ -7,7 +7,7 @@
   </parent>
   <artifactId>m2ebook-html</artifactId>
   <packaging>jar</packaging>
-  <name>Developing with Eclipse and Maven</name>
+  <name>m2eclipse Book DocBook to HTML Conversion</name>
   <description>A book about m2eclipse</description>
   <build>
 		<resources>

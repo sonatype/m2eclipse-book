@@ -7,7 +7,7 @@
   </parent>
   <artifactId>m2ebook-site</artifactId>
   <packaging>jar</packaging>
-  <name>Developing with Eclipse and Maven</name>
+  <name>m2eclipse Book Sonatype Site Project</name>
   <description>A book about m2eclipse</description>
   <build>
     <plugins>
