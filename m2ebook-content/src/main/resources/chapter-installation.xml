@@ -703,7 +703,7 @@
     in <xref linkend="fig-install-selecting-core-components" />. Select the
     feature to uninstall, and click on Next to continue.</para>
 
-    <figure id="fig-install-selecting-core-components">
+    <figure id="fig-install-selecting-components">
       <title>Selecting Components to Install for Maven Integration for Eclipse
       Installation</title>
 
