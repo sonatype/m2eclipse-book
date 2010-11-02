@@ -152,14 +152,6 @@
 
   <xi:include href="foreword.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-  <part>
-    <title>Sonatype m2eclipse</title>
-
-    <partintro>
-      <para>The first portion of this book deals with the Sonatype m2eclipse
-      plugin.</para>
-    </partintro>
-
     <xi:include href="chapter-introduction.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
 
@@ -183,25 +175,6 @@
 
     <xi:include href="chapter-eclipse.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
-  </part>
-
-  <part>
-    <title>Maven Studio for Eclipse</title>
-
-    <partintro>
-      <para>The second portion of this book deals with Maven Studio for
-      Eclipse.</para>
-    </partintro>
-
-    <xi:include href="chapter-mse-intro.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
-
-    <xi:include href="chapter-mse-quickstart.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
-
-    <xi:include href="chapter-mse-codebases.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
-  </part>
 
   <xi:include href="appendix-license.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
