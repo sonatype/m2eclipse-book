@@ -119,8 +119,7 @@
 
     <abstract>
       <para>Sonatype's m2eclipse plugin provides first-class support for Maven
-      projects in the Eclipse IDE. This book covers m2eclipse as well as
-      Sonatype's Maven Studio for Eclipse.</para>
+      projects in the Eclipse IDE.</para>
     </abstract>
 
     <subjectset>
@@ -152,29 +151,29 @@
 
   <xi:include href="foreword.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    <xi:include href="chapter-introduction.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-introduction.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    <xi:include href="chapter-installation.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-installation.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    <xi:include href="chapter-creating.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-creating.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    <xi:include href="chapter-running.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-running.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    <xi:include href="chapter-preferences.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-preferences.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    <xi:include href="chapter-repository.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-repository.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    <xi:include href="chapter-dependencies.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-dependencies.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    <xi:include href="chapter-eclipse.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="chapter-eclipse.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 
   <xi:include href="appendix-license.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
