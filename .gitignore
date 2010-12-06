@@ -3,3 +3,5 @@ target
 pom.xml~
 .gitignore~
 target/
+*.versionsBackup
+*.orig
