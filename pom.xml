@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.sonatype.m2eclipsebook</groupId>
   <artifactId>m2ebook-parent</artifactId>
-  <version>1.1.1</version>
+  <version>1.2</version>
   <packaging>pom</packaging>
   <name>Developing with Eclipse and Maven Parent Project</name>
   <description>A book about m2eclipse</description>
@@ -17,10 +17,10 @@
     <organization.address>800 W. El Camino Real, Suite 400, Mountain View, CA, 94040</organization.address>
     <organization.slogan>Sonatype: The Maven Company</organization.slogan>
     <organization.logo>http://www.sonatype.com/sites/all/themes/sonatype/images/sonatype_logo.gif</organization.logo>
-    <copyright.year>2010</copyright.year>
+    <copyright.year>2008-2011</copyright.year>
     <core.update.site>http://m2eclipse.sonatype.org/sites/m2e</core.update.site>
     <extras.update.site>http://m2eclipse.sonatype.org/sites/m2e-extras</extras.update.site>
-    <m2eclipse.version>0.10.2</m2eclipse.version>
+    <m2eclipse.version>0.12.0</m2eclipse.version>
     <docbkx-tools.version>2.0.11</docbkx-tools.version>
   </properties>
   <developers>
@@ -175,4 +175,100 @@
       <url>http://repository.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
+<repositories>
+    <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>sonatype-public</id>
+      <name>Sonatype Public</name>
+      <url>http://repository.sonatype.org/content/groups/public</url>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>sonatype-forge</id>
+      <name>Sonatype Forge</name>
+      <url>http://repository.sonatype.org/content/groups/forge</url>
+    </repository>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>Codehaus Snapshots</id>
+      <url>http://snapshots.repository.codehaus.org</url>
+    </repository>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>Central</id>
+      <url>http://repo1.maven.org/maven2</url>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Maven Repository Switchboard</name>
+      <url>http://repo1.maven.org/maven2</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>sonatype-public</id>
+      <name>Sonatype Public</name>
+      <url>http://repository.sonatype.org/content/groups/public</url>
+    </pluginRepository>
+    <pluginRepository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>sonatype-forge</id>
+      <name>Sonatype Forge</name>
+      <url>http://repository.sonatype.org/content/groups/forge</url>
+    </pluginRepository>
+    <pluginRepository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>Codehaus Snapshots</id>
+      <url>http://snapshots.repository.codehaus.org</url>
+    </pluginRepository>
+    <pluginRepository>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>Central</id>
+      <url>http://repo1.maven.org/maven2</url>
+    </pluginRepository>
+    <pluginRepository>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Maven Plugin Repository</name>
+      <url>http://repo1.maven.org/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
+
 </project>
