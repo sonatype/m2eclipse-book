@@ -44,10 +44,13 @@
       </listitem>
 
       <listitem>
-        <para>Updated the Book's copyright to 2011. (MEBOOK-74 and MEBOOK-82)</para>
+        <para>Updated the Book's copyright to 2011. (MEBOOK-74 and
+        MEBOOK-82)</para>
+      </listitem>
+
+      <listitem>
+        <para>Update version of m2eclipse to 0.12.0. (MEBOOK-84)</para>
       </listitem>
     </itemizedlist>
   </section>
-
-
 </preface>

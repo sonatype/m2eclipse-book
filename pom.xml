@@ -20,7 +20,7 @@
     <copyright.year>2008-2011</copyright.year>
     <core.update.site>http://m2eclipse.sonatype.org/sites/m2e</core.update.site>
     <extras.update.site>http://m2eclipse.sonatype.org/sites/m2e-extras</extras.update.site>
-    <m2eclipse.version>0.10.2</m2eclipse.version>
+    <m2eclipse.version>0.12.0</m2eclipse.version>
     <docbkx-tools.version>2.0.11</docbkx-tools.version>
   </properties>
   <developers>
