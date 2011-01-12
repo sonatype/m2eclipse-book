@@ -8,6 +8,19 @@
   chronological order starting with ${project.version}.</para>
 
   <section>
+    <title>Changes in Edition 1.1</title>
+
+    <para>The following changes were introduced in Edition 1.1 in July,
+    2010:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Added <xref linkend="install-sect-marketplace" /></para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
     <title>Changes in Edition 0.8</title>
 
     <para>The following changes were introduced in Edition 0.8 on February 15,
