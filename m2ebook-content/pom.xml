@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.sonatype.m2eclipsebook</groupId>
@@ -34,26 +35,11 @@
         <version>1.0</version>
         <extensions>true</extensions>
         <executions>
-	  <!--        	<execution>
-        		<id>validate-chapters</id>
-        		<phase>test</phase>
-        		<goals>
-        		  <goal>validate-chapter-ids</goal>
-        		</goals>
-            </execution> -->
-<!--          <execution>
-            <id>inject-examples</id>
-            <phase>process-classes</phase>
-            <goals>
-              <goal>inject-examples</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>wrappify</id>
-            <goals>
-              <goal>wrappify</goal>
-            </goals>
-          </execution> -->
+          <!-- <execution> <id>validate-chapters</id> <phase>test</phase> 
+            <goals> <goal>validate-chapter-ids</goal> </goals> </execution> -->
+          <!-- <execution> <id>inject-examples</id> <phase>process-classes</phase> 
+            <goals> <goal>inject-examples</goal> </goals> </execution> <execution> <id>wrappify</id> 
+            <goals> <goal>wrappify</goal> </goals> </execution> -->
         </executions>
       </plugin>
       <plugin>
