@@ -5,3 +5,6 @@ pom.xml~
 target/
 *.versionsBackup
 *.orig
+.settings
+.project
+.classpath
