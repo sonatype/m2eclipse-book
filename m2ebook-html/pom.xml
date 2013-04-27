@@ -60,10 +60,10 @@
           <chunkedOutput>true</chunkedOutput>
           <chunkSectionDepth>1</chunkSectionDepth>
           <postProcess>
-            <copy todir="${project.build.directory}/html/images">
+            <copy todir="${project.build.directory}/html/book-m2e/images">
               <fileset dir="${basedir}/src/main/resources/images" />
             </copy>
-            <copy todir="${project.build.directory}/html/figs/web">
+            <copy todir="${project.build.directory}/html/book-m2e/figs/web">
               <fileset dir="target/docbook/figs/web" />
             </copy>
           </postProcess>
