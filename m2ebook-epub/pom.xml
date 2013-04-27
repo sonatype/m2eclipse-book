@@ -39,14 +39,14 @@
 				<groupId>com.agilejava.docbkx</groupId>
 				<artifactId>docbkx-maven-plugin</artifactId>
 				<version>${docbkx-tools.version}</version>
-				<dependencies>
+<!-- 				<dependencies>
 					<dependency>
 						<groupId>docbook</groupId>
 						<artifactId>docbook-xml</artifactId>
 						<version>4.5</version>
 					</dependency>
 				</dependencies>
-				<executions>
+ -->				<executions>
 					<execution>
 						<id>generate-epub</id>
 						<phase>compile</phase>

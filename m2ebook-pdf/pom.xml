@@ -39,7 +39,7 @@
 			<plugin>
 				<groupId>com.agilejava.docbkx</groupId>
 				<artifactId>docbkx-fop-support</artifactId>
-				<version>2.0.9</version>
+				<version>${docbkx-tools.version}</version>
 				<executions>
 					<execution>
 						<phase>generate-resources</phase>
@@ -55,8 +55,8 @@
 			<plugin>
 				<groupId>com.agilejava.docbkx</groupId>
 				<artifactId>docbkx-maven-plugin</artifactId>
-				<version>2.0.9</version>
-				<dependencies>
+				<version>${docbkx-tools.version}</version>
+<!-- 				<dependencies>
 					<dependency>
 						<groupId>docbook</groupId>
 						<artifactId>docbook-xml</artifactId>
@@ -80,7 +80,7 @@
 						<classifier>dev</classifier>
 					</dependency>
 				</dependencies>
-				<executions>
+ -->				<executions>
 					<execution>
 						<id>generate-pdf</id>
 						<phase>compile</phase>
