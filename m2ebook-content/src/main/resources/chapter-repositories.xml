@@ -24,7 +24,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_console.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -58,7 +58,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_run-menu.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -80,8 +80,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/web/eclipse_run-config.png" scalefit="0"
-                     width="100%" />
+                     fileref="figs/web/eclipse_run-config.png" 
+                     scale="50"/>
         </imageobject>
       </mediaobject>
     </figure>
@@ -121,7 +121,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_available-features.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -197,7 +197,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/eclipse_add-manual-depend.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -221,7 +221,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/eclipse_updating-depends.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -244,7 +244,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/eclipse_add-depend3.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -391,7 +391,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/eclipse_search-pom.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -421,7 +421,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/eclipse_search-class.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -478,7 +478,7 @@
 
           <imageobject role="print">
             <imagedata align="center" fileref="figs/web/eclipse_indexes.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -499,7 +499,7 @@
 
           <imageobject role="print">
             <imagedata align="center" fileref="figs/web/eclipse_index2.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -600,7 +600,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-parent.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -632,7 +632,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-effective.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -683,7 +683,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-dependencies.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -707,7 +707,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-build.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -772,7 +772,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-depend-tree.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -808,7 +808,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-depend-tree-locate.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -839,7 +839,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-graph.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -862,7 +862,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-graph-radial.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -954,7 +954,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_preference-goals.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -989,7 +989,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_preferences2.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1035,7 +1035,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_decorate.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1058,7 +1058,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_decorate2.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1079,7 +1079,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_decorate3.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1153,7 +1153,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_show-view-other.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1176,7 +1176,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_show-view.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1245,7 +1245,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_browsing-remote-repo.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1279,7 +1279,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_workspace-repo.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1331,7 +1331,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_adding-project-repo.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1352,7 +1352,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_adding-project-repo-xml.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1375,7 +1375,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_project-repos.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1406,7 +1406,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_browsing-local-repo.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -1474,7 +1474,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_update-remote-index.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>

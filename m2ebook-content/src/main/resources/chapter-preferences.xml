@@ -30,8 +30,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/web/eclipse_preferences.png" scalefit="0"
-                     width="100%" />
+                     fileref="figs/web/eclipse_preferences.png" 
+                     scale="50"/>
         </imageobject>
       </mediaobject>
     </figure>
@@ -91,7 +91,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_preference-goals.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -126,7 +126,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_preferences2.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -172,7 +172,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_decorate.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -196,7 +196,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_decorate2.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -217,7 +217,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_decorate3.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>

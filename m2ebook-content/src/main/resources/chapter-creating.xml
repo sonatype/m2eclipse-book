@@ -40,7 +40,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/creating_create-wizard.png"
-                     width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -66,7 +66,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/creating_checking-out.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -140,7 +140,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/creating_new-maven.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -354,7 +354,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/creating_new-module.png"
-                       scalefit="0" width="50%" />
+                       scale="100" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -377,7 +377,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/creating_select-project.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -413,8 +413,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/web/creating_create-pom.png" scalefit="0"
-                     width="100%" />
+                     fileref="figs/web/creating_create-pom.png" 
+                     scale="50"/>
         </imageobject>
       </mediaobject>
     </figure>
@@ -437,7 +437,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/creating_additional-depends.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -461,7 +461,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/creating_add-dependency.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -519,7 +519,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/creating_import.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -560,7 +560,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/creating_import-project.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -608,8 +608,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/web/creating_import2.png" scalefit="0"
-                       width="100%" />
+                       fileref="figs/web/creating_import2.png" 
+                       scale="50"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -635,7 +635,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/creating_add-depend.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -659,7 +659,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/creating_import-camel.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>

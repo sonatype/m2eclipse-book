@@ -43,7 +43,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/eclipse_add-manual-depend.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -67,7 +67,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/eclipse_updating-depends.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -91,7 +91,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/eclipse_add-depend3.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -212,7 +212,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-depend-tree.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -248,7 +248,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-depend-tree-locate.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -279,7 +279,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-graph.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -302,7 +302,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-graph-radial.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>

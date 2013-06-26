@@ -32,7 +32,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_available-features.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -165,8 +165,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/web/eclipse_pom-editor.png" scalefit="0"
-                     width="100%" />
+                     fileref="figs/web/eclipse_pom-editor.png" 
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -207,7 +207,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-parent.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -239,7 +239,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-effective.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -290,7 +290,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-dependencies.png"
-                     scalefit="0" width="50%" />
+                     scale="50"/>
         </imageobject>
       </mediaobject>
     </figure>
@@ -314,7 +314,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_pom-editor-build.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>

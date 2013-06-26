@@ -44,7 +44,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_navigate.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -69,8 +69,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/web/eclipse_search-pom.png" scalefit="0"
-                     width="100%" />
+                     fileref="figs/web/eclipse_search-pom.png" 
+                     scale="50"/>
         </imageobject>
       </mediaobject>
     </figure>
@@ -100,7 +100,7 @@
         <imageobject role="print">
           <imagedata align="center"
                      fileref="figs/web/eclipse_search-class.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -135,7 +135,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_show-view.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -156,7 +156,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_indexes.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -176,7 +176,7 @@
 
         <imageobject role="print">
           <imagedata align="center" fileref="figs/web/eclipse_index2.png"
-                     scalefit="0" width="50%" />
+                     scale="50" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -257,7 +257,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_show-view-other.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -280,7 +280,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_show-view.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -349,7 +349,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_browsing-remote-repo.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -383,7 +383,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_workspace-repo.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -435,7 +435,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_adding-project-repo.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -456,7 +456,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_adding-project-repo-xml.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -479,7 +479,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_project-repos.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -510,7 +510,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_browsing-local-repo.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -578,7 +578,7 @@
           <imageobject role="print">
             <imagedata align="center"
                        fileref="figs/web/repo-view_update-remote-index.png"
-                       scalefit="0" width="50%" />
+                       scale="50" />
           </imageobject>
         </mediaobject>
       </figure>
