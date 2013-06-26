@@ -43,8 +43,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/eclipse_navigate.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/eclipse_navigate.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -69,7 +69,7 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_search-pom.pdf" scalefit="0"
+                     fileref="figs/web/eclipse_search-pom.png" scalefit="0"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -99,8 +99,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_search-class.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_search-class.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -134,8 +134,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/eclipse_show-view.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/eclipse_show-view.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -155,8 +155,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/eclipse_indexes.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/eclipse_indexes.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -175,8 +175,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/eclipse_index2.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/eclipse_index2.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -256,8 +256,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_show-view-other.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_show-view-other.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -279,8 +279,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_show-view.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_show-view.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -348,8 +348,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_browsing-remote-repo.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_browsing-remote-repo.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -382,8 +382,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_workspace-repo.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_workspace-repo.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -434,8 +434,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_adding-project-repo.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_adding-project-repo.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -455,8 +455,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_adding-project-repo-xml.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_adding-project-repo-xml.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -478,8 +478,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_project-repos.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_project-repos.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -509,8 +509,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_browsing-local-repo.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_browsing-local-repo.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -577,8 +577,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/repo-view_update-remote-index.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/repo-view_update-remote-index.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>

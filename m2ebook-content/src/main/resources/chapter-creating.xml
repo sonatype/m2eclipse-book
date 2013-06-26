@@ -39,8 +39,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/creating_create-wizard.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/creating_create-wizard.png"
+                     width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -60,13 +60,13 @@
           <imageobject role="web">
             <imagedata contentdepth="100%"
                        fileref="figs/web/creating_checking-out.png"
-                       scalefit="1" width="100%" />
+                       scalefit="0" width="100%" />
           </imageobject>
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/creating_checking-out.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/creating_checking-out.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -139,8 +139,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/creating_new-maven.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/creating_new-maven.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -353,8 +353,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/creating_new-module.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/creating_new-module.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -376,8 +376,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/creating_select-project.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/creating_select-project.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -413,7 +413,7 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/creating_create-pom.pdf" scalefit="0"
+                     fileref="figs/web/creating_create-pom.png" scalefit="0"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -436,8 +436,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/creating_additional-depends.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/creating_additional-depends.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -460,8 +460,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/creating_add-dependency.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/creating_add-dependency.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -518,8 +518,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/creating_import.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/creating_import.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -559,8 +559,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/creating_import-project.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/creating_import-project.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -608,7 +608,7 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/creating_import2.pdf" scalefit="0"
+                       fileref="figs/web/creating_import2.png" scalefit="0"
                        width="100%" />
           </imageobject>
         </mediaobject>
@@ -634,8 +634,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/creating_add-depend.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/creating_add-depend.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -658,8 +658,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/creating_import-camel.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/creating_import-camel.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>

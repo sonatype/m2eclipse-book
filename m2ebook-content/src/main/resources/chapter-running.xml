@@ -23,8 +23,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/running_console.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/running_console.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -57,8 +57,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/running_run-menu.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/running_run-menu.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -80,7 +80,7 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/running_run-config.pdf" scalefit="0"
+                     fileref="figs/web/running_run-config.png" scalefit="0"
                      width="100%" />
         </imageobject>
       </mediaobject>

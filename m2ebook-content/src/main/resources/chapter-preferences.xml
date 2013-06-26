@@ -30,7 +30,7 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_preferences.pdf" scalefit="0"
+                     fileref="figs/web/eclipse_preferences.png" scalefit="0"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -90,8 +90,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_preference-goals.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_preference-goals.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -125,8 +125,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_preferences2.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_preferences2.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -171,8 +171,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/eclipse_decorate.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/eclipse_decorate.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -195,8 +195,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/eclipse_decorate2.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/eclipse_decorate2.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -216,8 +216,8 @@
         </imageobject>
 
         <imageobject role="print">
-          <imagedata align="center" fileref="figs/print/eclipse_decorate3.pdf"
-                     scalefit="0" width="100%" />
+          <imagedata align="center" fileref="figs/web/eclipse_decorate3.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>

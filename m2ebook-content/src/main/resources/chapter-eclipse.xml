@@ -31,8 +31,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_available-features.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_available-features.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -165,7 +165,7 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor.pdf" scalefit="0"
+                     fileref="figs/web/eclipse_pom-editor.png" scalefit="0"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -206,8 +206,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor-parent.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_pom-editor-parent.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -238,8 +238,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor-effective.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_pom-editor-effective.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -289,8 +289,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor-dependencies.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_pom-editor-dependencies.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -313,8 +313,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor-build.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_pom-editor-build.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>

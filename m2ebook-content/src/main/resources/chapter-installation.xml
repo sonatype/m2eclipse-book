@@ -50,7 +50,7 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-marketplace.pdf" scalefit="0"
+                     fileref="figs/web/install-marketplace.png" scalefit="0"
                      width="100%" />
         </imageobject>
       </mediaobject>
@@ -70,8 +70,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-select-marketplace.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/install-select-marketplace.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -99,8 +99,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-choose-maven-integration.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-choose-maven-integration.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -122,8 +122,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-uninstall-core.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-uninstall-core.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -146,8 +146,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-agree-maven-integration-license.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-agree-maven-integration-license.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -167,8 +167,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-ignore-extras-warning.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-ignore-extras-warning.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -189,8 +189,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-restart-extras.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-restart-extras.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -225,8 +225,8 @@
 
             <imageobject role="print">
               <imagedata align="center"
-                         fileref="figs/print/install-choose-subclipse.pdf"
-                         scalefit="0" width="100%" />
+                         fileref="figs/web/install-choose-subclipse.png"
+                         scalefit="0" width="50%" />
             </imageobject>
           </mediaobject>
         </figure>
@@ -254,8 +254,8 @@
 
             <imageobject role="print">
               <imagedata align="center"
-                         fileref="figs/print/install-choose-mylyn.pdf"
-                         scalefit="0" width="100%" />
+                         fileref="figs/web/install-choose-mylyn.png"
+                         scalefit="0" width="50%" />
             </imageobject>
           </mediaobject>
         </figure>
@@ -287,8 +287,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-choose-extras.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-choose-extras.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -383,8 +383,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-select-extras-features.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-select-extras-features.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -407,8 +407,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-agree-extras-license.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-agree-extras-license.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -429,8 +429,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-ignore-maven-integration-warning.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-ignore-maven-integration-warning.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -452,8 +452,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/install-restart-maven-integration.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/install-restart-maven-integration.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -692,8 +692,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-uninstall-installed-components.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/install-uninstall-installed-components.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -714,8 +714,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-select-maven-integration-features.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/install-select-maven-integration-features.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -737,8 +737,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-uninstall-extras.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/install-uninstall-extras.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -757,8 +757,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/install-uninstall-restart.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/install-uninstall-restart.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>

@@ -42,8 +42,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/eclipse_add-manual-depend.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/eclipse_add-manual-depend.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -66,8 +66,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/eclipse_updating-depends.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/eclipse_updating-depends.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -90,8 +90,8 @@
 
           <imageobject role="print">
             <imagedata align="center"
-                       fileref="figs/print/eclipse_add-depend3.pdf"
-                       scalefit="0" width="100%" />
+                       fileref="figs/web/eclipse_add-depend3.png"
+                       scalefit="0" width="50%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -211,8 +211,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor-depend-tree.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_pom-editor-depend-tree.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -247,8 +247,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor-depend-tree-locate.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_pom-editor-depend-tree-locate.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -278,8 +278,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor-graph.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_pom-editor-graph.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -301,8 +301,8 @@
 
         <imageobject role="print">
           <imagedata align="center"
-                     fileref="figs/print/eclipse_pom-editor-graph-radial.pdf"
-                     scalefit="0" width="100%" />
+                     fileref="figs/web/eclipse_pom-editor-graph-radial.png"
+                     scalefit="0" width="50%" />
         </imageobject>
       </mediaobject>
     </figure>
