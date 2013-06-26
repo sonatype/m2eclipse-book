@@ -286,11 +286,6 @@ $ <command>mvn clean install</command>
       </listitem>
 
       <listitem>
-        <para>The m2eclipse Book ePub can be found in
-        <filename>m2ebook-epub/target</filename></para>
-      </listitem>
-
-      <listitem>
         <para>The m2eclipse Book HTML can be found in
         <filename>m2ebook-html/target</filename></para>
       </listitem>
@@ -343,20 +338,8 @@ $ <command>mvn clean install</command>
           <filename>src/main/resources</filename>.</para>
         </listitem>
       </varlistentry>
-
-      <varlistentry>
-        <term>m2ebook-epub</term>
-
-        <listitem>
-          <para>This project contains the ePub-specific XSL stylesheets. The
-          ePub specific stylesheets can be found in
-          <filename>src/main/resources</filename>.</para>
-        </listitem>
-      </varlistentry>
-
       <varlistentry>
         <term>m2ebook-site</term>
-
         <listitem>
           <para>This project combines all of the book projects into a single,
           deployable site and is only meant to be published by internal
