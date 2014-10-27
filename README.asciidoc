@@ -1,0 +1,15 @@
+== M2e Book
+
+This repository holds the source for the M2e book which documents the Maven integration for the Eclipse IDE. 
+
+== Status
+
+This repository and the book are currently (Oct 2014) unmaintained and out of date for  and have been relicensed 
+for the community to pick up and improve as desired.
+
+The M2e project has been informed about this license change with https://bugs.eclipse.org/bugs/show_bug.cgi?id=448972
+
+== License
+
+As of 2014-10-28 the book license has change to EPL-1.0 and can therefore be used by the M2e project directly. 
+See the LICENSE file or http://www.eclipse.org/legal/epl-v10.html for details.
